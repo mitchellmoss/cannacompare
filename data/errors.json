@@ -5,5 +5,121 @@
     "url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers",
     "error_message": "Deno.seekSync is not a function",
     "log_time": "2025-05-03T22:04:50.951Z"
+  },
+  {
+    "id": 2,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers",
+    "error_message": "Error scraping https://dutchie.com/dispensary/natures-remedy1/products/vaporizers: 402 Payment Required - {\"success\":false,\"error\":\"Insufficient credits to perform this request. For more credits, you can upgrade your plan at https://firecrawl.dev/pricing or try changing the request limit to a lower value.\"}",
+    "log_time": "2025-05-03T22:06:59.553Z"
+  },
+  {
+    "id": 3,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers",
+    "error_message": "Error scraping https://dutchie.com/dispensary/natures-remedy1/products/vaporizers: 500 Internal Server Error - {\"success\":false,\"error\":\"(Internal server error) - timeout\"}",
+    "log_time": "2025-05-03T22:15:42.864Z"
+  },
+  {
+    "id": 4,
+    "dispensary_id": 1,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-03T22:15:42.870Z"
+  },
+  {
+    "id": 5,
+    "url": "https://dutchie.com/dispensary/resinate-worcester",
+    "error_message": "HTML format received, but HTML parsing not implemented. Please implement an HTML parser or use JSON/LLM format.",
+    "log_time": "2025-05-03T22:16:04.197Z"
+  },
+  {
+    "id": 6,
+    "dispensary_id": 2,
+    "url": "https://dutchie.com/dispensary/resinate-worcester",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-03T22:16:04.198Z"
+  },
+  {
+    "id": 7,
+    "url": "https://dutchie.com/dispensary/clear-sky-worcester",
+    "error_message": "HTML format received, but HTML parsing not implemented. Please implement an HTML parser or use JSON/LLM format.",
+    "log_time": "2025-05-03T22:16:20.732Z"
+  },
+  {
+    "id": 8,
+    "dispensary_id": 3,
+    "url": "https://dutchie.com/dispensary/clear-sky-worcester",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-03T22:16:20.735Z"
+  },
+  {
+    "id": 9,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers",
+    "error_message": "Error scraping https://dutchie.com/dispensary/natures-remedy1/products/vaporizers: 500 Internal Server Error - {\"success\":false,\"error\":\"(Internal server error) - timeout\"}",
+    "log_time": "2025-05-03T22:26:43.715Z"
+  },
+  {
+    "id": 10,
+    "dispensary_id": 1,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-03T22:26:43.726Z"
+  },
+  {
+    "id": 11,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Error scraping https://dutchie.com/dispensary/natures-remedy1/: 400 Bad Request - {\"success\":false,\"error\":\"Bad Request\",\"details\":[{\"code\":\"custom\",\"message\":\"Either 'milliseconds' or 'selector' must be provided, but not both.\",\"path\":[\"actions\",1]},{\"code\":\"custom\",\"message\":\"Either 'milliseconds' or 'selector' must be provided, but not both.\",\"path\":[\"actions\",3]},{\"code\":\"invalid_union\",\"unionErrors\":[{\"issues\":[{\"received\":\"waitForSelector\",\"code\":\"invalid_literal\",\"expected\":\"wait\",\"path\":[\"actions\",4,\"type\"],\"message\":\"Invalid literal value, expected \\\"wait\\\"\"}],\"name\":\"ZodError\"},{\"issues\":[{\"received\":\"waitForSelector\",\"code\":\"invalid_literal\",\"expected\":\"click\",\"path\":[\"actions\",4,\"type\"],\"message\":\"Invalid literal value, expected \\\"click\\\"\"}],\"name\":\"ZodError\"},{\"issues\":[{\"received\":\"waitForSelector\",\"code\":\"invalid_literal\",\"expected\":\"screenshot\",\"path\":[\"actions\",4,\"type\"],\"message\":\"Invalid literal value, expected \\\"screenshot\\\"\"}],\"name\":\"ZodError\"},{\"issues\":[{\"received\":\"waitForSelector\",\"code\":\"invalid_literal\",\"expected\":\"write\",\"path\":[\"actions\",4,\"type\"],\"message\":\"Invalid literal value, expected \\\"write\\\"\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"actions\",4,\"text\"],\"message\":\"Required\"}],\"name\":\"ZodError\"},{\"issues\":[{\"received\":\"waitForSelector\",\"code\":\"invalid_literal\",\"expected\":\"press\",\"path\":[\"actions\",4,\"type\"],\"message\":\"Invalid literal value, expected \\\"press\\\"\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"actions\",4,\"key\"],\"message\":\"Required\"}],\"name\":\"ZodError\"},{\"issues\":[{\"received\":\"waitForSelector\",\"code\":\"invalid_literal\",\"expected\":\"scroll\",\"path\":[\"actions\",4,\"type\"],\"message\":\"Invalid literal value, expected \\\"scroll\\\"\"}],\"name\":\"ZodError\"},{\"issues\":[{\"received\":\"waitForSelector\",\"code\":\"invalid_literal\",\"expected\":\"scrape\",\"path\":[\"actions\",4,\"type\"],\"message\":\"Invalid literal value, expected \\\"scrape\\\"\"}],\"name\":\"ZodError\"},{\"issues\":[{\"received\":\"waitForSelector\",\"code\":\"invalid_literal\",\"expected\":\"executeJavascript\",\"path\":[\"actions\",4,\"type\"],\"message\":\"Invalid literal value, expected \\\"executeJavascript\\\"\"},{\"code\":\"invalid_type\",\"expected\":\"string\",\"received\":\"undefined\",\"path\":[\"actions\",4,\"script\"],\"message\":\"Required\"}],\"name\":\"ZodError\"}],\"path\":[\"actions\",4],\"message\":\"Invalid input\"}]}",
+    "log_time": "2025-05-03T22:30:23.412Z"
+  },
+  {
+    "id": 12,
+    "dispensary_id": 4,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-03T22:30:23.416Z"
+  },
+  {
+    "id": 13,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Failed to scrape https://dutchie.com/dispensary/natures-remedy1/ - Error type: ReferenceError. Original error: response is not defined",
+    "log_time": "2025-05-03T22:35:49.035Z"
+  },
+  {
+    "id": 14,
+    "dispensary_id": 4,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-03T22:35:49.040Z"
+  },
+  {
+    "id": 15,
+    "url": "https://dutchie.com/dispensary/resinate-worcester/",
+    "error_message": "Failed to scrape https://dutchie.com/dispensary/resinate-worcester/ - Error type: ReferenceError. Original error: response is not defined",
+    "log_time": "2025-05-03T22:36:18.345Z"
+  },
+  {
+    "id": 16,
+    "dispensary_id": 5,
+    "url": "https://dutchie.com/dispensary/resinate-worcester/",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-03T22:36:18.347Z"
+  },
+  {
+    "id": 17,
+    "url": "https://dutchie.com/dispensary/clear-sky-worcester/",
+    "error_message": "HTML parsing did not return any products. HTML content may not match expected patterns.",
+    "log_time": "2025-05-03T22:40:09.377Z"
+  },
+  {
+    "id": 18,
+    "url": "https://dutchie.com/dispensary/clear-sky-worcester/",
+    "error_message": "Fallback scrape did not find any products in HTML content from https://dutchie.com/dispensary/clear-sky-worcester/",
+    "log_time": "2025-05-03T22:40:09.606Z"
+  },
+  {
+    "id": 19,
+    "dispensary_id": 6,
+    "url": "https://dutchie.com/dispensary/clear-sky-worcester/",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-03T22:40:09.606Z"
   }
 ]

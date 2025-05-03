@@ -21,17 +21,20 @@ The code in this repository is provided as a technical demonstration of web scra
 ## Features
 
 - Automated scraping of product data from dispensary websites
-- Local SQLite database for data storage
+- HTML parsing for extracting product information from Dutchie menus
+- Local JSON file-based data storage
 - Web interface for searching and comparing product prices
 - Support for multiple dispensaries
 - Robust error handling and logging
+- Smart fallback mechanisms for different menu structures
 
 ## Technology Stack
 
 - **Deno**: Modern, secure TypeScript runtime
-- **Firecrawl API**: Web scraping service with LLM extraction
-- **SQLite**: Lightweight relational database
+- **Firecrawl API**: Web scraping service with HTML or LLM extraction
+- **JSON Storage**: Simple file-based data persistence
 - **Oak**: Deno web framework for the HTTP server
+- **Deno DOM**: HTML parsing for product extraction
 
 ## Prerequisites
 
@@ -47,10 +50,11 @@ The code in this repository is provided as a technical demonstration of web scra
 ├── src/
 │   ├── scraper/
 │   │   ├── firecrawl_client.ts   # Firecrawl API interaction logic
+│   │   ├── html_parser.ts        # HTML parsing for Dutchie menus
 │   │   └── main_scraper.ts       # Main scraping orchestration script
 │   ├── db/
-│   │   ├── schema.sql            # SQL schema definition
-│   │   └── database.ts           # SQLite connection and query functions
+│   │   ├── json_storage.ts       # JSON file-based storage functions
+│   │   └── database.ts           # Database interface
 │   ├── web/
 │   │   ├── server.ts             # Oak web server setup
 │   │   ├── routes.ts             # API endpoint definitions
@@ -60,7 +64,11 @@ The code in this repository is provided as a technical demonstration of web scra
 │   │       └── script.js
 │   └── shared/
 │       └── types.ts              # Shared TypeScript types
-└── target_dispensaries.json  # List of target dispensary menu URLs
+├── target_dispensaries.json  # List of target dispensary menu URLs
+└── data/                    # Directory for JSON data storage
+    ├── dispensaries.json    # Stored dispensary information
+    ├── products.json        # Stored product information
+    └── errors.json          # Error logging
 ```
 
 ## Setup Instructions
@@ -117,7 +125,8 @@ deno run --allow-net --allow-read --allow-write --allow-env src/scraper/main_scr
 This command:
 1. Loads the list of dispensaries from `target_dispensaries.json`
 2. Scrapes each menu URL using the Firecrawl API
-3. Stores the product data in the SQLite database
+3. Parses the HTML content to extract product information
+4. Stores the product data in JSON files in the data directory
 
 ### Setting Up Recurring Scraping
 

@@ -21,11 +21,21 @@ export interface ProductQueryResult extends ProductSchema {
   scraped_at: string;
 }
 
+// Action types for Firecrawl
+export type FirecrawlAction = 
+  | { type: "scroll"; distance: number }
+  | { type: "wait"; milliseconds: number }
+  | { type: "click"; selector: string }
+  | { type: "write"; selector: string; text: string }
+  | { type: "press"; key: string }
+  | { type: "executeJavascript"; script: string };
+
 // Firecrawl API parameters
 export interface ScrapeParams {
   url: string;
   formats?: string[];
   waitFor?: number;
+  actions?: FirecrawlAction[];
   jsonOptions?: {
     schema?: Record<string, unknown>;
     prompt?: string;

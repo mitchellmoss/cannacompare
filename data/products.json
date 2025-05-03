@@ -1,1 +1,5628 @@
-[]
+[
+  {
+    "id": 1,
+    "dispensary_id": 1,
+    "product_name": "Blue Dream",
+    "price": "$11",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 2,
+    "dispensary_id": 1,
+    "product_name": "Blue Dream",
+    "price": "$35",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 3,
+    "dispensary_id": 1,
+    "product_name": "Blue Dream",
+    "price": "$70",
+    "weight_or_size": "7g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 4,
+    "dispensary_id": 1,
+    "product_name": "Blue Dream",
+    "price": "$140",
+    "weight_or_size": "14g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 5,
+    "dispensary_id": 1,
+    "product_name": "OG Kush",
+    "price": "$12",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 6,
+    "dispensary_id": 1,
+    "product_name": "OG Kush",
+    "price": "$43",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 7,
+    "dispensary_id": 1,
+    "product_name": "OG Kush",
+    "price": "$85",
+    "weight_or_size": "7g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 8,
+    "dispensary_id": 1,
+    "product_name": "Sour Diesel",
+    "price": "$39",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 9,
+    "dispensary_id": 1,
+    "product_name": "Sour Diesel",
+    "price": "$76",
+    "weight_or_size": "7g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 10,
+    "dispensary_id": 1,
+    "product_name": "Sour Diesel",
+    "price": "$154",
+    "weight_or_size": "14g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 11,
+    "dispensary_id": 1,
+    "product_name": "Girl Scout Cookies",
+    "price": "$14",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 12,
+    "dispensary_id": 1,
+    "product_name": "Girl Scout Cookies",
+    "price": "$49",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 13,
+    "dispensary_id": 1,
+    "product_name": "Wedding Cake",
+    "price": "$16",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 14,
+    "dispensary_id": 1,
+    "product_name": "Wedding Cake",
+    "price": "$52",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 15,
+    "dispensary_id": 1,
+    "product_name": "Wedding Cake",
+    "price": "$105",
+    "weight_or_size": "7g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 16,
+    "dispensary_id": 1,
+    "product_name": "Purple Punch",
+    "price": "$45",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 17,
+    "dispensary_id": 1,
+    "product_name": "Purple Punch",
+    "price": "$91",
+    "weight_or_size": "7g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 18,
+    "dispensary_id": 1,
+    "product_name": "Northern Lights",
+    "price": "$8",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 19,
+    "dispensary_id": 1,
+    "product_name": "Northern Lights",
+    "price": "$31",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 20,
+    "dispensary_id": 1,
+    "product_name": "Northern Lights",
+    "price": "$64",
+    "weight_or_size": "7g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 21,
+    "dispensary_id": 1,
+    "product_name": "Northern Lights",
+    "price": "$125",
+    "weight_or_size": "14g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 22,
+    "dispensary_id": 1,
+    "product_name": "Gelato",
+    "price": "$16",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 23,
+    "dispensary_id": 1,
+    "product_name": "Gelato",
+    "price": "$57",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 24,
+    "dispensary_id": 1,
+    "product_name": "500mg Vape Cartridge",
+    "price": "$35",
+    "weight_or_size": "500mg",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 25,
+    "dispensary_id": 1,
+    "product_name": "1000mg Vape Cartridge",
+    "price": "$60",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 26,
+    "dispensary_id": 4,
+    "product_name": "New Liquid Diamonds Cartridges from The Lab!View AllPurple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cartBlack Cherry Fizz: LiquidDiamonds Cartridge…The Lab…TAC: 95.91% · THC: 93.36%Add to cartPreviousNext",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 27,
+    "dispensary_id": 4,
+    "product_name": "New Liquid Diamonds Cartridges from The Lab!View AllPurple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cartBlack Cherry Fizz: LiquidDiamonds Cartridge…The Lab…TAC: 95.91% · THC: 93.36%Add to cartPreviousNext",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 28,
+    "dispensary_id": 4,
+    "product_name": "Purple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cartBlack Cherry Fizz: LiquidDiamonds Cartridge…The Lab…TAC: 95.91% · THC: 93.36%Add to cartPreviousNext",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 29,
+    "dispensary_id": 4,
+    "product_name": "Purple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cartBlack Cherry Fizz: LiquidDiamonds Cartridge…The Lab…TAC: 95.91% · THC: 93.36%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 30,
+    "dispensary_id": 4,
+    "product_name": "Purple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cartBlack Cherry Fizz: LiquidDiamonds Cartridge…The Lab…TAC: 95.91% · THC: 93.36%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 31,
+    "dispensary_id": 4,
+    "product_name": "Purple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cartBlack Cherry Fizz: LiquidDiamonds Cartridge…The Lab…TAC: 95.91% · THC: 93.36%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 32,
+    "dispensary_id": 4,
+    "product_name": "Purple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 33,
+    "dispensary_id": 4,
+    "product_name": "Purple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 34,
+    "dispensary_id": 4,
+    "product_name": "TAC: 97.2% · THC: 95.22%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 35,
+    "dispensary_id": 4,
+    "product_name": "Black Cherry Fizz: LiquidDiamonds Cartridge…The Lab…TAC: 95.91% · THC: 93.36%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 36,
+    "dispensary_id": 4,
+    "product_name": "Black Cherry Fizz: LiquidDiamonds Cartridge…The Lab…TAC: 95.91% · THC: 93.36%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 37,
+    "dispensary_id": 4,
+    "product_name": "TAC: 95.91% · THC: 93.36%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 38,
+    "dispensary_id": 4,
+    "product_name": "Uncommon Kind ProductsView AllCalamansi Lime: Live RosinInfused Chews…Uncommon Kind…HybridTAC: · THC: 97.6 mgAdd to cartPrickly Pear: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 95 mgAdd to cartMorello Cherry: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 94.6 mgAdd to cartPreviousNext",
+    "price": "$14.30",
+    "weight_or_size": "97.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 39,
+    "dispensary_id": 4,
+    "product_name": "Uncommon Kind ProductsView AllCalamansi Lime: Live RosinInfused Chews…Uncommon Kind…HybridTAC: · THC: 97.6 mgAdd to cartPrickly Pear: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 95 mgAdd to cartMorello Cherry: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 94.6 mgAdd to cartPreviousNext",
+    "price": "$14.30",
+    "weight_or_size": "97.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 40,
+    "dispensary_id": 4,
+    "product_name": "Calamansi Lime: Live RosinInfused Chews…Uncommon Kind…HybridTAC: · THC: 97.6 mgAdd to cartPrickly Pear: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 95 mgAdd to cartMorello Cherry: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 94.6 mgAdd to cartPreviousNext",
+    "price": "$14.30",
+    "weight_or_size": "97.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 41,
+    "dispensary_id": 4,
+    "product_name": "Calamansi Lime: Live RosinInfused Chews…Uncommon Kind…HybridTAC: · THC: 97.6 mgAdd to cartPrickly Pear: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 95 mgAdd to cartMorello Cherry: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 94.6 mgAdd to cart",
+    "price": "$14.30",
+    "weight_or_size": "97.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 42,
+    "dispensary_id": 4,
+    "product_name": "Calamansi Lime: Live RosinInfused Chews…Uncommon Kind…HybridTAC: · THC: 97.6 mgAdd to cartPrickly Pear: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 95 mgAdd to cartMorello Cherry: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 94.6 mgAdd to cart",
+    "price": "$14.30",
+    "weight_or_size": "97.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 43,
+    "dispensary_id": 4,
+    "product_name": "Calamansi Lime: Live RosinInfused Chews…Uncommon Kind…HybridTAC: · THC: 97.6 mgAdd to cartPrickly Pear: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 95 mgAdd to cartMorello Cherry: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 94.6 mgAdd to cart",
+    "price": "$14.30",
+    "weight_or_size": "97.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 44,
+    "dispensary_id": 4,
+    "product_name": "Calamansi Lime: Live RosinInfused Chews…Uncommon Kind…HybridTAC: · THC: 97.6 mgAdd to cart",
+    "price": "$14.30",
+    "weight_or_size": "97.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 45,
+    "dispensary_id": 4,
+    "product_name": "Calamansi Lime: Live RosinInfused Chews…Uncommon Kind…HybridTAC: · THC: 97.6 mgAdd to cart",
+    "price": "$14.30",
+    "weight_or_size": "97.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 46,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: · THC: 97.6 mgAdd to cart",
+    "price": "$14.30",
+    "weight_or_size": "97.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 47,
+    "dispensary_id": 4,
+    "product_name": "Prickly Pear: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 95 mgAdd to cart",
+    "price": "$14.30",
+    "weight_or_size": "95 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 48,
+    "dispensary_id": 4,
+    "product_name": "Prickly Pear: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 95 mgAdd to cart",
+    "price": "$14.30",
+    "weight_or_size": "95 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 49,
+    "dispensary_id": 4,
+    "product_name": "HybridTHC: 95 mgAdd to cart",
+    "price": "$14.30",
+    "weight_or_size": "95 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 50,
+    "dispensary_id": 4,
+    "product_name": "Morello Cherry: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 94.6 mgAdd to cart",
+    "price": "$13.00",
+    "weight_or_size": "94.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 51,
+    "dispensary_id": 4,
+    "product_name": "Morello Cherry: Live RosinInfused Chews…Uncommon Kind…HybridTHC: 94.6 mgAdd to cart",
+    "price": "$13.00",
+    "weight_or_size": "94.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 52,
+    "dispensary_id": 4,
+    "product_name": "HybridTHC: 94.6 mgAdd to cart",
+    "price": "$13.00",
+    "weight_or_size": "94.6 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 53,
+    "dispensary_id": 4,
+    "product_name": "SeCHe Select - View AllOreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cartPreviousNext",
+    "price": "$13",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 54,
+    "dispensary_id": 4,
+    "product_name": "SeCHe Select - View AllOreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cartPreviousNext",
+    "price": "$13",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 55,
+    "dispensary_id": 4,
+    "product_name": "SeCHe Select - View All",
+    "price": "$13",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 56,
+    "dispensary_id": 4,
+    "product_name": "SeCHe Select -",
+    "price": "$13",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 57,
+    "dispensary_id": 4,
+    "product_name": "SeCHe Select -",
+    "price": "$13",
+    "weight_or_size": "3.5g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 58,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cartPreviousNext",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 59,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 60,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 61,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 62,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 63,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 64,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 65,
+    "dispensary_id": 4,
+    "product_name": "SeCHe All Day Flower - View AllJungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cartPreviousNext",
+    "price": "$90",
+    "weight_or_size": "28g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 66,
+    "dispensary_id": 4,
+    "product_name": "SeCHe All Day Flower - View AllJungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cartPreviousNext",
+    "price": "$90",
+    "weight_or_size": "28g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 67,
+    "dispensary_id": 4,
+    "product_name": "SeCHe All Day Flower - View All",
+    "price": "$90",
+    "weight_or_size": "28g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 68,
+    "dispensary_id": 4,
+    "product_name": "SeCHe All Day Flower -",
+    "price": "$90",
+    "weight_or_size": "28g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 69,
+    "dispensary_id": 4,
+    "product_name": "SeCHe All Day Flower -",
+    "price": "$90",
+    "weight_or_size": "28g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 70,
+    "dispensary_id": 4,
+    "product_name": "Jungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cartPreviousNext",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 71,
+    "dispensary_id": 4,
+    "product_name": "Jungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 72,
+    "dispensary_id": 4,
+    "product_name": "Jungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 73,
+    "dispensary_id": 4,
+    "product_name": "Jungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 74,
+    "dispensary_id": 4,
+    "product_name": "Jungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 75,
+    "dispensary_id": 4,
+    "product_name": "Jungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 76,
+    "dispensary_id": 4,
+    "product_name": "HybridTHC: 22.07%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 77,
+    "dispensary_id": 4,
+    "product_name": "Grape Ape: DistillateCartridge…The Lab…IndicaTAC: 91.12% · THC: 83.18% - 85.42%Select weight",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 78,
+    "dispensary_id": 4,
+    "product_name": "Grape Ape: DistillateCartridge…The Lab…IndicaTAC: 91.12% · THC: 83.18% - 85.42%Select weight",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 79,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 91.12% · THC: 83.18% - 85.42%Select weight",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 80,
+    "dispensary_id": 4,
+    "product_name": "Pie Hole: All Day…SeCHe…THC: 22.01%Add to cart",
+    "price": "$64.35",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 81,
+    "dispensary_id": 4,
+    "product_name": "Pie Hole: All Day…SeCHe…THC: 22.01%Add to cart",
+    "price": "$64.35",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 82,
+    "dispensary_id": 4,
+    "product_name": "THC: 22.01%Add to cart",
+    "price": "$64.35",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 83,
+    "dispensary_id": 4,
+    "product_name": "Donnie Burger: All Day…SeCHe…IndicaTAC: 36.11% · THC: 31.02%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 84,
+    "dispensary_id": 4,
+    "product_name": "Donnie Burger: All Day…SeCHe…IndicaTAC: 36.11% · THC: 31.02%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 85,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 36.11% · THC: 31.02%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 86,
+    "dispensary_id": 4,
+    "product_name": "Lemon Pastry: All Day…SeCHe…Indica-HybridTAC: 38.17% · THC: 33.33%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 87,
+    "dispensary_id": 4,
+    "product_name": "Lemon Pastry: All Day…SeCHe…Indica-HybridTAC: 38.17% · THC: 33.33%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 88,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 38.17% · THC: 33.33%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 89,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: All Day…SeCHe…Indica-HybridTAC: · THC: 25.17%Add to cart",
+    "price": "$90.00",
+    "weight_or_size": "30.02 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 90,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: All Day…SeCHe…Indica-HybridTAC: · THC: 25.17%Add to cart",
+    "price": "$90.00",
+    "weight_or_size": "30.02 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 91,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: · THC: 25.17%Add to cart",
+    "price": "$90.00",
+    "weight_or_size": "30.02 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 92,
+    "dispensary_id": 4,
+    "product_name": "Banana Kush: All-In-One…The Lab…IndicaTAC: 94.42% · THC: 88.06%Add to cart",
+    "price": "$39.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 93,
+    "dispensary_id": 4,
+    "product_name": "Banana Kush: All-In-One…The Lab…IndicaTAC: 94.42% · THC: 88.06%Add to cart",
+    "price": "$39.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 94,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 94.42% · THC: 88.06%Add to cart",
+    "price": "$39.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 95,
+    "dispensary_id": 4,
+    "product_name": "Alpha Runtz: Fine Grind…SeCHe…HybridTAC: · THC: 24.06%Add to cart",
+    "price": "$29.25",
+    "weight_or_size": "25.27 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 96,
+    "dispensary_id": 4,
+    "product_name": "Alpha Runtz: Fine Grind…SeCHe…HybridTAC: · THC: 24.06%Add to cart",
+    "price": "$29.25",
+    "weight_or_size": "25.27 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 97,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: · THC: 24.06%Add to cart",
+    "price": "$29.25",
+    "weight_or_size": "25.27 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 98,
+    "dispensary_id": 4,
+    "product_name": "Dazed Gushers: SnowballsInfused Flower…Black Frost…HybridTAC: 59.08% · THC: 57.95%Add to cart",
+    "price": "$47.60",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 99,
+    "dispensary_id": 4,
+    "product_name": "Dazed Gushers: SnowballsInfused Flower…Black Frost…HybridTAC: 59.08% · THC: 57.95%Add to cart",
+    "price": "$47.60",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 100,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 59.08% · THC: 57.95%Add to cart",
+    "price": "$47.60",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 101,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 102,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 103,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 104,
+    "dispensary_id": 4,
+    "product_name": "Animal Mintz Cake: Flower…The Bank…IndicaTAC: 31% · THC: 26.37%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 105,
+    "dispensary_id": 4,
+    "product_name": "Animal Mintz Cake: Flower…The Bank…IndicaTAC: 31% · THC: 26.37%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 106,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 31% · THC: 26.37%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 107,
+    "dispensary_id": 4,
+    "product_name": "Cannalope Haze: Fine Grind…SeCHe…SativaTAC: 26.32% · THC: 22.49%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 108,
+    "dispensary_id": 4,
+    "product_name": "Cannalope Haze: Fine Grind…SeCHe…SativaTAC: 26.32% · THC: 22.49%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 109,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 26.32% · THC: 22.49%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 110,
+    "dispensary_id": 4,
+    "product_name": "Kush Mints: Hijinks…Hijinks…TAC: 39.11% · THC: 37.67%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 111,
+    "dispensary_id": 4,
+    "product_name": "Kush Mints: Hijinks…Hijinks…TAC: 39.11% · THC: 37.67%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 112,
+    "dispensary_id": 4,
+    "product_name": "TAC: 39.11% · THC: 37.67%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 113,
+    "dispensary_id": 4,
+    "product_name": "Berry Dream 2:1 THC:CBN20-Pack…Tasteology…2 to 1TAC: · THC: 95.2 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "147 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 114,
+    "dispensary_id": 4,
+    "product_name": "Berry Dream 2:1 THC:CBN20-Pack…Tasteology…2 to 1TAC: · THC: 95.2 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "147 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 115,
+    "dispensary_id": 4,
+    "product_name": "2 to 1TAC: · THC: 95.2 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "147 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 116,
+    "dispensary_id": 4,
+    "product_name": "Gelato #33 Cartridge…The Lab…THC: 89.05%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 117,
+    "dispensary_id": 4,
+    "product_name": "Gelato #33 Cartridge…The Lab…THC: 89.05%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 118,
+    "dispensary_id": 4,
+    "product_name": "THC: 89.05%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 119,
+    "dispensary_id": 4,
+    "product_name": "Mandarin Zkittlez: Flower…Simply Herb…Sativa-HybridTAC: 24.82% · THC: 22.14%Add to cart",
+    "price": "$99.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 120,
+    "dispensary_id": 4,
+    "product_name": "Mandarin Zkittlez: Flower…Simply Herb…Sativa-HybridTAC: 24.82% · THC: 22.14%Add to cart",
+    "price": "$99.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 121,
+    "dispensary_id": 4,
+    "product_name": "Sativa-HybridTAC: 24.82% · THC: 22.14%Add to cart",
+    "price": "$99.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 122,
+    "dispensary_id": 4,
+    "product_name": "Maui Wowie: Cartridge…The Lab…SativaTAC: 88.34% · THC: 82.88%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 123,
+    "dispensary_id": 4,
+    "product_name": "Maui Wowie: Cartridge…The Lab…SativaTAC: 88.34% · THC: 82.88%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 124,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 88.34% · THC: 82.88%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 125,
+    "dispensary_id": 4,
+    "product_name": "Apples and Bananas: Pre-roll…SeCHe…HybridTHC: 26.71%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 126,
+    "dispensary_id": 4,
+    "product_name": "Apples and Bananas: Pre-roll…SeCHe…HybridTHC: 26.71%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 127,
+    "dispensary_id": 4,
+    "product_name": "HybridTHC: 26.71%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 128,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: 5 PackPre-rolls…SeCHe…Indica-HybridTHC: 22.99%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 129,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: 5 PackPre-rolls…SeCHe…Indica-HybridTHC: 22.99%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 130,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTHC: 22.99%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 131,
+    "dispensary_id": 4,
+    "product_name": "Purple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 132,
+    "dispensary_id": 4,
+    "product_name": "Purple Punch: LiquidDiamonds Cartridge…The Lab…TAC: 97.2% · THC: 95.22%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 133,
+    "dispensary_id": 4,
+    "product_name": "TAC: 97.2% · THC: 95.22%Add to cart",
+    "price": "$25.01",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 134,
+    "dispensary_id": 4,
+    "product_name": "J1 (Jack Skunk)…Local Roots…SativaTAC: 31.4% · THC: 29.6%Add to cart",
+    "price": "$27.30",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 135,
+    "dispensary_id": 4,
+    "product_name": "J1 (Jack Skunk)…Local Roots…SativaTAC: 31.4% · THC: 29.6%Add to cart",
+    "price": "$27.30",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 136,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 31.4% · THC: 29.6%Add to cart",
+    "price": "$27.30",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 137,
+    "dispensary_id": 4,
+    "product_name": "Berry Haze: Traveler…Fernway…TAC: 89.1% · THC: 80.95% - 82.19% · CBD: 0.17% - 1.02%Select weight",
+    "price": "$31.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 138,
+    "dispensary_id": 4,
+    "product_name": "Berry Haze: Traveler…Fernway…TAC: 89.1% · THC: 80.95% - 82.19% · CBD: 0.17% - 1.02%Select weight",
+    "price": "$31.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 139,
+    "dispensary_id": 4,
+    "product_name": "TAC: 89.1% · THC: 80.95% - 82.19% · CBD: 0.17% - 1.02%Select weight",
+    "price": "$31.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 140,
+    "dispensary_id": 4,
+    "product_name": "Cereal Milk Cartridge…The Lab…HybridTHC: 84.47%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 141,
+    "dispensary_id": 4,
+    "product_name": "Cereal Milk Cartridge…The Lab…HybridTHC: 84.47%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 142,
+    "dispensary_id": 4,
+    "product_name": "HybridTHC: 84.47%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 143,
+    "dispensary_id": 4,
+    "product_name": "LA Kush Cake: Flower…The Bank…IndicaTAC: 27.05% · THC: 25.84%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 144,
+    "dispensary_id": 4,
+    "product_name": "LA Kush Cake: Flower…The Bank…IndicaTAC: 27.05% · THC: 25.84%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 145,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 27.05% · THC: 25.84%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 146,
+    "dispensary_id": 4,
+    "product_name": "Durban Poison: All-In-One…The Lab…SativaTAC: 88.43% · THC: 82.3% - 83.23%Select weight",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 147,
+    "dispensary_id": 4,
+    "product_name": "Durban Poison: All-In-One…The Lab…SativaTAC: 88.43% · THC: 82.3% - 83.23%Select weight",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 148,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 88.43% · THC: 82.3% - 83.23%Select weight",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 149,
+    "dispensary_id": 4,
+    "product_name": "Rum Cake: Flower…The Bank…HybridTAC: 37.7% · THC: 31.98%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 150,
+    "dispensary_id": 4,
+    "product_name": "Rum Cake: Flower…The Bank…HybridTAC: 37.7% · THC: 31.98%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 151,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 37.7% · THC: 31.98%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 152,
+    "dispensary_id": 4,
+    "product_name": "Pie Hole: All Day…SeCHe…THC: 22.01%Add to cart",
+    "price": "$64.35",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 153,
+    "dispensary_id": 4,
+    "product_name": "Pie Hole: All Day…SeCHe…THC: 22.01%Add to cart",
+    "price": "$64.35",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 154,
+    "dispensary_id": 4,
+    "product_name": "THC: 22.01%Add to cart",
+    "price": "$64.35",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 155,
+    "dispensary_id": 4,
+    "product_name": "Donnie Burger: All Day…SeCHe…IndicaTAC: 36.11% · THC: 31.02%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 156,
+    "dispensary_id": 4,
+    "product_name": "Donnie Burger: All Day…SeCHe…IndicaTAC: 36.11% · THC: 31.02%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 157,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 36.11% · THC: 31.02%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 158,
+    "dispensary_id": 4,
+    "product_name": "Lemon Pastry: All Day…SeCHe…Indica-HybridTAC: 38.17% · THC: 33.33%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 159,
+    "dispensary_id": 4,
+    "product_name": "Lemon Pastry: All Day…SeCHe…Indica-HybridTAC: 38.17% · THC: 33.33%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 160,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 38.17% · THC: 33.33%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 161,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: All Day…SeCHe…Indica-HybridTAC: · THC: 25.17%Add to cart",
+    "price": "$90.00",
+    "weight_or_size": "30.02 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 162,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: All Day…SeCHe…Indica-HybridTAC: · THC: 25.17%Add to cart",
+    "price": "$90.00",
+    "weight_or_size": "30.02 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 163,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: · THC: 25.17%Add to cart",
+    "price": "$90.00",
+    "weight_or_size": "30.02 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 164,
+    "dispensary_id": 4,
+    "product_name": "Alpha Runtz: Fine Grind…SeCHe…HybridTAC: · THC: 24.06%Add to cart",
+    "price": "$29.25",
+    "weight_or_size": "25.27 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 165,
+    "dispensary_id": 4,
+    "product_name": "Alpha Runtz: Fine Grind…SeCHe…HybridTAC: · THC: 24.06%Add to cart",
+    "price": "$29.25",
+    "weight_or_size": "25.27 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 166,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: · THC: 24.06%Add to cart",
+    "price": "$29.25",
+    "weight_or_size": "25.27 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 167,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 168,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Select…SeCHe…IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 169,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 26% · THC: 24.33%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 170,
+    "dispensary_id": 4,
+    "product_name": "Cannalope Haze: Fine Grind…SeCHe…SativaTAC: 26.32% · THC: 22.49%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 171,
+    "dispensary_id": 4,
+    "product_name": "Cannalope Haze: Fine Grind…SeCHe…SativaTAC: 26.32% · THC: 22.49%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 172,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 26.32% · THC: 22.49%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 173,
+    "dispensary_id": 4,
+    "product_name": "Apples and Bananas: Pre-roll…SeCHe…HybridTHC: 26.71%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 174,
+    "dispensary_id": 4,
+    "product_name": "Apples and Bananas: Pre-roll…SeCHe…HybridTHC: 26.71%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 175,
+    "dispensary_id": 4,
+    "product_name": "HybridTHC: 26.71%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 176,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: 5 PackPre-rolls…SeCHe…Indica-HybridTHC: 22.99%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 177,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: 5 PackPre-rolls…SeCHe…Indica-HybridTHC: 22.99%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 178,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTHC: 22.99%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 179,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: Fine Grind…SeCHe…Indica-HybridTAC: 26.61% · THC: 24.39%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 180,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: Fine Grind…SeCHe…Indica-HybridTAC: 26.61% · THC: 24.39%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 181,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 26.61% · THC: 24.39%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 182,
+    "dispensary_id": 4,
+    "product_name": "Devil Driver: Fine Grind…SeCHe…Sativa-HybridTAC: 22.47% · THC: 19.28%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 183,
+    "dispensary_id": 4,
+    "product_name": "Devil Driver: Fine Grind…SeCHe…Sativa-HybridTAC: 22.47% · THC: 19.28%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 184,
+    "dispensary_id": 4,
+    "product_name": "Sativa-HybridTAC: 22.47% · THC: 19.28%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 185,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: Fine Grind…SeCHe…TAC: 36.29% · THC: 30.55%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 186,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: Fine Grind…SeCHe…TAC: 36.29% · THC: 30.55%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 187,
+    "dispensary_id": 4,
+    "product_name": "TAC: 36.29% · THC: 30.55%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 188,
+    "dispensary_id": 4,
+    "product_name": "Lemon Dairy: Fine Grind…SeCHe…TAC: 23.89% · THC: 23.09%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 189,
+    "dispensary_id": 4,
+    "product_name": "Lemon Dairy: Fine Grind…SeCHe…TAC: 23.89% · THC: 23.09%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 190,
+    "dispensary_id": 4,
+    "product_name": "TAC: 23.89% · THC: 23.09%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 191,
+    "dispensary_id": 4,
+    "product_name": "LA Kush Cake: All Day…SeCHe…IndicaTAC: 38.11% · THC: 32.15%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 192,
+    "dispensary_id": 4,
+    "product_name": "LA Kush Cake: All Day…SeCHe…IndicaTAC: 38.11% · THC: 32.15%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 193,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 38.11% · THC: 32.15%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 194,
+    "dispensary_id": 4,
+    "product_name": "Honey Banana: All Day…SeCHe…IndicaTAC: 29.12% · THC: 24.55%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 195,
+    "dispensary_id": 4,
+    "product_name": "Honey Banana: All Day…SeCHe…IndicaTAC: 29.12% · THC: 24.55%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 196,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 29.12% · THC: 24.55%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 197,
+    "dispensary_id": 4,
+    "product_name": "Baker's Delight: Fine Flower…SeCHe…TAC: 26.06% · THC: 25.63%Add to cart",
+    "price": "$24.70",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 198,
+    "dispensary_id": 4,
+    "product_name": "Baker's Delight: Fine Flower…SeCHe…TAC: 26.06% · THC: 25.63%Add to cart",
+    "price": "$24.70",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 199,
+    "dispensary_id": 4,
+    "product_name": "TAC: 26.06% · THC: 25.63%Add to cart",
+    "price": "$24.70",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 200,
+    "dispensary_id": 4,
+    "product_name": "Blueberry Muffin: Pre-Roll 2Pack…SeCHe…IndicaTAC: 24.14% · THC: 22.26%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 201,
+    "dispensary_id": 4,
+    "product_name": "Blueberry Muffin: Pre-Roll 2Pack…SeCHe…IndicaTAC: 24.14% · THC: 22.26%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 202,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 24.14% · THC: 22.26%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 203,
+    "dispensary_id": 4,
+    "product_name": "Grape Pie: Pre-roll…SeCHe…IndicaTAC: 24.81% · THC: 22.7%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 204,
+    "dispensary_id": 4,
+    "product_name": "Grape Pie: Pre-roll…SeCHe…IndicaTAC: 24.81% · THC: 22.7%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 205,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 24.81% · THC: 22.7%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 206,
+    "dispensary_id": 4,
+    "product_name": "7 Sins: Fine Grind…SeCHe…IndicaTAC: 21.65% · THC: 18.32%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 207,
+    "dispensary_id": 4,
+    "product_name": "7 Sins: Fine Grind…SeCHe…IndicaTAC: 21.65% · THC: 18.32%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 208,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 21.65% · THC: 18.32%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 209,
+    "dispensary_id": 4,
+    "product_name": "Sherbacio: Fine Grind…SeCHe…HybridTAC: 23.6% · THC: 20.14%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 210,
+    "dispensary_id": 4,
+    "product_name": "Sherbacio: Fine Grind…SeCHe…HybridTAC: 23.6% · THC: 20.14%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 211,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 23.6% · THC: 20.14%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 212,
+    "dispensary_id": 4,
+    "product_name": "Mandarin Zkittlez: FineGrind…SeCHe…TAC: 25.42% · THC: 20.18%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 213,
+    "dispensary_id": 4,
+    "product_name": "Mandarin Zkittlez: FineGrind…SeCHe…TAC: 25.42% · THC: 20.18%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 214,
+    "dispensary_id": 4,
+    "product_name": "TAC: 25.42% · THC: 20.18%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 215,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: InfusedPre-roll…SeCHe…TAC: 51.05% · THC: 45.56%Add to cart",
+    "price": "$9.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 216,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: InfusedPre-roll…SeCHe…TAC: 51.05% · THC: 45.56%Add to cart",
+    "price": "$9.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 217,
+    "dispensary_id": 4,
+    "product_name": "TAC: 51.05% · THC: 45.56%Add to cart",
+    "price": "$9.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 218,
+    "dispensary_id": 4,
+    "product_name": "Banana OG: Fine Flower…SeCHe…IndicaTHC: 24.3%Add to cart",
+    "price": "$24.70",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 219,
+    "dispensary_id": 4,
+    "product_name": "Banana OG: Fine Flower…SeCHe…IndicaTHC: 24.3%Add to cart",
+    "price": "$24.70",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 220,
+    "dispensary_id": 4,
+    "product_name": "IndicaTHC: 24.3%Add to cart",
+    "price": "$24.70",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 221,
+    "dispensary_id": 4,
+    "product_name": "RS11: Fine Grind…SeCHe…Indica-HybridTAC: 22.84% · THC: 19.01%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 222,
+    "dispensary_id": 4,
+    "product_name": "RS11: Fine Grind…SeCHe…Indica-HybridTAC: 22.84% · THC: 19.01%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 223,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 22.84% · THC: 19.01%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 224,
+    "dispensary_id": 4,
+    "product_name": "Rum Berry: Kind Grind…SeCHe…TAC: 44% · THC: 38.33%Add to cart",
+    "price": "$22.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 225,
+    "dispensary_id": 4,
+    "product_name": "Rum Berry: Kind Grind…SeCHe…TAC: 44% · THC: 38.33%Add to cart",
+    "price": "$22.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 226,
+    "dispensary_id": 4,
+    "product_name": "TAC: 44% · THC: 38.33%Add to cart",
+    "price": "$22.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 227,
+    "dispensary_id": 4,
+    "product_name": "Jungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 228,
+    "dispensary_id": 4,
+    "product_name": "Jungle Jam: All Day…SeCHe…HybridTHC: 22.07%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 229,
+    "dispensary_id": 4,
+    "product_name": "HybridTHC: 22.07%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 230,
+    "dispensary_id": 4,
+    "product_name": "Mandarin ZKittlez: All Day…SeCHe…TAC: 31.43% · THC: 25.16%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 231,
+    "dispensary_id": 4,
+    "product_name": "Mandarin ZKittlez: All Day…SeCHe…TAC: 31.43% · THC: 25.16%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 232,
+    "dispensary_id": 4,
+    "product_name": "TAC: 31.43% · THC: 25.16%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 233,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: Pre-roll 2pk…SeCHe…Indica-HybridTAC: 22.25% · THC: 20.94%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 234,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: Pre-roll 2pk…SeCHe…Indica-HybridTAC: 22.25% · THC: 20.94%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 235,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 22.25% · THC: 20.94%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 236,
+    "dispensary_id": 4,
+    "product_name": "Kind Grind: Kush Mints…SeCHe…Indica-HybridTAC: 50.8% · THC: 48.7%Add to cart",
+    "price": "$22.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 237,
+    "dispensary_id": 4,
+    "product_name": "Kind Grind: Kush Mints…SeCHe…Indica-HybridTAC: 50.8% · THC: 48.7%Add to cart",
+    "price": "$22.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 238,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 50.8% · THC: 48.7%Add to cart",
+    "price": "$22.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 239,
+    "dispensary_id": 4,
+    "product_name": "Rum Cake: Fine Grind…SeCHe…SativaTHC: 27.89%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 240,
+    "dispensary_id": 4,
+    "product_name": "Rum Cake: Fine Grind…SeCHe…SativaTHC: 27.89%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 241,
+    "dispensary_id": 4,
+    "product_name": "SativaTHC: 27.89%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 242,
+    "dispensary_id": 4,
+    "product_name": "LA Kush Cake: Fine Grind…SeCHe…IndicaTAC: · THC: 17.54%Add to cart",
+    "price": "$29.25",
+    "weight_or_size": "20.57 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 243,
+    "dispensary_id": 4,
+    "product_name": "LA Kush Cake: Fine Grind…SeCHe…IndicaTAC: · THC: 17.54%Add to cart",
+    "price": "$29.25",
+    "weight_or_size": "20.57 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 244,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: · THC: 17.54%Add to cart",
+    "price": "$29.25",
+    "weight_or_size": "20.57 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 245,
+    "dispensary_id": 4,
+    "product_name": "Kush Mints: Pre-Roll…SeCHe…Indica-HybridTHC: 20.01%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 246,
+    "dispensary_id": 4,
+    "product_name": "Kush Mints: Pre-Roll…SeCHe…Indica-HybridTHC: 20.01%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 247,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTHC: 20.01%Add to cart",
+    "price": "$5.20",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 248,
+    "dispensary_id": 4,
+    "product_name": "Seche: Accessory RollingTray…SeCHe…Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 249,
+    "dispensary_id": 4,
+    "product_name": "Seche: Accessory RollingTray…SeCHe…Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 250,
+    "dispensary_id": 4,
+    "product_name": "Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 251,
+    "dispensary_id": 4,
+    "product_name": "Seche Rolling Kit…SeCHe…Add to cart",
+    "price": "$39.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 252,
+    "dispensary_id": 4,
+    "product_name": "Seche Rolling Kit…SeCHe…Add to cart",
+    "price": "$39.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 253,
+    "dispensary_id": 4,
+    "product_name": "Add to cart",
+    "price": "$39.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 254,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: All Day…SeCHe…IndicaTHC: 22.66%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 255,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: All Day…SeCHe…IndicaTHC: 22.66%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 256,
+    "dispensary_id": 4,
+    "product_name": "IndicaTHC: 22.66%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 257,
+    "dispensary_id": 4,
+    "product_name": "Lemon Pastry: Fine Grind…SeCHe…THC: 23.04%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 258,
+    "dispensary_id": 4,
+    "product_name": "Lemon Pastry: Fine Grind…SeCHe…THC: 23.04%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 259,
+    "dispensary_id": 4,
+    "product_name": "THC: 23.04%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 260,
+    "dispensary_id": 4,
+    "product_name": "Kush Mints: Infused Pre-roll…SeCHe…THC: 34.95%Add to cart",
+    "price": "$9.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 261,
+    "dispensary_id": 4,
+    "product_name": "Kush Mints: Infused Pre-roll…SeCHe…THC: 34.95%Add to cart",
+    "price": "$9.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 262,
+    "dispensary_id": 4,
+    "product_name": "THC: 34.95%Add to cart",
+    "price": "$9.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 263,
+    "dispensary_id": 4,
+    "product_name": "Kush DNA: Kind Grind…SeCHe…TAC: 48.6%Add to cart",
+    "price": "$22.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 264,
+    "dispensary_id": 4,
+    "product_name": "Kush DNA: Kind Grind…SeCHe…TAC: 48.6%Add to cart",
+    "price": "$22.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 265,
+    "dispensary_id": 4,
+    "product_name": "TAC: 48.6%Add to cart",
+    "price": "$22.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 266,
+    "dispensary_id": 4,
+    "product_name": "Butterstuff: All Day…SeCHe…TAC: 27.76% · THC: 22.79%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 267,
+    "dispensary_id": 4,
+    "product_name": "Butterstuff: All Day…SeCHe…TAC: 27.76% · THC: 22.79%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 268,
+    "dispensary_id": 4,
+    "product_name": "TAC: 27.76% · THC: 22.79%Add to cart",
+    "price": "$90.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 269,
+    "dispensary_id": 4,
+    "product_name": "Berry Kush Muffin: InfusedPre-roll…SeCHe…THC: 41.36%Add to cart",
+    "price": "$9.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 270,
+    "dispensary_id": 4,
+    "product_name": "Berry Kush Muffin: InfusedPre-roll…SeCHe…THC: 41.36%Add to cart",
+    "price": "$9.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 271,
+    "dispensary_id": 4,
+    "product_name": "THC: 41.36%Add to cart",
+    "price": "$9.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 272,
+    "dispensary_id": 4,
+    "product_name": "Banana OG: 5 Pack Pre-rolls…SeCHe…IndicaTHC: 28.53%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 273,
+    "dispensary_id": 4,
+    "product_name": "Banana OG: 5 Pack Pre-rolls…SeCHe…IndicaTHC: 28.53%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 274,
+    "dispensary_id": 4,
+    "product_name": "IndicaTHC: 28.53%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 275,
+    "dispensary_id": 4,
+    "product_name": "Animal Mintz Cake: Flower…The Bank…IndicaTAC: 31% · THC: 26.37%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 276,
+    "dispensary_id": 4,
+    "product_name": "Animal Mintz Cake: Flower…The Bank…IndicaTAC: 31% · THC: 26.37%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 277,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 31% · THC: 26.37%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 278,
+    "dispensary_id": 4,
+    "product_name": "LA Kush Cake: Flower…The Bank…IndicaTAC: 27.05% · THC: 25.84%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 279,
+    "dispensary_id": 4,
+    "product_name": "LA Kush Cake: Flower…The Bank…IndicaTAC: 27.05% · THC: 25.84%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 280,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 27.05% · THC: 25.84%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 281,
+    "dispensary_id": 4,
+    "product_name": "Rum Cake: Flower…The Bank…HybridTAC: 37.7% · THC: 31.98%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 282,
+    "dispensary_id": 4,
+    "product_name": "Rum Cake: Flower…The Bank…HybridTAC: 37.7% · THC: 31.98%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 283,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 37.7% · THC: 31.98%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 284,
+    "dispensary_id": 4,
+    "product_name": "Blueberry Muffin: Flower…The Bank…IndicaTAC: 26.37% · THC: 25.56%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 285,
+    "dispensary_id": 4,
+    "product_name": "Blueberry Muffin: Flower…The Bank…IndicaTAC: 26.37% · THC: 25.56%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 286,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 26.37% · THC: 25.56%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 287,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: The Bank II…The Bank…IndicaTAC: 27.99% · THC: 25.83%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 288,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: The Bank II…The Bank…IndicaTAC: 27.99% · THC: 25.83%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 289,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 27.99% · THC: 25.83%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 290,
+    "dispensary_id": 4,
+    "product_name": "Lime Tai: Pre-Roll Blunt…The Bank…Sativa-HybridTAC: 28.32% · THC: 23.57%Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 291,
+    "dispensary_id": 4,
+    "product_name": "Lime Tai: Pre-Roll Blunt…The Bank…Sativa-HybridTAC: 28.32% · THC: 23.57%Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 292,
+    "dispensary_id": 4,
+    "product_name": "Sativa-HybridTAC: 28.32% · THC: 23.57%Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 293,
+    "dispensary_id": 4,
+    "product_name": "Donnie Burger: The Bank II…The Bank…IndicaTAC: 29.58% · THC: 25.36%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 294,
+    "dispensary_id": 4,
+    "product_name": "Donnie Burger: The Bank II…The Bank…IndicaTAC: 29.58% · THC: 25.36%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 295,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 29.58% · THC: 25.36%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 296,
+    "dispensary_id": 4,
+    "product_name": "7 Sins: The Bank II…The Bank…IndicaTAC: 33.72% · THC: 28.04%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 297,
+    "dispensary_id": 4,
+    "product_name": "7 Sins: The Bank II…The Bank…IndicaTAC: 33.72% · THC: 28.04%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 298,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 33.72% · THC: 28.04%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 299,
+    "dispensary_id": 4,
+    "product_name": "Butterstuff: The Bank II…The Bank…TAC: 27.76% · THC: 22.79%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 300,
+    "dispensary_id": 4,
+    "product_name": "Butterstuff: The Bank II…The Bank…TAC: 27.76% · THC: 22.79%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 301,
+    "dispensary_id": 4,
+    "product_name": "TAC: 27.76% · THC: 22.79%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 302,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: Pre-RollBlunt…The Bank…Indica-HybridTAC: 33.03% · THC: 30.24%Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 303,
+    "dispensary_id": 4,
+    "product_name": "Gusher x Runtz: Pre-RollBlunt…The Bank…Indica-HybridTAC: 33.03% · THC: 30.24%Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 304,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 33.03% · THC: 30.24%Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 305,
+    "dispensary_id": 4,
+    "product_name": "Rum Cake: The Bank II…The Bank…HybridTAC: 34.99% · THC: 29.99%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 306,
+    "dispensary_id": 4,
+    "product_name": "Rum Cake: The Bank II…The Bank…HybridTAC: 34.99% · THC: 29.99%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 307,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 34.99% · THC: 29.99%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 308,
+    "dispensary_id": 4,
+    "product_name": "Banana OG: Flower…The Bank…IndicaTAC: · THC: 24.72%Add to cart",
+    "price": "$48.75",
+    "weight_or_size": "28.69 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 309,
+    "dispensary_id": 4,
+    "product_name": "Banana OG: Flower…The Bank…IndicaTAC: · THC: 24.72%Add to cart",
+    "price": "$48.75",
+    "weight_or_size": "28.69 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 310,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: · THC: 24.72%Add to cart",
+    "price": "$48.75",
+    "weight_or_size": "28.69 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 311,
+    "dispensary_id": 4,
+    "product_name": "Grapevine 74: Bank InfusedBlunt…The Bank…TAC: 48.09% · THC: 45.83%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 312,
+    "dispensary_id": 4,
+    "product_name": "Grapevine 74: Bank InfusedBlunt…The Bank…TAC: 48.09% · THC: 45.83%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 313,
+    "dispensary_id": 4,
+    "product_name": "TAC: 48.09% · THC: 45.83%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 314,
+    "dispensary_id": 4,
+    "product_name": "Grape Gas: The Bank II…The Bank…Indica-HybridTAC: 34.64% · THC: 28.53%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 315,
+    "dispensary_id": 4,
+    "product_name": "Grape Gas: The Bank II…The Bank…Indica-HybridTAC: 34.64% · THC: 28.53%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 316,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 34.64% · THC: 28.53%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 317,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: The Bank II…The Bank…Indica-HybridTAC: 32.09% · THC: 26.45% · CBD: 0.47%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 318,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: The Bank II…The Bank…Indica-HybridTAC: 32.09% · THC: 26.45% · CBD: 0.47%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 319,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 32.09% · THC: 26.45% · CBD: 0.47%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 320,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: Flower…The Bank…Indica-HybridTAC: 31.95% · THC: 29.99%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 321,
+    "dispensary_id": 4,
+    "product_name": "Guava Gelato: Flower…The Bank…Indica-HybridTAC: 31.95% · THC: 29.99%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 322,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 31.95% · THC: 29.99%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 323,
+    "dispensary_id": 4,
+    "product_name": "Grape Gas #4: Pre-Roll Blunt…The Bank…Indica-HybridTHC: 27.41 mgAdd to cart",
+    "price": "$7.80",
+    "weight_or_size": "27.41 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 324,
+    "dispensary_id": 4,
+    "product_name": "Grape Gas #4: Pre-Roll Blunt…The Bank…Indica-HybridTHC: 27.41 mgAdd to cart",
+    "price": "$7.80",
+    "weight_or_size": "27.41 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 325,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTHC: 27.41 mgAdd to cart",
+    "price": "$7.80",
+    "weight_or_size": "27.41 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 326,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Flower…The Bank…TAC: 29.94% · THC: 24.69%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 327,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Flower…The Bank…TAC: 29.94% · THC: 24.69%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 328,
+    "dispensary_id": 4,
+    "product_name": "TAC: 29.94% · THC: 24.69%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 329,
+    "dispensary_id": 4,
+    "product_name": "Apples and Bananas:Pre-Roll Blunt…The Bank…HybridTAC: 29.8% · THC: 24.4%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 330,
+    "dispensary_id": 4,
+    "product_name": "Apples and Bananas:Pre-Roll Blunt…The Bank…HybridTAC: 29.8% · THC: 24.4%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 331,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 29.8% · THC: 24.4%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 332,
+    "dispensary_id": 4,
+    "product_name": "RS11: Pre-Roll Blunt…The Bank…Indica-HybridTAC: 31.54% · THC: 30.39%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 333,
+    "dispensary_id": 4,
+    "product_name": "RS11: Pre-Roll Blunt…The Bank…Indica-HybridTAC: 31.54% · THC: 30.39%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 334,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 31.54% · THC: 30.39%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 335,
+    "dispensary_id": 4,
+    "product_name": "RS11: Flower…The Bank…Indica-HybridTAC: 25.07% · THC: 21.31%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 336,
+    "dispensary_id": 4,
+    "product_name": "RS11: Flower…The Bank…Indica-HybridTAC: 25.07% · THC: 21.31%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 337,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 25.07% · THC: 21.31%Add to cart",
+    "price": "$45.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 338,
+    "dispensary_id": 4,
+    "product_name": "Grape Pie: Pre-Roll Blunt…The Bank…IndicaTAC: 25.39% · THC: 21.81%Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 339,
+    "dispensary_id": 4,
+    "product_name": "Grape Pie: Pre-Roll Blunt…The Bank…IndicaTAC: 25.39% · THC: 21.81%Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 340,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 25.39% · THC: 21.81%Add to cart",
+    "price": "$6.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 341,
+    "dispensary_id": 4,
+    "product_name": "Road Rage OG: The Bank II…The Bank…TAC: 33.1% · THC: 27.07% · CBD: 0.07%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 342,
+    "dispensary_id": 4,
+    "product_name": "Road Rage OG: The Bank II…The Bank…TAC: 33.1% · THC: 27.07% · CBD: 0.07%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 343,
+    "dispensary_id": 4,
+    "product_name": "TAC: 33.1% · THC: 27.07% · CBD: 0.07%Add to cart",
+    "price": "$19.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 344,
+    "dispensary_id": 4,
+    "product_name": "7 Sins: Flower…The Bank…TAC: 27.75% · THC: 23.46%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 345,
+    "dispensary_id": 4,
+    "product_name": "7 Sins: Flower…The Bank…TAC: 27.75% · THC: 23.46%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 346,
+    "dispensary_id": 4,
+    "product_name": "TAC: 27.75% · THC: 23.46%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 347,
+    "dispensary_id": 4,
+    "product_name": "Butterstuff: Flower…The Bank…TAC: 26.96% · THC: 22.16%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 348,
+    "dispensary_id": 4,
+    "product_name": "Butterstuff: Flower…The Bank…TAC: 26.96% · THC: 22.16%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 349,
+    "dispensary_id": 4,
+    "product_name": "TAC: 26.96% · THC: 22.16%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 350,
+    "dispensary_id": 4,
+    "product_name": "Baker's Delight: Flower…The Bank…TAC: 26.06% · THC: 25.63%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 351,
+    "dispensary_id": 4,
+    "product_name": "Baker's Delight: Flower…The Bank…TAC: 26.06% · THC: 25.63%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 352,
+    "dispensary_id": 4,
+    "product_name": "TAC: 26.06% · THC: 25.63%Add to cart",
+    "price": "$29.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 353,
+    "dispensary_id": 4,
+    "product_name": "Chem D I95: Pre-Roll Blunt…The Bank…Sativa-HybridTAC: 26.8% · THC: 22.8%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 354,
+    "dispensary_id": 4,
+    "product_name": "Chem D I95: Pre-Roll Blunt…The Bank…Sativa-HybridTAC: 26.8% · THC: 22.8%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 355,
+    "dispensary_id": 4,
+    "product_name": "Sativa-HybridTAC: 26.8% · THC: 22.8%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 356,
+    "dispensary_id": 4,
+    "product_name": "Sin Cake: Bank Infused Blunt…The Bank…THC: 35.21%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 357,
+    "dispensary_id": 4,
+    "product_name": "Sin Cake: Bank Infused Blunt…The Bank…THC: 35.21%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 358,
+    "dispensary_id": 4,
+    "product_name": "THC: 35.21%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 359,
+    "dispensary_id": 4,
+    "product_name": "Honey Banana: Pre-RollBlunt…The Bank…Indica-HybridTAC: 23.22% · THC: 19.19%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 360,
+    "dispensary_id": 4,
+    "product_name": "Honey Banana: Pre-RollBlunt…The Bank…Indica-HybridTAC: 23.22% · THC: 19.19%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 361,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 23.22% · THC: 19.19%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 362,
+    "dispensary_id": 4,
+    "product_name": "Alpha Runtz: Pre-Roll Blunt…The Bank…HybridTHC: 22.75%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 363,
+    "dispensary_id": 4,
+    "product_name": "Alpha Runtz: Pre-Roll Blunt…The Bank…HybridTHC: 22.75%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 364,
+    "dispensary_id": 4,
+    "product_name": "HybridTHC: 22.75%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 365,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Pre-Roll Blunt…The Bank…THC: 18.57%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 366,
+    "dispensary_id": 4,
+    "product_name": "Oreoz Cake: Pre-Roll Blunt…The Bank…THC: 18.57%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 367,
+    "dispensary_id": 4,
+    "product_name": "THC: 18.57%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 368,
+    "dispensary_id": 4,
+    "product_name": "Apocalypto: Pre-Roll Blunt…The Bank…SativaTAC: 31.51% · THC: 25.8%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 369,
+    "dispensary_id": 4,
+    "product_name": "Apocalypto: Pre-Roll Blunt…The Bank…SativaTAC: 31.51% · THC: 25.8%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 370,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 31.51% · THC: 25.8%Add to cart",
+    "price": "$7.80",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 371,
+    "dispensary_id": 4,
+    "product_name": "7 Sins: Flower…The Bank…IndicaTAC: 35.64% · THC: 29.64%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 372,
+    "dispensary_id": 4,
+    "product_name": "7 Sins: Flower…The Bank…IndicaTAC: 35.64% · THC: 29.64%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 373,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 35.64% · THC: 29.64%Add to cart",
+    "price": "$48.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 374,
+    "dispensary_id": 4,
+    "product_name": "Milk Chocolate Bar…Tasteology…HybridTAC: · THC: 90.4 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "94.5 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 375,
+    "dispensary_id": 4,
+    "product_name": "Milk Chocolate Bar…Tasteology…HybridTAC: · THC: 90.4 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "94.5 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 376,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: · THC: 90.4 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "94.5 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 377,
+    "dispensary_id": 4,
+    "product_name": "Berry Dream 2:1 THC:CBN20-Pack…Tasteology…2 to 1TAC: · THC: 95.2 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "147 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 378,
+    "dispensary_id": 4,
+    "product_name": "Berry Dream 2:1 THC:CBN20-Pack…Tasteology…2 to 1TAC: · THC: 95.2 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "147 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 379,
+    "dispensary_id": 4,
+    "product_name": "2 to 1TAC: · THC: 95.2 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "147 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 380,
+    "dispensary_id": 4,
+    "product_name": "Passion Raspberry Balance20 Pack…Tasteology…High CBDTHC: · CBD: 92.4 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "98.7 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 381,
+    "dispensary_id": 4,
+    "product_name": "Passion Raspberry Balance20 Pack…Tasteology…High CBDTHC: · CBD: 92.4 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "98.7 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 382,
+    "dispensary_id": 4,
+    "product_name": "High CBDTHC: · CBD: 92.4 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "98.7 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 383,
+    "dispensary_id": 4,
+    "product_name": "Bohemian Blackberry 20Pack…Tasteology…HybridTAC: 100.1 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "100.1 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 384,
+    "dispensary_id": 4,
+    "product_name": "Bohemian Blackberry 20Pack…Tasteology…HybridTAC: 100.1 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "100.1 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 385,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 100.1 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "100.1 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 386,
+    "dispensary_id": 4,
+    "product_name": "Blueberry Calm 20 Pack…Tasteology…Indica-HybridTAC: · THC: 93.1 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "97.3 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 387,
+    "dispensary_id": 4,
+    "product_name": "Blueberry Calm 20 Pack…Tasteology…Indica-HybridTAC: · THC: 93.1 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "97.3 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 388,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: · THC: 93.1 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "97.3 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 389,
+    "dispensary_id": 4,
+    "product_name": "Blood Orange Boost 20 Pack…Tasteology…SativaTAC: · THC: 93.8 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "97 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 390,
+    "dispensary_id": 4,
+    "product_name": "Blood Orange Boost 20 Pack…Tasteology…SativaTAC: · THC: 93.8 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "97 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 391,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: · THC: 93.8 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "97 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 392,
+    "dispensary_id": 4,
+    "product_name": "Dark Chocolate Bar…Tasteology…HybridTAC: · THC: 92.2 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "96.8 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 393,
+    "dispensary_id": 4,
+    "product_name": "Dark Chocolate Bar…Tasteology…HybridTAC: · THC: 92.2 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "96.8 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 394,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: · THC: 92.2 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "96.8 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 395,
+    "dispensary_id": 4,
+    "product_name": "Strawberry Spirit 20-Pack…Tasteology…Sativa-HybridTHC: 93.1 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "93.1 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 396,
+    "dispensary_id": 4,
+    "product_name": "Strawberry Spirit 20-Pack…Tasteology…Sativa-HybridTHC: 93.1 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "93.1 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 397,
+    "dispensary_id": 4,
+    "product_name": "Sativa-HybridTHC: 93.1 mgAdd to cart",
+    "price": "$10.40",
+    "weight_or_size": "93.1 mg",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 398,
+    "dispensary_id": 4,
+    "product_name": "Strawberry Blonde Bar…Tasteology…HybridTHC: 0.15%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 399,
+    "dispensary_id": 4,
+    "product_name": "Strawberry Blonde Bar…Tasteology…HybridTHC: 0.15%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 400,
+    "dispensary_id": 4,
+    "product_name": "HybridTHC: 0.15%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 401,
+    "dispensary_id": 4,
+    "product_name": "La Flama Blanca: Ice WaterHash…Southie Adams…HybridTAC: 67.91% · THC: 66.98%Add to cart",
+    "price": "$49.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 402,
+    "dispensary_id": 4,
+    "product_name": "La Flama Blanca: Ice WaterHash…Southie Adams…HybridTAC: 67.91% · THC: 66.98%Add to cart",
+    "price": "$49.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 403,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 67.91% · THC: 66.98%Add to cart",
+    "price": "$49.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 404,
+    "dispensary_id": 4,
+    "product_name": "Bluenana Pie: Ice WaterHash…Southie Adams…HybridTAC: 72.68% · THC: 71.29%Add to cart",
+    "price": "$49.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 405,
+    "dispensary_id": 4,
+    "product_name": "Bluenana Pie: Ice WaterHash…Southie Adams…HybridTAC: 72.68% · THC: 71.29%Add to cart",
+    "price": "$49.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 406,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 72.68% · THC: 71.29%Add to cart",
+    "price": "$49.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 407,
+    "dispensary_id": 4,
+    "product_name": "Raspberry Lemon Parfait:Live Badder…Sticky Fish…HybridTAC: 82.21% · THC: 79.32%Add to cart",
+    "price": "$33.60",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 408,
+    "dispensary_id": 4,
+    "product_name": "Raspberry Lemon Parfait:Live Badder…Sticky Fish…HybridTAC: 82.21% · THC: 79.32%Add to cart",
+    "price": "$33.60",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 409,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 82.21% · THC: 79.32%Add to cart",
+    "price": "$33.60",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 410,
+    "dispensary_id": 4,
+    "product_name": "Hash Jelly: Live Badder…Sticky Fish…HybridTAC: 85.3% · THC: 84.01%Add to cart",
+    "price": "$33.60",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 411,
+    "dispensary_id": 4,
+    "product_name": "Hash Jelly: Live Badder…Sticky Fish…HybridTAC: 85.3% · THC: 84.01%Add to cart",
+    "price": "$33.60",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 412,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 85.3% · THC: 84.01%Add to cart",
+    "price": "$33.60",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 413,
+    "dispensary_id": 4,
+    "product_name": "THCa: Isolate…dabl…SativaTAC: 99.84% · THC: 99.848%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 414,
+    "dispensary_id": 4,
+    "product_name": "THCa: Isolate…dabl…SativaTAC: 99.84% · THC: 99.848%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 415,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 99.84% · THC: 99.848%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 416,
+    "dispensary_id": 4,
+    "product_name": "Kush Mints: Live Rosin…The Lab…Indica-HybridTAC: 89.33% · THC: 75.15%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 417,
+    "dispensary_id": 4,
+    "product_name": "Kush Mints: Live Rosin…The Lab…Indica-HybridTAC: 89.33% · THC: 75.15%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 418,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 89.33% · THC: 75.15%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 419,
+    "dispensary_id": 4,
+    "product_name": "Rainbow Archway:Diamonds in Sauce…The Heirloom Collective…HybridTAC: 91.4% · THC: 82% · CBD: 0.15%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 420,
+    "dispensary_id": 4,
+    "product_name": "Rainbow Archway:Diamonds in Sauce…The Heirloom Collective…HybridTAC: 91.4% · THC: 82% · CBD: 0.15%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 421,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 91.4% · THC: 82% · CBD: 0.15%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 422,
+    "dispensary_id": 4,
+    "product_name": "Georgia Peach: LiveDiamonds in Sauce…The Heirloom Collective…TAC: 92.7% · THC: 79.9% · CBD: 0.17%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 423,
+    "dispensary_id": 4,
+    "product_name": "Georgia Peach: LiveDiamonds in Sauce…The Heirloom Collective…TAC: 92.7% · THC: 79.9% · CBD: 0.17%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 424,
+    "dispensary_id": 4,
+    "product_name": "TAC: 92.7% · THC: 79.9% · CBD: 0.17%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 425,
+    "dispensary_id": 4,
+    "product_name": "Peanut Butter Lady:Diamonds in Sauce…The Heirloom Collective…Indica-HybridTAC: 95.2% · THC: 81% · CBD: 0.18%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 426,
+    "dispensary_id": 4,
+    "product_name": "Peanut Butter Lady:Diamonds in Sauce…The Heirloom Collective…Indica-HybridTAC: 95.2% · THC: 81% · CBD: 0.18%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 427,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 95.2% · THC: 81% · CBD: 0.18%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 428,
+    "dispensary_id": 4,
+    "product_name": "Lemon OG Haze: Crumble…Crispy Commission…SativaTAC: 95.28% · THC: 91.7%Add to cart",
+    "price": "$31.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 429,
+    "dispensary_id": 4,
+    "product_name": "Lemon OG Haze: Crumble…Crispy Commission…SativaTAC: 95.28% · THC: 91.7%Add to cart",
+    "price": "$31.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 430,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 95.28% · THC: 91.7%Add to cart",
+    "price": "$31.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 431,
+    "dispensary_id": 4,
+    "product_name": "Apocalypto: Live Rosin…The Lab…SativaTAC: 87.7% · THC: 72.87%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 432,
+    "dispensary_id": 4,
+    "product_name": "Apocalypto: Live Rosin…The Lab…SativaTAC: 87.7% · THC: 72.87%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 433,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 87.7% · THC: 72.87%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 434,
+    "dispensary_id": 4,
+    "product_name": "Grape Gas #4: Live Rosin…The Lab…Indica-HybridTHC: 72.44%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 435,
+    "dispensary_id": 4,
+    "product_name": "Grape Gas #4: Live Rosin…The Lab…Indica-HybridTHC: 72.44%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 436,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTHC: 72.44%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 437,
+    "dispensary_id": 4,
+    "product_name": "Muffins: Live Hash Rosin…The Lab…HybridTAC: 90.12% · THC: 85.42%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 438,
+    "dispensary_id": 4,
+    "product_name": "Muffins: Live Hash Rosin…The Lab…HybridTAC: 90.12% · THC: 85.42%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 439,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 90.12% · THC: 85.42%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 440,
+    "dispensary_id": 4,
+    "product_name": "Red Mana: Diamonds inSauce…The Heirloom Collective…Indica-HybridTAC: 91.3% · THC: 79.3% · CBD: 0.13%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 441,
+    "dispensary_id": 4,
+    "product_name": "Red Mana: Diamonds inSauce…The Heirloom Collective…Indica-HybridTAC: 91.3% · THC: 79.3% · CBD: 0.13%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 442,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 91.3% · THC: 79.3% · CBD: 0.13%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 443,
+    "dispensary_id": 4,
+    "product_name": "Cash Cab: Diamonds inSauce…The Heirloom Collective…SativaTAC: 91.3% · THC: 78.8% · CBD: 0.15%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 444,
+    "dispensary_id": 4,
+    "product_name": "Cash Cab: Diamonds inSauce…The Heirloom Collective…SativaTAC: 91.3% · THC: 78.8% · CBD: 0.15%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 445,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 91.3% · THC: 78.8% · CBD: 0.15%Add to cart",
+    "price": "$30.10",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 446,
+    "dispensary_id": 4,
+    "product_name": "Planet of the Grapes: Batter…dabl…Indica-HybridTAC: 88.18% · THC: 85.08%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 447,
+    "dispensary_id": 4,
+    "product_name": "Planet of the Grapes: Batter…dabl…Indica-HybridTAC: 88.18% · THC: 85.08%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 448,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 88.18% · THC: 85.08%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 449,
+    "dispensary_id": 4,
+    "product_name": "Planet Sherb: Batter…dabl…HybridTAC: 80.98% · THC: 80.45%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 450,
+    "dispensary_id": 4,
+    "product_name": "Planet Sherb: Batter…dabl…HybridTAC: 80.98% · THC: 80.45%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 451,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 80.98% · THC: 80.45%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 452,
+    "dispensary_id": 4,
+    "product_name": "Honey Banana: Live Rosin…The Lab…TAC: 85.03% · THC: 80.66%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 453,
+    "dispensary_id": 4,
+    "product_name": "Honey Banana: Live Rosin…The Lab…TAC: 85.03% · THC: 80.66%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 454,
+    "dispensary_id": 4,
+    "product_name": "TAC: 85.03% · THC: 80.66%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 455,
+    "dispensary_id": 4,
+    "product_name": "Happy Hour: Hash Rosin…dabl…Sativa-HybridTAC: 86.49% · THC: 83.82%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 456,
+    "dispensary_id": 4,
+    "product_name": "Happy Hour: Hash Rosin…dabl…Sativa-HybridTAC: 86.49% · THC: 83.82%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 457,
+    "dispensary_id": 4,
+    "product_name": "Sativa-HybridTAC: 86.49% · THC: 83.82%Add to cart",
+    "price": "$38.50",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 458,
+    "dispensary_id": 4,
+    "product_name": "Blueberry Muffin: Live Rosin…The Lab…IndicaTHC: 70.58%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 459,
+    "dispensary_id": 4,
+    "product_name": "Blueberry Muffin: Live Rosin…The Lab…IndicaTHC: 70.58%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 460,
+    "dispensary_id": 4,
+    "product_name": "IndicaTHC: 70.58%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 461,
+    "dispensary_id": 4,
+    "product_name": "Banana OG: Live Rosin…The Lab…IndicaTAC: 89.4% · THC: 75.44%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 462,
+    "dispensary_id": 4,
+    "product_name": "Banana OG: Live Rosin…The Lab…IndicaTAC: 89.4% · THC: 75.44%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 463,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 89.4% · THC: 75.44%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 464,
+    "dispensary_id": 4,
+    "product_name": "7 Mints: Live Rosin…The Lab…IndicaTAC: 90.53% · THC: 76.56%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 465,
+    "dispensary_id": 4,
+    "product_name": "7 Mints: Live Rosin…The Lab…IndicaTAC: 90.53% · THC: 76.56%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 466,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 90.53% · THC: 76.56%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 467,
+    "dispensary_id": 4,
+    "product_name": "Grape Ape: DistillateCartridge…The Lab…IndicaTAC: 91.12% · THC: 83.18% - 85.42%Select weight",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 468,
+    "dispensary_id": 4,
+    "product_name": "Grape Ape: DistillateCartridge…The Lab…IndicaTAC: 91.12% · THC: 83.18% - 85.42%Select weight",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 469,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 91.12% · THC: 83.18% - 85.42%Select weight",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 470,
+    "dispensary_id": 4,
+    "product_name": "Watermelon ZkittlesCartridge…The Lab…IndicaTAC: 87.84% · THC: 82.66%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 471,
+    "dispensary_id": 4,
+    "product_name": "Watermelon ZkittlesCartridge…The Lab…IndicaTAC: 87.84% · THC: 82.66%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 472,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 87.84% · THC: 82.66%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 473,
+    "dispensary_id": 4,
+    "product_name": "Mimosa Cartridge…The Lab…Indica-HybridTAC: 89.68% · THC: 77.15% - 84.71%Select weight",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 474,
+    "dispensary_id": 4,
+    "product_name": "Mimosa Cartridge…The Lab…Indica-HybridTAC: 89.68% · THC: 77.15% - 84.71%Select weight",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 475,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 89.68% · THC: 77.15% - 84.71%Select weight",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 476,
+    "dispensary_id": 4,
+    "product_name": "Front Porch 40 Cartridge…The Lab…HybridTAC: 84.82% · THC: 79.91% · CBD: 0.21%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 477,
+    "dispensary_id": 4,
+    "product_name": "Front Porch 40 Cartridge…The Lab…HybridTAC: 84.82% · THC: 79.91% · CBD: 0.21%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 478,
+    "dispensary_id": 4,
+    "product_name": "HybridTAC: 84.82% · THC: 79.91% · CBD: 0.21%Add to cart",
+    "price": "$10.40",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 479,
+    "dispensary_id": 4,
+    "product_name": "Tropicana CookiesCartridge…The Lab…Indica-HybridTAC: 85.49% · THC: 78.31%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 480,
+    "dispensary_id": 4,
+    "product_name": "Tropicana CookiesCartridge…The Lab…Indica-HybridTAC: 85.49% · THC: 78.31%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 481,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 85.49% · THC: 78.31%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 482,
+    "dispensary_id": 4,
+    "product_name": "24K Gold Punch Cartridge…The Lab…IndicaTAC: 87.95% · THC: 80.88%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 483,
+    "dispensary_id": 4,
+    "product_name": "24K Gold Punch Cartridge…The Lab…IndicaTAC: 87.95% · THC: 80.88%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 484,
+    "dispensary_id": 4,
+    "product_name": "IndicaTAC: 87.95% · THC: 80.88%Add to cart",
+    "price": "$13.00",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 485,
+    "dispensary_id": 4,
+    "product_name": "Durban Poison Cartridge …The Lab…SativaTAC: 89.72% · THC: 84.7%Add to cart",
+    "price": "$35.75",
+    "weight_or_size": "2g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 486,
+    "dispensary_id": 4,
+    "product_name": "Durban Poison Cartridge …The Lab…SativaTAC: 89.72% · THC: 84.7%Add to cart",
+    "price": "$35.75",
+    "weight_or_size": "2g",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 487,
+    "dispensary_id": 4,
+    "product_name": "SativaTAC: 89.72% · THC: 84.7%Add to cart",
+    "price": "$35.75",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 488,
+    "dispensary_id": 4,
+    "product_name": "Mimosa: All-In-One…The Lab…Indica-HybridTAC: 76.81% · THC: 70.31%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 489,
+    "dispensary_id": 4,
+    "product_name": "Mimosa: All-In-One…The Lab…Indica-HybridTAC: 76.81% · THC: 70.31%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 490,
+    "dispensary_id": 4,
+    "product_name": "Indica-HybridTAC: 76.81% · THC: 70.31%Add to cart",
+    "price": "$16.25",
+    "scraped_at": "2025-05-03T22:39:06.492Z"
+  },
+  {
+    "id": 491,
+    "dispensary_id": 5,
+    "product_name": "1:1 (CBD:THC) StrawberryLotus | Premium…Resinate…1 to 1TAC: 30.48% · THC: 20.42% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 492,
+    "dispensary_id": 5,
+    "product_name": "1:1 (CBD:THC) StrawberryLotus | Premium…Resinate…1 to 1TAC: 30.48% · THC: 20.42% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 493,
+    "dispensary_id": 5,
+    "product_name": "1 to 1TAC: 30.48% · THC: 20.42% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 494,
+    "dispensary_id": 5,
+    "product_name": "Gelato Pre-Roll…Resinate…IndicaTHC: 32.27%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 495,
+    "dispensary_id": 5,
+    "product_name": "Gelato Pre-Roll…Resinate…IndicaTHC: 32.27%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 496,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 32.27%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 497,
+    "dispensary_id": 5,
+    "product_name": "Staff PickLemongrass Lo MeinPre-Roll…Resinate…HybridTHC: 30.42%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 498,
+    "dispensary_id": 5,
+    "product_name": "Staff PickLemongrass Lo MeinPre-Roll…Resinate…HybridTHC: 30.42%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 499,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 30.42%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 500,
+    "dispensary_id": 5,
+    "product_name": "WOO + HAMP Short SleeveT-Shirt…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 501,
+    "dispensary_id": 5,
+    "product_name": "WOO + HAMP Short SleeveT-Shirt…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 502,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 503,
+    "dispensary_id": 5,
+    "product_name": "Jigglers | Premium Flower…Resinate…IndicaTHC: 28.62% offAdd to cart",
+    "price": "$19.20",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 504,
+    "dispensary_id": 5,
+    "product_name": "Jigglers | Premium Flower…Resinate…IndicaTHC: 28.62% offAdd to cart",
+    "price": "$19.20",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 505,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 28.62% offAdd to cart",
+    "price": "$19.20",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 506,
+    "dispensary_id": 5,
+    "product_name": "Staff PickBlue Dream | PremiumFlower…Resinate…SativaTHC: 30.45%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 507,
+    "dispensary_id": 5,
+    "product_name": "Staff PickBlue Dream | PremiumFlower…Resinate…SativaTHC: 30.45%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 508,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 30.45%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 509,
+    "dispensary_id": 5,
+    "product_name": "Oregon Lemons Pre-Rroll…Resinate…HybridTHC: 27.11%Special OfferAdd to cart",
+    "price": "$6.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 510,
+    "dispensary_id": 5,
+    "product_name": "Oregon Lemons Pre-Rroll…Resinate…HybridTHC: 27.11%Special OfferAdd to cart",
+    "price": "$6.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 511,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 27.11%Special OfferAdd to cart",
+    "price": "$6.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 512,
+    "dispensary_id": 5,
+    "product_name": "Skunk #1 Pre-Roll…Resinate…IndicaTHC: 30.67%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 513,
+    "dispensary_id": 5,
+    "product_name": "Skunk #1 Pre-Roll…Resinate…IndicaTHC: 30.67%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 514,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 30.67%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 515,
+    "dispensary_id": 5,
+    "product_name": "Gelato | Premium…Resinate…IndicaTHC: 31.85%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 516,
+    "dispensary_id": 5,
+    "product_name": "Gelato | Premium…Resinate…IndicaTHC: 31.85%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 517,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 31.85%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 518,
+    "dispensary_id": 5,
+    "product_name": "Lemon Haze | PremiumFlower…Resinate…SativaTHC: 29.1%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 519,
+    "dispensary_id": 5,
+    "product_name": "Lemon Haze | PremiumFlower…Resinate…SativaTHC: 29.1%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 520,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 29.1%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 521,
+    "dispensary_id": 5,
+    "product_name": "Grandaddy Purp | Premium…Resinate…IndicaTHC: 28.46%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 522,
+    "dispensary_id": 5,
+    "product_name": "Grandaddy Purp | Premium…Resinate…IndicaTHC: 28.46%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 523,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 28.46%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 524,
+    "dispensary_id": 5,
+    "product_name": "Jigglers Pre-Roll…Resinate…IndicaTHC: 28.9%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 525,
+    "dispensary_id": 5,
+    "product_name": "Jigglers Pre-Roll…Resinate…IndicaTHC: 28.9%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 526,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 28.9%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 527,
+    "dispensary_id": 5,
+    "product_name": "1:1 (THC:CBD) StrawberryLotus Pre-Roll…Resinate…1 to 1THC: 17.01% · CBD: 0.4%Special OfferAdd to cart",
+    "price": "$5.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 528,
+    "dispensary_id": 5,
+    "product_name": "1:1 (THC:CBD) StrawberryLotus Pre-Roll…Resinate…1 to 1THC: 17.01% · CBD: 0.4%Special OfferAdd to cart",
+    "price": "$5.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 529,
+    "dispensary_id": 5,
+    "product_name": "1 to 1THC: 17.01% · CBD: 0.4%Special OfferAdd to cart",
+    "price": "$5.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 530,
+    "dispensary_id": 5,
+    "product_name": "Blue Dream | Premium MiniBuds…Resinate…SativaTHC: 29.61%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 531,
+    "dispensary_id": 5,
+    "product_name": "Blue Dream | Premium MiniBuds…Resinate…SativaTHC: 29.61%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 532,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 29.61%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 533,
+    "dispensary_id": 5,
+    "product_name": "Blue Dream x Blue Dream |Live Resin Infused Blunt | 2……Resinate…SativaTHC: 62.95%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 534,
+    "dispensary_id": 5,
+    "product_name": "Blue Dream x Blue Dream |Live Resin Infused Blunt | 2……Resinate…SativaTHC: 62.95%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 535,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 62.95%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 536,
+    "dispensary_id": 5,
+    "product_name": "Pineapple Haze | Live ResinDisposable…Resinate…SativaTAC: 87.34%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 537,
+    "dispensary_id": 5,
+    "product_name": "Pineapple Haze | Live ResinDisposable…Resinate…SativaTAC: 87.34%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 538,
+    "dispensary_id": 5,
+    "product_name": "SativaTAC: 87.34%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 539,
+    "dispensary_id": 5,
+    "product_name": "Peach Crescendo | Crumble…Resinate…HybridTHC: 85.19%Select weight",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 540,
+    "dispensary_id": 5,
+    "product_name": "Peach Crescendo | Crumble…Resinate…HybridTHC: 85.19%Select weight",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 541,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 85.19%Select weight",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 542,
+    "dispensary_id": 5,
+    "product_name": "Apple Fritter | Badder…Resinate…IndicaTHC: 79.3%Add to cart",
+    "price": "$80.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 543,
+    "dispensary_id": 5,
+    "product_name": "Apple Fritter | Badder…Resinate…IndicaTHC: 79.3%Add to cart",
+    "price": "$80.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 544,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 79.3%Add to cart",
+    "price": "$80.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 545,
+    "dispensary_id": 5,
+    "product_name": "Moo Dank | Badder…Resinate…HybridTHC: 71.31%Add to cart",
+    "price": "$80.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 546,
+    "dispensary_id": 5,
+    "product_name": "Moo Dank | Badder…Resinate…HybridTHC: 71.31%Add to cart",
+    "price": "$80.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 547,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 71.31%Add to cart",
+    "price": "$80.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 548,
+    "dispensary_id": 5,
+    "product_name": "HG Night Piff | PregroundFlower…Resinate…SativaTHC: 12.61%Add to cart",
+    "price": "$60.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 549,
+    "dispensary_id": 5,
+    "product_name": "HG Night Piff | PregroundFlower…Resinate…SativaTHC: 12.61%Add to cart",
+    "price": "$60.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 550,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 12.61%Add to cart",
+    "price": "$60.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 551,
+    "dispensary_id": 5,
+    "product_name": "Pineapple Haze Pre-Roll | …Resinate…THC: 32.95%Add to cart",
+    "price": "$8.33",
+    "weight_or_size": "1  g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 552,
+    "dispensary_id": 5,
+    "product_name": "Pineapple Haze Pre-Roll | …Resinate…THC: 32.95%Add to cart",
+    "price": "$8.33",
+    "weight_or_size": "1  g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 553,
+    "dispensary_id": 5,
+    "product_name": "THC: 32.95%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 554,
+    "dispensary_id": 5,
+    "product_name": "Lemongrass Lo Mein |Crumble…Resinate…HybridTHC: 93.68%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 555,
+    "dispensary_id": 5,
+    "product_name": "Lemongrass Lo Mein |Crumble…Resinate…HybridTHC: 93.68%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 556,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 93.68%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 557,
+    "dispensary_id": 5,
+    "product_name": "Apple Fritter | Badder…Resinate…HybridTHC: 79.3%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 558,
+    "dispensary_id": 5,
+    "product_name": "Apple Fritter | Badder…Resinate…HybridTHC: 79.3%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 559,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 79.3%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 560,
+    "dispensary_id": 5,
+    "product_name": "Garlic Icing | Wax…Resinate…IndicaTHC: 80.79%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 561,
+    "dispensary_id": 5,
+    "product_name": "Garlic Icing | Wax…Resinate…IndicaTHC: 80.79%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 562,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 80.79%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 563,
+    "dispensary_id": 5,
+    "product_name": "1:1 (CBD:THC) Strawberrylotus | Premium Mini Buds…Resinate…1 to 1THC: 18.35% · CBD: 10.23%Add to cart",
+    "price": "$30.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 564,
+    "dispensary_id": 5,
+    "product_name": "1:1 (CBD:THC) Strawberrylotus | Premium Mini Buds…Resinate…1 to 1THC: 18.35% · CBD: 10.23%Add to cart",
+    "price": "$30.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 565,
+    "dispensary_id": 5,
+    "product_name": "1 to 1THC: 18.35% · CBD: 10.23%Add to cart",
+    "price": "$30.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 566,
+    "dispensary_id": 5,
+    "product_name": "Strawberry Banana Lemon |Live Resin Disposable…Resinate…SativaTHC: 82.08%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 567,
+    "dispensary_id": 5,
+    "product_name": "Strawberry Banana Lemon |Live Resin Disposable…Resinate…SativaTHC: 82.08%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 568,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 82.08%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 569,
+    "dispensary_id": 5,
+    "product_name": "Mango Sapphire | Live ResinDisposable…Resinate…HybridTHC: 78.92%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 570,
+    "dispensary_id": 5,
+    "product_name": "Mango Sapphire | Live ResinDisposable…Resinate…HybridTHC: 78.92%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 571,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 78.92%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 572,
+    "dispensary_id": 5,
+    "product_name": "Skunk #1 | Live ResinDisposable…Resinate…IndicaTAC: 89.09%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 573,
+    "dispensary_id": 5,
+    "product_name": "Skunk #1 | Live ResinDisposable…Resinate…IndicaTAC: 89.09%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 574,
+    "dispensary_id": 5,
+    "product_name": "IndicaTAC: 89.09%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 575,
+    "dispensary_id": 5,
+    "product_name": "Sundae Sunset Pre-Roll…Resinate…IndicaTHC: 29.92%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 576,
+    "dispensary_id": 5,
+    "product_name": "Sundae Sunset Pre-Roll…Resinate…IndicaTHC: 29.92%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 577,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 29.92%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 578,
+    "dispensary_id": 5,
+    "product_name": "Trucker Hat | Resinate |White & Green…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 579,
+    "dispensary_id": 5,
+    "product_name": "Trucker Hat | Resinate |White & Green…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 580,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 581,
+    "dispensary_id": 5,
+    "product_name": "Trucker Hat | Resinate |Charcoal & Light Blue…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 582,
+    "dispensary_id": 5,
+    "product_name": "Trucker Hat | Resinate |Charcoal & Light Blue…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 583,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 584,
+    "dispensary_id": 5,
+    "product_name": "Strawberry Lotus | LiveResin Disposable…Resinate…IndicaTHC: 39.15% · CBD: 38.82%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 585,
+    "dispensary_id": 5,
+    "product_name": "Strawberry Lotus | LiveResin Disposable…Resinate…IndicaTHC: 39.15% · CBD: 38.82%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 586,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 39.15% · CBD: 38.82%Add to cart",
+    "price": "$45.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 587,
+    "dispensary_id": 5,
+    "product_name": "Resinate/Take the HighRoad | Short Sleeve T-Shirt……Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 588,
+    "dispensary_id": 5,
+    "product_name": "Resinate/Take the HighRoad | Short Sleeve T-Shirt……Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 589,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 590,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Seafoam | 2XL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 591,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Seafoam | 2XL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 592,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 593,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Sapphire | X-Large…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 594,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Sapphire | X-Large…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 595,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 596,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Sapphire | SMALL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 597,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Sapphire | SMALL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 598,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 599,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Sapphire | MEDIUM…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 600,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Sapphire | MEDIUM…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 601,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 602,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Sapphire | LARGE…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 603,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Sapphire | LARGE…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 604,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 605,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Island Green | SM……Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 606,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Island Green | SM……Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 607,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 608,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Island Green | LAR……Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 609,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Island Green | LAR……Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 610,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 611,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Island Green | 2XL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 612,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Island Green | 2XL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 613,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 614,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Grape | LARGE…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 615,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Grape | LARGE…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 616,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 617,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Black | 3XL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 618,
+    "dispensary_id": 5,
+    "product_name": "Resinate | Short SleeveT-Shirt | Black | 3XL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 619,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 620,
+    "dispensary_id": 5,
+    "product_name": "Resinate T-Shirt | Blue | XL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 621,
+    "dispensary_id": 5,
+    "product_name": "Resinate T-Shirt | Blue | XL…Resinate…Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 622,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 623,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Seafoam | XL…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 624,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Seafoam | XL…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 625,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 626,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Seafoam | Small…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 627,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Seafoam | Small…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 628,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 629,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Seafoam | Large…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 630,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Seafoam | Large…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 631,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 632,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Seafoam | 2XL…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 633,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Seafoam | 2XL…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 634,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 635,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Red | XL…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 636,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Red | XL…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 637,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 638,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Red | Small…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 639,
+    "dispensary_id": 5,
+    "product_name": "Rave Short Sleeve T-Shirt |Red | Small…Resinate…Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 640,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 641,
+    "dispensary_id": 5,
+    "product_name": "Staff PickGame Over | Distillate 510Cart…Replay…IndicaTHC: 71.7%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 642,
+    "dispensary_id": 5,
+    "product_name": "Staff PickGame Over | Distillate 510Cart…Replay…IndicaTHC: 71.7%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 643,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 71.7%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 644,
+    "dispensary_id": 5,
+    "product_name": "1:1 (CBD:THC) StrawberryLotus | Premium…Resinate…1 to 1TAC: 30.48% · THC: 20.42% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 645,
+    "dispensary_id": 5,
+    "product_name": "1:1 (CBD:THC) StrawberryLotus | Premium…Resinate…1 to 1TAC: 30.48% · THC: 20.42% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 646,
+    "dispensary_id": 5,
+    "product_name": "1 to 1TAC: 30.48% · THC: 20.42% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 647,
+    "dispensary_id": 5,
+    "product_name": "Staff PickMana | Distillate 510 Cart…Replay…SativaTHC: 72.62%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 648,
+    "dispensary_id": 5,
+    "product_name": "Staff PickMana | Distillate 510 Cart…Replay…SativaTHC: 72.62%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 649,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 72.62%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 650,
+    "dispensary_id": 5,
+    "product_name": "Staff PickRespawn | Distillate 510 Cart…re+PLAY…IndicaTHC: 71.89%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 651,
+    "dispensary_id": 5,
+    "product_name": "Staff PickRespawn | Distillate 510 Cart…re+PLAY…IndicaTHC: 71.89%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 652,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 71.89%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 653,
+    "dispensary_id": 5,
+    "product_name": "Staff PickCappachino…Cappadonna…HybridTAC: 29.77% · THC: 27.08% · CBD: 0.4%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 654,
+    "dispensary_id": 5,
+    "product_name": "Staff PickCappachino…Cappadonna…HybridTAC: 29.77% · THC: 27.08% · CBD: 0.4%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 655,
+    "dispensary_id": 5,
+    "product_name": "HybridTAC: 29.77% · THC: 27.08% · CBD: 0.4%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 656,
+    "dispensary_id": 5,
+    "product_name": "Staff PickLemongrass Lo MeinPre-Roll…Resinate…HybridTHC: 30.42%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 657,
+    "dispensary_id": 5,
+    "product_name": "Staff PickLemongrass Lo MeinPre-Roll…Resinate…HybridTHC: 30.42%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 658,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 30.42%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 659,
+    "dispensary_id": 5,
+    "product_name": "Staff PickSpeed Run | Distillate 510Cart…Replay…SativaTHC: 80.63%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 660,
+    "dispensary_id": 5,
+    "product_name": "Staff PickSpeed Run | Distillate 510Cart…Replay…SativaTHC: 80.63%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 661,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 80.63%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 662,
+    "dispensary_id": 5,
+    "product_name": "Staff PickBlue Dream | PremiumFlower…Resinate…SativaTHC: 30.45%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 663,
+    "dispensary_id": 5,
+    "product_name": "Staff PickBlue Dream | PremiumFlower…Resinate…SativaTHC: 30.45%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 664,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 30.45%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 665,
+    "dispensary_id": 5,
+    "product_name": "Oregon Lemons Pre-Rroll…Resinate…HybridTHC: 27.11%Special OfferAdd to cart",
+    "price": "$6.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 666,
+    "dispensary_id": 5,
+    "product_name": "Oregon Lemons Pre-Rroll…Resinate…HybridTHC: 27.11%Special OfferAdd to cart",
+    "price": "$6.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 667,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 27.11%Special OfferAdd to cart",
+    "price": "$6.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 668,
+    "dispensary_id": 5,
+    "product_name": "Staff Pick1:1:1 (CBD:CBG:THC) | GetBetter Milk Chocolate Bar ……Remix…THCTHC: 0.17% · CBD: 0.18%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 669,
+    "dispensary_id": 5,
+    "product_name": "Staff Pick1:1:1 (CBD:CBG:THC) | GetBetter Milk Chocolate Bar ……Remix…THCTHC: 0.17% · CBD: 0.18%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 670,
+    "dispensary_id": 5,
+    "product_name": "THCTHC: 0.17% · CBD: 0.18%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 671,
+    "dispensary_id": 5,
+    "product_name": "1:1 (THC:CBD) StrawberryLotus Pre-Roll…Resinate…1 to 1THC: 17.01% · CBD: 0.4%Special OfferAdd to cart",
+    "price": "$5.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 672,
+    "dispensary_id": 5,
+    "product_name": "1:1 (THC:CBD) StrawberryLotus Pre-Roll…Resinate…1 to 1THC: 17.01% · CBD: 0.4%Special OfferAdd to cart",
+    "price": "$5.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 673,
+    "dispensary_id": 5,
+    "product_name": "1 to 1THC: 17.01% · CBD: 0.4%Special OfferAdd to cart",
+    "price": "$5.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 674,
+    "dispensary_id": 5,
+    "product_name": "Staff PickResinate Embroidered | TheShorty | Smell Proof Mini B……Revelry…Add to cart",
+    "price": "$60.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 675,
+    "dispensary_id": 5,
+    "product_name": "Staff PickResinate Embroidered | TheShorty | Smell Proof Mini B……Revelry…Add to cart",
+    "price": "$60.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 676,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$60.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 677,
+    "dispensary_id": 5,
+    "product_name": "Staff PickSleepy Cherry | 1:1:1(THC:CBD:CBN) Indica | 5……Lilos…IndicaTHC: 0.1% · CBD: 0.11%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 678,
+    "dispensary_id": 5,
+    "product_name": "Staff PickSleepy Cherry | 1:1:1(THC:CBD:CBN) Indica | 5……Lilos…IndicaTHC: 0.1% · CBD: 0.11%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 679,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 0.1% · CBD: 0.11%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 680,
+    "dispensary_id": 5,
+    "product_name": "Staff PickMandarin Orange Yuzu | 1:1(THC:CBG) Sativa | 20……Lilos…SativaTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "weight_or_size": "5mg",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 681,
+    "dispensary_id": 5,
+    "product_name": "Staff PickMandarin Orange Yuzu | 1:1(THC:CBG) Sativa | 20……Lilos…SativaTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "weight_or_size": "5mg",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 682,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 683,
+    "dispensary_id": 5,
+    "product_name": "Staff PickWatermelon Mint | Hybrid | 20pk…Lilos…HybridTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "weight_or_size": "5mg",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 684,
+    "dispensary_id": 5,
+    "product_name": "Staff PickWatermelon Mint | Hybrid | 20pk…Lilos…HybridTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "weight_or_size": "5mg",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 685,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 686,
+    "dispensary_id": 5,
+    "product_name": "Citrus Rush…Trees Co.…IndicaTHC: 34.04% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 687,
+    "dispensary_id": 5,
+    "product_name": "Citrus Rush…Trees Co.…IndicaTHC: 34.04% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 688,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 34.04% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 689,
+    "dispensary_id": 5,
+    "product_name": "Blue Dream | Premium MiniBuds…Resinate…SativaTHC: 29.61%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 690,
+    "dispensary_id": 5,
+    "product_name": "Blue Dream | Premium MiniBuds…Resinate…SativaTHC: 29.61%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 691,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 29.61%Add to cart",
+    "price": "$40.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 692,
+    "dispensary_id": 5,
+    "product_name": "22 Fumez…Insa…HybridAdd to cart",
+    "price": "$125.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 693,
+    "dispensary_id": 5,
+    "product_name": "22 Fumez…Insa…HybridAdd to cart",
+    "price": "$125.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 694,
+    "dispensary_id": 5,
+    "product_name": "HybridAdd to cart",
+    "price": "$125.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 695,
+    "dispensary_id": 5,
+    "product_name": "Afgoo | Shake…Sira Naturals…IndicaAdd to cart",
+    "price": "$35.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 696,
+    "dispensary_id": 5,
+    "product_name": "Afgoo | Shake…Sira Naturals…IndicaAdd to cart",
+    "price": "$35.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 697,
+    "dispensary_id": 5,
+    "product_name": "IndicaAdd to cart",
+    "price": "$35.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 698,
+    "dispensary_id": 5,
+    "product_name": "Citrus Rush Pre-Roll…Trees Co.…THC: 30.55%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 699,
+    "dispensary_id": 5,
+    "product_name": "Citrus Rush Pre-Roll…Trees Co.…THC: 30.55%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 700,
+    "dispensary_id": 5,
+    "product_name": "THC: 30.55%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 701,
+    "dispensary_id": 5,
+    "product_name": "So F'n Gassy Pre-Roll…Trees Co.…HybridTHC: 39.97%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 702,
+    "dispensary_id": 5,
+    "product_name": "So F'n Gassy Pre-Roll…Trees Co.…HybridTHC: 39.97%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 703,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 39.97%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 704,
+    "dispensary_id": 5,
+    "product_name": "Lemon Candy Kush…Rebelle…HybridTHC: 16.8%Add to cart",
+    "price": "$15.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 705,
+    "dispensary_id": 5,
+    "product_name": "Lemon Candy Kush…Rebelle…HybridTHC: 16.8%Add to cart",
+    "price": "$15.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 706,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 16.8%Add to cart",
+    "price": "$15.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 707,
+    "dispensary_id": 5,
+    "product_name": "Pink Runtz…Sparq…HybridTHC: 29.4%Add to cart",
+    "price": "$30.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 708,
+    "dispensary_id": 5,
+    "product_name": "Pink Runtz…Sparq…HybridTHC: 29.4%Add to cart",
+    "price": "$30.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 709,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 29.4%Add to cart",
+    "price": "$30.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 710,
+    "dispensary_id": 5,
+    "product_name": "Chem Dog | PregroundFlower…Trees Co.…HybridTHC: 32.71%Add to cart",
+    "price": "$35.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 711,
+    "dispensary_id": 5,
+    "product_name": "Chem Dog | PregroundFlower…Trees Co.…HybridTHC: 32.71%Add to cart",
+    "price": "$35.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 712,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 32.71%Add to cart",
+    "price": "$35.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 713,
+    "dispensary_id": 5,
+    "product_name": "Staff PickCheat Code | Distillate 510Cart…Replay…HybridTHC: 79.19%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 714,
+    "dispensary_id": 5,
+    "product_name": "Staff PickCheat Code | Distillate 510Cart…Replay…HybridTHC: 79.19%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 715,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 79.19%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 716,
+    "dispensary_id": 5,
+    "product_name": "Staff PickGame Over | Distillate 510Cart…Replay…IndicaTHC: 71.7%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 717,
+    "dispensary_id": 5,
+    "product_name": "Staff PickGame Over | Distillate 510Cart…Replay…IndicaTHC: 71.7%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 718,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 71.7%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 719,
+    "dispensary_id": 5,
+    "product_name": "Staff PickMana | Distillate 510 Cart…Replay…SativaTHC: 72.62%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 720,
+    "dispensary_id": 5,
+    "product_name": "Staff PickMana | Distillate 510 Cart…Replay…SativaTHC: 72.62%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 721,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 72.62%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 722,
+    "dispensary_id": 5,
+    "product_name": "Staff PickRespawn | Distillate 510 Cart…re+PLAY…IndicaTHC: 71.89%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 723,
+    "dispensary_id": 5,
+    "product_name": "Staff PickRespawn | Distillate 510 Cart…re+PLAY…IndicaTHC: 71.89%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 724,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 71.89%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 725,
+    "dispensary_id": 5,
+    "product_name": "Staff PickCappachino…Cappadonna…HybridTAC: 29.77% · THC: 27.08% · CBD: 0.4%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 726,
+    "dispensary_id": 5,
+    "product_name": "Staff PickCappachino…Cappadonna…HybridTAC: 29.77% · THC: 27.08% · CBD: 0.4%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 727,
+    "dispensary_id": 5,
+    "product_name": "HybridTAC: 29.77% · THC: 27.08% · CBD: 0.4%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 728,
+    "dispensary_id": 5,
+    "product_name": "Staff PickLemongrass Lo MeinPre-Roll…Resinate…HybridTHC: 30.42%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 729,
+    "dispensary_id": 5,
+    "product_name": "Staff PickLemongrass Lo MeinPre-Roll…Resinate…HybridTHC: 30.42%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 730,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 30.42%Add to cart",
+    "price": "$8.33",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 731,
+    "dispensary_id": 5,
+    "product_name": "Staff PickSpeed Run | Distillate 510Cart…Replay…SativaTHC: 80.63%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 732,
+    "dispensary_id": 5,
+    "product_name": "Staff PickSpeed Run | Distillate 510Cart…Replay…SativaTHC: 80.63%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 733,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 80.63%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 734,
+    "dispensary_id": 5,
+    "product_name": "Staff PickBlue Dream | PremiumFlower…Resinate…SativaTHC: 30.45%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 735,
+    "dispensary_id": 5,
+    "product_name": "Staff PickBlue Dream | PremiumFlower…Resinate…SativaTHC: 30.45%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 736,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 30.45%Add to cart",
+    "price": "$32.50",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 737,
+    "dispensary_id": 5,
+    "product_name": "Staff Pick1:1:1 (CBD:CBG:THC) | GetBetter Milk Chocolate Bar ……Remix…THCTHC: 0.17% · CBD: 0.18%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 738,
+    "dispensary_id": 5,
+    "product_name": "Staff Pick1:1:1 (CBD:CBG:THC) | GetBetter Milk Chocolate Bar ……Remix…THCTHC: 0.17% · CBD: 0.18%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 739,
+    "dispensary_id": 5,
+    "product_name": "THCTHC: 0.17% · CBD: 0.18%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 740,
+    "dispensary_id": 5,
+    "product_name": "Staff PickResinate Embroidered | TheShorty | Smell Proof Mini B……Revelry…Add to cart",
+    "price": "$60.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 741,
+    "dispensary_id": 5,
+    "product_name": "Staff PickResinate Embroidered | TheShorty | Smell Proof Mini B……Revelry…Add to cart",
+    "price": "$60.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 742,
+    "dispensary_id": 5,
+    "product_name": "Add to cart",
+    "price": "$60.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 743,
+    "dispensary_id": 5,
+    "product_name": "Staff PickSleepy Cherry | 1:1:1(THC:CBD:CBN) Indica | 5……Lilos…IndicaTHC: 0.1% · CBD: 0.11%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 744,
+    "dispensary_id": 5,
+    "product_name": "Staff PickSleepy Cherry | 1:1:1(THC:CBD:CBN) Indica | 5……Lilos…IndicaTHC: 0.1% · CBD: 0.11%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 745,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 0.1% · CBD: 0.11%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 746,
+    "dispensary_id": 5,
+    "product_name": "Staff PickMandarin Orange Yuzu | 1:1(THC:CBG) Sativa | 20……Lilos…SativaTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "weight_or_size": "5mg",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 747,
+    "dispensary_id": 5,
+    "product_name": "Staff PickMandarin Orange Yuzu | 1:1(THC:CBG) Sativa | 20……Lilos…SativaTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "weight_or_size": "5mg",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 748,
+    "dispensary_id": 5,
+    "product_name": "SativaTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 749,
+    "dispensary_id": 5,
+    "product_name": "Staff PickWatermelon Mint | Hybrid | 20pk…Lilos…HybridTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "weight_or_size": "5mg",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 750,
+    "dispensary_id": 5,
+    "product_name": "Staff PickWatermelon Mint | Hybrid | 20pk…Lilos…HybridTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "weight_or_size": "5mg",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 751,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 0.1%Add to cart",
+    "price": "$25.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 752,
+    "dispensary_id": 5,
+    "product_name": "Staff PickCheat Code | Distillate 510Cart…Replay…HybridTHC: 79.19%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 753,
+    "dispensary_id": 5,
+    "product_name": "Staff PickCheat Code | Distillate 510Cart…Replay…HybridTHC: 79.19%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 754,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 79.19%Add to cart",
+    "price": "$20.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 755,
+    "dispensary_id": 5,
+    "product_name": "1:1 (CBD:THC) StrawberryLotus | Premium…Resinate…1 to 1TAC: 30.48% · THC: 20.42% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 756,
+    "dispensary_id": 5,
+    "product_name": "1:1 (CBD:THC) StrawberryLotus | Premium…Resinate…1 to 1TAC: 30.48% · THC: 20.42% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 757,
+    "dispensary_id": 5,
+    "product_name": "1 to 1TAC: 30.48% · THC: 20.42% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 758,
+    "dispensary_id": 5,
+    "product_name": "Jigglers | Premium Flower…Resinate…IndicaTHC: 28.62% offAdd to cart",
+    "price": "$19.20",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 759,
+    "dispensary_id": 5,
+    "product_name": "Jigglers | Premium Flower…Resinate…IndicaTHC: 28.62% offAdd to cart",
+    "price": "$19.20",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 760,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 28.62% offAdd to cart",
+    "price": "$19.20",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 761,
+    "dispensary_id": 5,
+    "product_name": "Oregon Lemons Pre-Rroll…Resinate…HybridTHC: 27.11%Special OfferAdd to cart",
+    "price": "$6.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 762,
+    "dispensary_id": 5,
+    "product_name": "Oregon Lemons Pre-Rroll…Resinate…HybridTHC: 27.11%Special OfferAdd to cart",
+    "price": "$6.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 763,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 27.11%Special OfferAdd to cart",
+    "price": "$6.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 764,
+    "dispensary_id": 5,
+    "product_name": "1:1 (THC:CBD) StrawberryLotus Pre-Roll…Resinate…1 to 1THC: 17.01% · CBD: 0.4%Special OfferAdd to cart",
+    "price": "$5.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 765,
+    "dispensary_id": 5,
+    "product_name": "1:1 (THC:CBD) StrawberryLotus Pre-Roll…Resinate…1 to 1THC: 17.01% · CBD: 0.4%Special OfferAdd to cart",
+    "price": "$5.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 766,
+    "dispensary_id": 5,
+    "product_name": "1 to 1THC: 17.01% · CBD: 0.4%Special OfferAdd to cart",
+    "price": "$5.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 767,
+    "dispensary_id": 5,
+    "product_name": "Citrus Rush…Trees Co.…IndicaTHC: 34.04% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 768,
+    "dispensary_id": 5,
+    "product_name": "Citrus Rush…Trees Co.…IndicaTHC: 34.04% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 769,
+    "dispensary_id": 5,
+    "product_name": "IndicaTHC: 34.04% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 770,
+    "dispensary_id": 5,
+    "product_name": "Lemon Larry Lavender…Trees Co.…HybridTHC: 31.37% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 771,
+    "dispensary_id": 5,
+    "product_name": "Lemon Larry Lavender…Trees Co.…HybridTHC: 31.37% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 772,
+    "dispensary_id": 5,
+    "product_name": "HybridTHC: 31.37% offAdd to cart",
+    "price": "$18.00",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 773,
+    "dispensary_id": 5,
+    "product_name": "OffersView AllSelect Pre-Rolls 10/…ShopPreviousNext",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 774,
+    "dispensary_id": 5,
+    "product_name": "OffersView AllSelect Pre-Rolls 10/…ShopPreviousNext",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 775,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…ShopPreviousNext",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 776,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…Shop",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 777,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…Shop",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 778,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…Shop",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 779,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…Shop",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 780,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…Shop",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 781,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…Shop",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 782,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 783,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 784,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/…",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 785,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  },
+  {
+    "id": 786,
+    "dispensary_id": 5,
+    "product_name": "Select Pre-Rolls 10/",
+    "price": "$45",
+    "weight_or_size": "1g",
+    "scraped_at": "2025-05-03T22:39:36.242Z"
+  }
+]

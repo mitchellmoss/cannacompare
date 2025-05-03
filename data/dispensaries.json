@@ -2,6 +2,34 @@
   {
     "id": 1,
     "name": "Nature's Remedy (Millbury)",
-    "menu_url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers"
+    "menu_url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers",
+    "last_scraped_at": "2025-05-03T22:06:59.559Z"
+  },
+  {
+    "id": 2,
+    "name": "Resinate (Worcester)",
+    "menu_url": "https://dutchie.com/dispensary/resinate-worcester"
+  },
+  {
+    "id": 3,
+    "name": "Clear Sky (Worcester)",
+    "menu_url": "https://dutchie.com/dispensary/clear-sky-worcester"
+  },
+  {
+    "id": 4,
+    "name": "Nature's Remedy (Millbury)",
+    "menu_url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "last_scraped_at": "2025-05-03T22:39:06.497Z"
+  },
+  {
+    "id": 5,
+    "name": "Resinate (Worcester)",
+    "menu_url": "https://dutchie.com/dispensary/resinate-worcester/",
+    "last_scraped_at": "2025-05-03T22:39:36.244Z"
+  },
+  {
+    "id": 6,
+    "name": "Clear Sky (Worcester)",
+    "menu_url": "https://dutchie.com/dispensary/clear-sky-worcester/"
   }
 ]
