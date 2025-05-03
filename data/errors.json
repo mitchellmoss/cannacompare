@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "dispensary_id": 1,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers",
+    "error_message": "Deno.seekSync is not a function",
+    "log_time": "2025-05-03T22:04:50.951Z"
+  }
+]

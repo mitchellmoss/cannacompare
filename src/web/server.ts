@@ -1,6 +1,6 @@
 import { Application } from "https://deno.land/x/oak@v12.6.1/mod.ts";
 import { load } from "https://deno.land/std@0.218.2/dotenv/mod.ts";
-import { setupDatabase, closeDb } from "../db/database.ts";
+import { setupDatabase, closeDb } from "../db/json_storage.ts"; // Changed to use JSON storage
 import apiRouter from "./routes.ts";
 
 // Load environment variables
@@ -60,7 +60,7 @@ app.use((ctx) => {
   ctx.response.body = { success: false, error: "Not Found" };
 });
 
-// Initialize DB on start
+// Initialize storage on start
 setupDatabase();
 
 // Add event listener for server startup
@@ -74,7 +74,7 @@ app.addEventListener("listen", ({ hostname, port, secure }) => {
 
 // Graceful shutdown
 globalThis.addEventListener("unload", () => {
-  console.log("Closing database connection...");
+  console.log("Closing data connections...");
   closeDb();
 });
 

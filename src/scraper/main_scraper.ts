@@ -7,7 +7,7 @@ import {
   updateDispensaryScrapeTime,
   logScrapeError,
   closeDb
-} from "../db/database.ts";
+} from "../db/json_storage.ts"; // Changed to use JSON storage
 import { load } from "https://deno.land/std@0.218.2/dotenv/mod.ts";
 import { TargetDispensary } from "../shared/types.ts";
 
@@ -21,7 +21,7 @@ const REQUEST_DELAY_MS = 5000; // 5 seconds delay between requests (adjust based
  */
 async function main() {
   console.log("Starting scraper run...");
-  setupDatabase(); // Ensure DB schema exists
+  setupDatabase(); // Ensure storage is initialized
 
   let targetDispensaries: TargetDispensary[] = [];
   try {
@@ -69,7 +69,7 @@ async function main() {
     }
   }
 
-  closeDb(); // Close the database connection when done
+  closeDb(); // Close any connections (not needed for JSON but keeping for API compatibility)
   console.log("\nScraper run finished.");
 }
 

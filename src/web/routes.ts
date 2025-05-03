@@ -4,7 +4,7 @@ import {
   getAllDispensaries, 
   getProductsByDispensary,
   getRecentErrors
-} from "../db/database.ts";
+} from "../db/json_storage.ts"; // Changed to use JSON storage
 
 const router = new Router();
 

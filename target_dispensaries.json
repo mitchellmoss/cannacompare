@@ -1,14 +1,14 @@
 [
   {
-    "name": "Green Harvest Dispensary",
-    "menu_url": "https://example.com/greenharvest/menu"
+    "name": "Nature's Remedy (Millbury)",
+    "menu_url": "https://dutchie.com/dispensary/natures-remedy1/products/vaporizers"
   },
   {
-    "name": "Evergreen Cannabis",
-    "menu_url": "https://example.com/evergreen/menu"
+    "name": "Resinate (Worcester)",
+    "menu_url": "https://dutchie.com/dispensary/resinate-worcester"
   },
   {
-    "name": "Herbal Remedies",
-    "menu_url": "https://example.com/herbalremedies/menu"
+    "name": "Clear Sky (Worcester)",
+    "menu_url": "https://dutchie.com/dispensary/clear-sky-worcester"
   }
 ]

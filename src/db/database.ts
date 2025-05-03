@@ -1,4 +1,4 @@
-import { DB } from "https://deno.land/x/sqlite@v3.8/mod.ts";
+import { DB } from "https://deno.land/x/sqlite@v3.1.1/mod.ts";
 import { load } from "https://deno.land/std@0.218.2/dotenv/mod.ts";
 import { ProductSchema, ProductQueryResult } from "../shared/types.ts";
 
@@ -101,13 +101,14 @@ export function insertProducts(dispensaryId: number, products: ProductSchema[]):
   const dbInstance = getDb();
   
   // Use a transaction for bulk inserts
-  dbInstance.transaction(() => {
-    const insertStmt = dbInstance.prepareQuery<[number, string, string, string | null]>(
-      "INSERT INTO products (dispensary_id, product_name, price, weight_or_size) VALUES (?, ?, ?, ?)"
-    );
+  dbInstance.query("BEGIN TRANSACTION");
+  
+  try {
+    const insertQuery = 
+      "INSERT INTO products (dispensary_id, product_name, price, weight_or_size) VALUES (?, ?, ?, ?)";
     
     for (const product of products) {
-      insertStmt.execute([
+      dbInstance.query(insertQuery, [
         dispensaryId,
         product.product_name,
         product.price,
@@ -115,10 +116,13 @@ export function insertProducts(dispensaryId: number, products: ProductSchema[]):
       ]);
     }
     
-    insertStmt.finalize(); // Close the prepared statement
-  });
-  
-  console.log(`Inserted ${products.length} products for dispensary ID ${dispensaryId}`);
+    dbInstance.query("COMMIT");
+    console.log(`Inserted ${products.length} products for dispensary ID ${dispensaryId}`);
+  } catch (error) {
+    dbInstance.query("ROLLBACK");
+    console.error("Error inserting products:", error);
+    throw error;
+  }
 }
 
 /**
