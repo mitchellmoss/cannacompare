@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cannabis Product Price Comparator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Cannabis Product Price Comparator</h1>
+    <p>Compare prices across different dispensaries</p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for products (e.g., 'Blue Dream', 'OG Kush')">
+        <button id="searchButton">Search</button>
+      </div>
+
+      <div class="dispensary-filter">
+        <label for="dispensarySelect">Filter by Dispensary:</label>
+        <select id="dispensarySelect">
+          <option value="all">All Dispensaries</option>
+          <!-- Will be populated by JavaScript -->
+        </select>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <h2>Results</h2>
+      <div class="results-container">
+        <table id="resultsTable">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Size/Weight</th>
+              <th>Dispensary</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody id="resultsBody">
+            <tr>
+              <td colspan="5">Enter a search term above.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>About This Tool</h2>
+      <p>
+        This application allows you to compare cannabis product prices across different dispensaries.
+        Data is collected from dispensary websites and updated regularly.
+      </p>
+      <div class="legal-disclaimer">
+        <h3>Legal Disclaimer</h3>
+        <p>
+          This tool is for educational and demonstration purposes only. All pricing data is collected
+          from publicly available sources. This application is not affiliated with any dispensary or
+          cannabis company. Please verify prices directly with dispensaries before making purchasing decisions.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cannabis Price Comparator. For educational purposes only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

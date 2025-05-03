@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Green Harvest Dispensary",
+    "menu_url": "https://example.com/greenharvest/menu"
+  },
+  {
+    "name": "Evergreen Cannabis",
+    "menu_url": "https://example.com/evergreen/menu"
+  },
+  {
+    "name": "Herbal Remedies",
+    "menu_url": "https://example.com/herbalremedies/menu"
+  }
+]
