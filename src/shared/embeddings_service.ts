@@ -5,7 +5,7 @@
 import { load } from "https://deno.land/std@0.218.2/dotenv/mod.ts";
 
 // Load environment variables
-const env = await load();
+const env = await load({ allowEmptyValues: true });
 const GOOGLE_API_KEY = env.GOOGLE_API_KEY;
 const EMBEDDING_MODEL = env.EMBEDDING_MODEL || "gemini-embedding-exp-03-07";
 const DIMENSIONS = env.EMBEDDING_DIMENSIONS ? parseInt(env.EMBEDDING_DIMENSIONS) : 3072;

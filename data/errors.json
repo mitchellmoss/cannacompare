@@ -216,5 +216,81 @@
     "url": "https://dutchie.com/dispensary/clear-sky-worcester/",
     "error_message": "Scraping failed, no products returned.",
     "log_time": "2025-05-04T14:09:19.422Z"
+  },
+  {
+    "id": 35,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Firecrawl server error (500). This may be due to timeout, rate limiting, or site complexity. Trying fallback scraper. Details: {\"success\":false,\"error\":\"(Internal server error) - timeout\"}",
+    "log_time": "2025-05-04T16:10:00.454Z"
+  },
+  {
+    "id": 36,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Fallback scrape did not find any products in HTML content from https://dutchie.com/dispensary/natures-remedy1/",
+    "log_time": "2025-05-04T16:10:00.704Z"
+  },
+  {
+    "id": 37,
+    "dispensary_id": 4,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-04T16:10:00.705Z"
+  },
+  {
+    "id": 38,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Firecrawl server error (500). This may be due to timeout, rate limiting, or site complexity. Trying fallback scraper. Details: {\"success\":false,\"error\":\"(Internal server error) - timeout\"}",
+    "log_time": "2025-05-04T16:11:00.747Z"
+  },
+  {
+    "id": 39,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Fallback scrape did not find any products in HTML content from https://dutchie.com/dispensary/natures-remedy1/",
+    "log_time": "2025-05-04T16:11:00.923Z"
+  },
+  {
+    "id": 40,
+    "dispensary_id": 4,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-04T16:11:00.924Z"
+  },
+  {
+    "id": 41,
+    "url": "https://dutchie.com/dispensary/resinate-worcester/",
+    "error_message": "Firecrawl server error (500). This may be due to timeout, rate limiting, or site complexity. Trying fallback scraper. Details: {\"success\":false,\"error\":\"(Internal server error) - timeout\"}",
+    "log_time": "2025-05-04T17:44:42.658Z"
+  },
+  {
+    "id": 42,
+    "url": "https://dutchie.com/dispensary/resinate-worcester/",
+    "error_message": "Fallback scrape did not find any products in HTML content from https://dutchie.com/dispensary/resinate-worcester/",
+    "log_time": "2025-05-04T17:44:42.913Z"
+  },
+  {
+    "id": 43,
+    "dispensary_id": 5,
+    "url": "https://dutchie.com/dispensary/resinate-worcester/",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-04T17:44:42.914Z"
+  },
+  {
+    "id": 44,
+    "url": "https://dutchie.com/dispensary/clear-sky-worcester/",
+    "error_message": "HTML parsing did not return any products. HTML content may not match expected patterns.",
+    "log_time": "2025-05-04T17:45:15.321Z"
+  },
+  {
+    "id": 45,
+    "url": "https://dutchie.com/dispensary/clear-sky-worcester/",
+    "error_message": "Fallback scrape did not find any products in HTML content from https://dutchie.com/dispensary/clear-sky-worcester/",
+    "log_time": "2025-05-04T17:45:15.483Z"
+  },
+  {
+    "id": 46,
+    "dispensary_id": 6,
+    "url": "https://dutchie.com/dispensary/clear-sky-worcester/",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-04T17:45:15.484Z"
   }
 ]
