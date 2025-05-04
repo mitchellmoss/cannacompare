@@ -121,5 +121,24 @@
     "url": "https://dutchie.com/dispensary/clear-sky-worcester/",
     "error_message": "Scraping failed, no products returned.",
     "log_time": "2025-05-03T22:40:09.606Z"
+  },
+  {
+    "id": 20,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Firecrawl server error (500). This may be due to timeout, rate limiting, or site complexity. Trying fallback scraper. Details: {\"success\":false,\"error\":\"(Internal server error) - timeout\"}",
+    "log_time": "2025-05-04T00:47:07.891Z"
+  },
+  {
+    "id": 21,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Fallback scrape did not find any products in HTML content from https://dutchie.com/dispensary/natures-remedy1/",
+    "log_time": "2025-05-04T00:47:08.122Z"
+  },
+  {
+    "id": 22,
+    "dispensary_id": 4,
+    "url": "https://dutchie.com/dispensary/natures-remedy1/",
+    "error_message": "Scraping failed, no products returned.",
+    "log_time": "2025-05-04T00:47:08.122Z"
   }
 ]
