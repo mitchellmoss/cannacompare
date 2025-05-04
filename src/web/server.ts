@@ -444,6 +444,22 @@ app.use(async (ctx, next) => {
   
   console.log(`Handling static file request: ${pathName}`);
   
+  // Add access to data files for frontend ONLY for direct reading of JSON files
+  // This helps with situations where the API might be failing but we still want to show stats
+  if (pathName.startsWith("/data/") && pathName.endsWith(".json")) {
+    try {
+      await ctx.send({
+        root: Deno.cwd(),
+        path: pathName.replace(/^\//, ""), // Remove leading slash if present
+      });
+      console.log(`Successfully served data file: ${pathName}`);
+      return;
+    } catch (error) {
+      console.log(`Data file not found: ${pathName}`, error);
+      // Fall through to public folder check
+    }
+  }
+  
   // Handle root path
   if (pathName === "/") {
     pathName = "/index.html";

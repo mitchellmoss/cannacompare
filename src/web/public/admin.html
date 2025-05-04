@@ -180,7 +180,7 @@
           These embeddings enable semantic similarity search, helping users find related products across different dispensaries.
         </p>
         
-        <div class="actions" style="margin-top: 1.5rem;">
+        <div class="actions" style="margin-top: 1.5rem; display: flex; gap: 10px; flex-wrap: wrap;">
           <button id="generateBtn" class="action-btn">
             <span id="spinner" class="spinner"></span>
             Generate All Missing Embeddings
@@ -596,6 +596,12 @@
               
               const percent = total > 0 ? Math.round((withEmbed / total) * 100) : 0;
               percentCompleteEl.textContent = `${percent}%`;
+            } else {
+              // If API returns success: false
+              console.error("API returned error:", stats.error);
+              totalProductsEl.textContent = 'Error';
+              withEmbeddingsEl.textContent = 'Error';
+              percentCompleteEl.textContent = 'Error';
             }
           } else {
             // If unauthorized, might need to redirect to login
@@ -604,14 +610,39 @@
               // Not redirecting here to avoid disrupting the UI if only the stats fail
             }
             
-            // If we can't get the stats, just show N/A
+            console.error(`API returned status ${productsResponse.status}`);
+            
+            // If we can't get the stats, show actual values instead of N/A
+            // Fetch products.json and embeddings.json directly
+            try {
+              const productsResp = await fetch('/data/products.json');
+              const embeddingsResp = await fetch('/data/embeddings.json');
+              
+              if (productsResp.ok && embeddingsResp.ok) {
+                const products = await productsResp.json();
+                const embeddings = await embeddingsResp.json();
+                
+                totalProductsEl.textContent = products.length.toString();
+                withEmbeddingsEl.textContent = embeddings.length.toString();
+                
+                const percent = products.length > 0 
+                  ? Math.round((embeddings.length / products.length) * 100) 
+                  : 0;
+                percentCompleteEl.textContent = `${percent}%`;
+                return;
+              }
+            } catch (directError) {
+              console.error("Error fetching data files directly:", directError);
+            }
+            
+            // Fall back to N/A if direct fetch also fails
             totalProductsEl.textContent = 'N/A';
             withEmbeddingsEl.textContent = 'N/A';
             percentCompleteEl.textContent = 'N/A';
           }
         } catch (error) {
           console.error('Error fetching stats:', error);
-          // Show N/A in case of errors
+          // Show Error in case of errors
           totalProductsEl.textContent = 'Error';
           withEmbeddingsEl.textContent = 'Error';
           percentCompleteEl.textContent = 'Error';
