@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross-Dispensary Product Comparisons</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Comparison specific styles */
+    .comparison-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    
+    .original-product {
+      background-color: rgba(65, 105, 225, 0.1);
+      padding: 1rem;
+      border-radius: 8px;
+      border-left: 4px solid royalblue;
+      margin-bottom: 1rem;
+    }
+    
+    .dispensary-group {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    
+    .dispensary-header {
+      background-color: #f5f5f5;
+      padding: 0.75rem 1rem;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .dispensary-products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    
+    .product-card {
+      border: 1px solid #eee;
+      border-radius: 6px;
+      padding: 1rem;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .product-name {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+    
+    .product-details {
+      color: #666;
+      font-size: 0.9rem;
+    }
+    
+    .product-price {
+      font-weight: bold;
+      color: green;
+      margin-top: 0.5rem;
+    }
+    
+    .comparison-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .empty-results {
+      text-align: center;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+    
+    /* Side by side comparison view */
+    .side-by-side {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+      background-color: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    
+    .side-by-side .product-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .similarity-score {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+      color: white;
+      background-color: #888;
+    }
+    
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    
+    .comparison-table th {
+      background-color: #f5f5f5;
+    }
+    
+    .best-price {
+      font-weight: bold;
+      color: green;
+    }
+    
+    .navigation-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .back-button {
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .copy-link-button {
+      background-color: #f0f8ff;
+      border: 1px solid #add8e6;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      color: #0066cc;
+    }
+    
+    .loading-container {
+      text-align: center;
+      padding: 3rem;
+    }
+    
+    .spinner {
+      border: 4px solid rgba(0, 0, 0, 0.1);
+      border-left-color: #0066cc;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cross-Dispensary Product Comparisons</h1>
+    <p>Compare similar products across different dispensaries</p>
+    <div style="margin-top: 10px;">
+      <a href="/" style="color: white; text-decoration: underline;">Back to Search</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="navigation-controls">
+      <button id="backButton" class="back-button">← Back to Search Results</button>
+      <button id="copyLinkButton" class="copy-link-button">Copy Comparison Link</button>
+    </section>
+    
+    <section id="comparisonContainer" class="comparison-container">
+      <div class="loading-container">
+        <div class="spinner"></div>
+        <p>Loading product comparison...</p>
+      </div>
+    </section>
+    
+    <section id="sideBySideContainer" class="side-by-side-container" style="display: none;">
+      <h2>Side-by-Side Comparison</h2>
+      <div id="sideBySideContent" class="side-by-side">
+        <!-- Products will be added here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cannabis Price Comparator. For educational purposes only.</p>
+  </footer>
+
+  <script>
+    // DOM Elements
+    const comparisonContainer = document.getElementById('comparisonContainer');
+    const sideBySideContainer = document.getElementById('sideBySideContainer');
+    const sideBySideContent = document.getElementById('sideBySideContent');
+    const backButton = document.getElementById('backButton');
+    const copyLinkButton = document.getElementById('copyLinkButton');
+    
+    // API Endpoints
+    const API_BASE_URL = '/api';
+    const COMPARE_ENDPOINT = `${API_BASE_URL}/products/`;
+    
+    // State
+    let originalProduct = null;
+    let similarByDispensary = [];
+    let selectedForComparison = [];
+    const maxCompareItems = 4; // Maximum number of items for side-by-side comparison
+    
+    // Event Listeners
+    document.addEventListener('DOMContentLoaded', initialize);
+    backButton.addEventListener('click', navigateBack);
+    copyLinkButton.addEventListener('click', copyComparisonLink);
+    
+    /**
+     * Initialize the comparison view
+     */
+    async function initialize() {
+      // Get product ID from URL
+      const params = new URLSearchParams(window.location.search);
+      const productId = params.get('id');
+      
+      if (!productId) {
+        showError('No product ID provided for comparison');
+        return;
+      }
+      
+      // Fetch comparison data
+      try {
+        const response = await fetch(`${COMPARE_ENDPOINT}${productId}/compare-across-dispensaries`);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const result = await response.json();
+        
+        if (!result.success) {
+          throw new Error(result.error || 'Failed to load comparison data');
+        }
+        
+        // Save state
+        originalProduct = result.data.original_product;
+        similarByDispensary = result.data.similar_by_dispensary;
+        
+        // Render the comparison view
+        renderComparisonView();
+      } catch (error) {
+        console.error('Error loading comparison data:', error);
+        showError('Failed to load comparison data. Please try again later.');
+      }
+    }
+    
+    /**
+     * Render the main comparison view
+     */
+    function renderComparisonView() {
+      if (!originalProduct) {
+        showError('No product data available for comparison');
+        return;
+      }
+      
+      // Clear loading state
+      comparisonContainer.innerHTML = '';
+      
+      // Original product
+      const originalProductEl = document.createElement('div');
+      originalProductEl.className = 'original-product';
+      originalProductEl.innerHTML = `
+        <h2>Original Product</h2>
+        <div class="product-name">${originalProduct.product_name}</div>
+        <div class="product-details">
+          ${originalProduct.weight_or_size ? `Size: ${originalProduct.weight_or_size}` : ''}
+          <div>Dispensary: ${originalProduct.dispensary_name}</div>
+        </div>
+        <div class="product-price">${originalProduct.price}</div>
+      `;
+      comparisonContainer.appendChild(originalProductEl);
+      
+      // No similar products found
+      if (!similarByDispensary || similarByDispensary.length === 0) {
+        const emptyResults = document.createElement('div');
+        emptyResults.className = 'empty-results';
+        emptyResults.innerHTML = `
+          <h3>No similar products found</h3>
+          <p>We couldn't find any similar products at other dispensaries.</p>
+        `;
+        comparisonContainer.appendChild(emptyResults);
+        return;
+      }
+      
+      // Add comparison controls
+      const comparisonControls = document.createElement('div');
+      comparisonControls.className = 'comparison-controls';
+      comparisonControls.innerHTML = `
+        <div>
+          <button id="compareSelectedButton" disabled>Compare Selected Products</button>
+          <span id="selectedCount">0 products selected</span>
+        </div>
+        <div>
+          <button id="expandAllButton">Expand All</button>
+          <button id="collapseAllButton">Collapse All</button>
+        </div>
+      `;
+      comparisonContainer.appendChild(comparisonControls);
+      
+      // Add event listeners for control buttons
+      document.getElementById('compareSelectedButton').addEventListener('click', showSideBySideComparison);
+      document.getElementById('expandAllButton').addEventListener('click', () => toggleAllDispensaries(true));
+      document.getElementById('collapseAllButton').addEventListener('click', () => toggleAllDispensaries(false));
+      
+      // Similar products by dispensary
+      similarByDispensary.forEach(dispensaryGroup => {
+        const dispensaryEl = document.createElement('div');
+        dispensaryEl.className = 'dispensary-group';
+        dispensaryEl.dataset.dispensaryId = dispensaryGroup.dispensary_id;
+        
+        const header = document.createElement('div');
+        header.className = 'dispensary-header';
+        header.innerHTML = `
+          <span>${dispensaryGroup.dispensary_name} - ${dispensaryGroup.products.length} similar products</span>
+          <button class="toggle-button" data-action="collapse">▼</button>
+        `;
+        
+        const productsContainer = document.createElement('div');
+        productsContainer.className = 'dispensary-products';
+        
+        // Add products for this dispensary
+        dispensaryGroup.products.forEach(product => {
+          const productCard = document.createElement('div');
+          productCard.className = 'product-card';
+          productCard.dataset.productId = product.id;
+          
+          productCard.innerHTML = `
+            <div class="product-name">${product.product_name}</div>
+            <div class="product-details">
+              ${product.weight_or_size ? `Size: ${product.weight_or_size}` : ''}
+            </div>
+            <div class="product-price">${product.price}</div>
+            <div class="card-actions">
+              <button class="compare-button" data-product-id="${product.id}">+ Add to Comparison</button>
+            </div>
+          `;
+          
+          productsContainer.appendChild(productCard);
+          
+          // Add event listener for compare button
+          productCard.querySelector('.compare-button').addEventListener('click', function() {
+            toggleProductSelection(this, product);
+          });
+        });
+        
+        dispensaryEl.appendChild(header);
+        dispensaryEl.appendChild(productsContainer);
+        comparisonContainer.appendChild(dispensaryEl);
+        
+        // Add event listener for toggle button
+        header.querySelector('.toggle-button').addEventListener('click', function() {
+          toggleDispensaryProducts(this, productsContainer);
+        });
+      });
+      
+      // Add table comparison
+      addTableComparison();
+    }
+    
+    /**
+     * Add a table comparing products across dispensaries
+     */
+    function addTableComparison() {
+      // Create a price comparison table
+      const tableContainer = document.createElement('div');
+      tableContainer.innerHTML = `<h2>Price Comparison Table</h2>`;
+      
+      const table = document.createElement('table');
+      table.className = 'comparison-table';
+      
+      // Create header row
+      const thead = document.createElement('thead');
+      const headerRow = document.createElement('tr');
+      headerRow.innerHTML = `
+        <th>Dispensary</th>
+        <th>Product</th>
+        <th>Size</th>
+        <th>Price</th>
+      `;
+      thead.appendChild(headerRow);
+      table.appendChild(thead);
+      
+      // Create table body
+      const tbody = document.createElement('tbody');
+      
+      // Add original product
+      const originalRow = document.createElement('tr');
+      originalRow.innerHTML = `
+        <td>${originalProduct.dispensary_name}</td>
+        <td>${originalProduct.product_name}</td>
+        <td>${originalProduct.weight_or_size || 'N/A'}</td>
+        <td class="product-price">${originalProduct.price}</td>
+      `;
+      tbody.appendChild(originalRow);
+      
+      // Add similar products
+      const allProducts = [];
+      
+      // Collect all products
+      similarByDispensary.forEach(dispensary => {
+        dispensary.products.forEach(product => {
+          allProducts.push({
+            ...product,
+            dispensary_name: dispensary.dispensary_name
+          });
+        });
+      });
+      
+      // Sort by price (extract numeric value from price string)
+      allProducts.sort((a, b) => {
+        const priceA = parseFloat(a.price.replace(/[^0-9.]/g, '')) || 0;
+        const priceB = parseFloat(b.price.replace(/[^0-9.]/g, '')) || 0;
+        return priceA - priceB;
+      });
+      
+      // Find best price
+      let bestPrice = Infinity;
+      const originalPrice = parseFloat(originalProduct.price.replace(/[^0-9.]/g, '')) || 0;
+      
+      allProducts.forEach(product => {
+        const price = parseFloat(product.price.replace(/[^0-9.]/g, '')) || 0;
+        if (price < bestPrice && product.weight_or_size === originalProduct.weight_or_size) {
+          bestPrice = price;
+        }
+      });
+      
+      // Add rows for similar products
+      allProducts.forEach(product => {
+        const row = document.createElement('tr');
+        const price = parseFloat(product.price.replace(/[^0-9.]/g, '')) || 0;
+        const isBestPrice = price === bestPrice && product.weight_or_size === originalProduct.weight_or_size;
+        
+        row.innerHTML = `
+          <td>${product.dispensary_name}</td>
+          <td>${product.product_name}</td>
+          <td>${product.weight_or_size || 'N/A'}</td>
+          <td class="product-price ${isBestPrice ? 'best-price' : ''}">${product.price} ${isBestPrice ? '(Best Price)' : ''}</td>
+        `;
+        tbody.appendChild(row);
+      });
+      
+      table.appendChild(tbody);
+      tableContainer.appendChild(table);
+      comparisonContainer.appendChild(tableContainer);
+    }
+    
+    /**
+     * Toggle dispensary products visibility
+     */
+    function toggleDispensaryProducts(button, productsContainer) {
+      const isExpanded = button.dataset.action === 'collapse';
+      if (isExpanded) {
+        // Collapse
+        productsContainer.style.display = 'none';
+        button.textContent = '▶';
+        button.dataset.action = 'expand';
+      } else {
+        // Expand
+        productsContainer.style.display = 'grid';
+        button.textContent = '▼';
+        button.dataset.action = 'collapse';
+      }
+    }
+    
+    /**
+     * Toggle all dispensaries expanded/collapsed
+     */
+    function toggleAllDispensaries(expand) {
+      const dispensaryGroups = document.querySelectorAll('.dispensary-group');
+      dispensaryGroups.forEach(group => {
+        const button = group.querySelector('.toggle-button');
+        const productsContainer = group.querySelector('.dispensary-products');
+        
+        if (expand) {
+          productsContainer.style.display = 'grid';
+          button.textContent = '▼';
+          button.dataset.action = 'collapse';
+        } else {
+          productsContainer.style.display = 'none';
+          button.textContent = '▶';
+          button.dataset.action = 'expand';
+        }
+      });
+    }
+    
+    /**
+     * Toggle product selection for comparison
+     */
+    function toggleProductSelection(button, product) {
+      const index = selectedForComparison.findIndex(p => p.id === product.id);
+      
+      if (index === -1) {
+        // Not selected, add to selection if under limit
+        if (selectedForComparison.length < maxCompareItems) {
+          selectedForComparison.push(product);
+          button.textContent = '- Remove from Comparison';
+          button.parentNode.parentNode.classList.add('selected-for-comparison');
+        } else {
+          alert(`You can only compare up to ${maxCompareItems} products at once`);
+          return;
+        }
+      } else {
+        // Already selected, remove from selection
+        selectedForComparison.splice(index, 1);
+        button.textContent = '+ Add to Comparison';
+        button.parentNode.parentNode.classList.remove('selected-for-comparison');
+      }
+      
+      // Update selected count
+      const selectedCount = document.getElementById('selectedCount');
+      selectedCount.textContent = `${selectedForComparison.length} products selected`;
+      
+      // Enable/disable compare button
+      const compareButton = document.getElementById('compareSelectedButton');
+      compareButton.disabled = selectedForComparison.length < 2;
+      
+      // If we have at least 2 products selected, enable the compare button
+      if (selectedForComparison.length >= 2) {
+        compareButton.disabled = false;
+      } else {
+        compareButton.disabled = true;
+      }
+    }
+    
+    /**
+     * Show side-by-side comparison of selected products
+     */
+    function showSideBySideComparison() {
+      if (selectedForComparison.length < 2) {
+        alert('Please select at least 2 products to compare');
+        return;
+      }
+      
+      // Clear current content
+      sideBySideContent.innerHTML = '';
+      
+      // Add original product first
+      const originalCard = document.createElement('div');
+      originalCard.className = 'product-card original';
+      originalCard.innerHTML = `
+        <div class="product-name">${originalProduct.product_name}</div>
+        <div class="product-details">
+          ${originalProduct.weight_or_size ? `<div>Size: ${originalProduct.weight_or_size}</div>` : ''}
+          <div>Dispensary: ${originalProduct.dispensary_name}</div>
+        </div>
+        <div class="product-price">${originalProduct.price}</div>
+      `;
+      sideBySideContent.appendChild(originalCard);
+      
+      // Add selected products
+      selectedForComparison.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'product-card';
+        
+        productCard.innerHTML = `
+          <div class="product-name">${product.product_name}</div>
+          <div class="product-details">
+            ${product.weight_or_size ? `<div>Size: ${product.weight_or_size}</div>` : ''}
+            <div>Dispensary: ${product.dispensary_name}</div>
+          </div>
+          <div class="product-price">${product.price}</div>
+        `;
+        
+        sideBySideContent.appendChild(productCard);
+      });
+      
+      // Show the side-by-side container
+      sideBySideContainer.style.display = 'block';
+      
+      // Scroll to the comparison
+      sideBySideContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    /**
+     * Display error message
+     */
+    function showError(message) {
+      comparisonContainer.innerHTML = `
+        <div class="error-message">
+          <h3>Error</h3>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+    
+    /**
+     * Navigate back to the previous page
+     */
+    function navigateBack() {
+      if (document.referrer && document.referrer.includes(window.location.hostname)) {
+        window.history.back();
+      } else {
+        window.location.href = '/';
+      }
+    }
+    
+    /**
+     * Copy comparison link to clipboard
+     */
+    function copyComparisonLink() {
+      const currentUrl = window.location.href;
+      
+      // Copy to clipboard
+      navigator.clipboard.writeText(currentUrl)
+        .then(() => {
+          // Show success message
+          copyLinkButton.textContent = 'Link Copied!';
+          
+          // Reset button text after 2 seconds
+          setTimeout(() => {
+            copyLinkButton.textContent = 'Copy Comparison Link';
+          }, 2000);
+        })
+        .catch(err => {
+          console.error('Failed to copy link:', err);
+          alert('Failed to copy link. Please copy it manually from the address bar.');
+        });
+    }
+  </script>
+</body>
+</html>

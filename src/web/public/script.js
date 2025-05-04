@@ -209,7 +209,7 @@ function displayResults(products) {
     const actionsCell = row.insertCell();
     actionsCell.className = 'actions-cell';
     
-    // Only show similar button if the product has an ID
+    // Only show action buttons if the product has an ID
     if (productId) {
       // Create tooltip container for this product
       const tooltip = document.createElement('div');
@@ -219,28 +219,34 @@ function displayResults(products) {
       
       // Add mouseover event listener to fetch similar products
       row.addEventListener('mouseenter', () => {
-        console.log(`Mouse entered row for product ${productId}`);
         // Only load if we haven't already cached this tooltip
         if (!hoverTooltips.has(productId)) {
-          console.log(`Loading similar products for ${productId}`);
           loadSimilarProductsTooltip(productId, tooltip);
         } else {
-          console.log(`Using cached data for ${productId}`);
           // Use cached data if available
           renderSimilarProductsTooltip(tooltip, hoverTooltips.get(productId));
         }
       });
       
-      // Add mouseleave listener to ensure proper tooltip behavior
-      row.addEventListener('mouseleave', () => {
-        console.log(`Mouse left row for product ${productId}`);
-      });
+      // Add buttons container for better styling
+      const buttonContainer = document.createElement('div');
+      buttonContainer.className = 'action-buttons';
       
+      // Similar products button
       const similarButton = document.createElement('button');
       similarButton.className = 'similar-button';
       similarButton.textContent = 'Find Similar';
       similarButton.addEventListener('click', () => findSimilarProducts(productId));
-      actionsCell.appendChild(similarButton);
+      buttonContainer.appendChild(similarButton);
+      
+      // Cross-dispensary comparison button
+      const compareButton = document.createElement('button');
+      compareButton.className = 'compare-button';
+      compareButton.textContent = 'Compare Across Dispensaries';
+      compareButton.addEventListener('click', () => compareCrossDispensary(productId));
+      buttonContainer.appendChild(compareButton);
+      
+      actionsCell.appendChild(buttonContainer);
     }
   });
   
@@ -442,6 +448,16 @@ function renderSimilarProductsTooltip(tooltipElement, similarProducts) {
   });
   
   tooltipElement.innerHTML = html;
+}
+
+/**
+ * Navigate to cross-dispensary comparison page for a product
+ */
+function compareCrossDispensary(productId) {
+  if (!productId) return;
+  
+  // Navigate to the comparison page with the product ID
+  window.location.href = `/comparison.html?id=${productId}`;
 }
 
 /**

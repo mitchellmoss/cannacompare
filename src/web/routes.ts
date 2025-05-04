@@ -10,7 +10,10 @@ import {
   generateMissingEmbeddings,
   generateAndStoreEmbedding,
   regenerateAllEmbeddings,
-  readJsonFile
+  readJsonFile,
+  getProductEmbedding,
+  findSimilarProductsByEmbedding,
+  groupProductsByDispensary
 } from "../db/json_storage.ts"; // Changed to use JSON storage
 import { join } from "https://deno.land/std@0.218.2/path/mod.ts";
 import { load } from "https://deno.land/std@0.218.2/dotenv/mod.ts";
@@ -96,8 +99,72 @@ router.get("/api/products/:id/similar", async (ctx) => {
   const productId = ctx.params.id;
   const limitParam = ctx.request.url.searchParams.get("limit");
   const thresholdParam = ctx.request.url.searchParams.get("threshold");
+  const crossDispensaryParam = ctx.request.url.searchParams.get("crossDispensary");
   
   const limit = limitParam ? parseInt(limitParam) : 5;
+  const threshold = thresholdParam ? parseFloat(thresholdParam) : SIMILARITY_THRESHOLD;
+  const crossDispensary = crossDispensaryParam === "true";
+
+  if (!productId) {
+    ctx.response.status = 400;
+    ctx.response.body = { success: false, error: "Missing product ID" };
+    return;
+  }
+
+  try {
+    // Modify the findSimilarProductsById function to pass the crossDispensary parameter
+    const product = getProductById(parseInt(productId));
+    if (!product) {
+      ctx.response.status = 404;
+      ctx.response.body = { success: false, error: "Product not found" };
+      return;
+    }
+    
+    // Get product embedding
+    const productEmbedding = getProductEmbedding(parseInt(productId));
+    if (!productEmbedding) {
+      ctx.response.status = 400;
+      ctx.response.body = { 
+        success: false, 
+        error: "No embedding found for this product. Please generate embeddings first." 
+      };
+      return;
+    }
+    
+    // For cross-dispensary comparison, we want to exclude the original dispensary
+    // if crossDispensary is true
+    const results = crossDispensary 
+      ? findSimilarProductsByEmbedding(
+          productEmbedding, 
+          limit, 
+          threshold, 
+          parseInt(productId), 
+          true,
+          product.dispensary_id // Exclude the original dispensary
+        )
+      : findSimilarProductsByEmbedding(
+          productEmbedding, 
+          limit, 
+          threshold, 
+          parseInt(productId)
+        );
+    
+    ctx.response.status = 200;
+    ctx.response.body = { success: true, data: results };
+  } catch (error) {
+    console.error(`Error finding similar products for product ${productId}:`, error);
+    ctx.response.status = 500;
+    ctx.response.body = { success: false, error: "Failed to find similar products" };
+  }
+});
+
+// API route for cross-dispensary product comparison
+router.get("/api/products/:id/compare-across-dispensaries", async (ctx) => {
+  const productId = ctx.params.id;
+  const limitParam = ctx.request.url.searchParams.get("limit");
+  const thresholdParam = ctx.request.url.searchParams.get("threshold");
+  
+  const limit = limitParam ? parseInt(limitParam) : 10; // Higher default limit for comparison
   const threshold = thresholdParam ? parseFloat(thresholdParam) : SIMILARITY_THRESHOLD;
 
   if (!productId) {
@@ -107,13 +174,50 @@ router.get("/api/products/:id/similar", async (ctx) => {
   }
 
   try {
-    const results = await findSimilarProductsById(parseInt(productId), limit, threshold);
+    // Get the original product
+    const originalProduct = getProductById(parseInt(productId));
+    if (!originalProduct) {
+      ctx.response.status = 404;
+      ctx.response.body = { success: false, error: "Product not found" };
+      return;
+    }
+    
+    // Get product embedding
+    const productEmbedding = getProductEmbedding(parseInt(productId));
+    if (!productEmbedding) {
+      ctx.response.status = 400;
+      ctx.response.body = { 
+        success: false, 
+        error: "No embedding found for this product. Please generate embeddings first." 
+      };
+      return;
+    }
+    
+    // Find similar products from other dispensaries
+    const similarProducts = findSimilarProductsByEmbedding(
+      productEmbedding,
+      limit,
+      threshold,
+      parseInt(productId),
+      true, // Enable cross-dispensary mode
+      originalProduct.dispensary_id // Exclude the original dispensary
+    );
+    
+    // Group similar products by dispensary
+    const groupedByDispensary = groupProductsByDispensary(similarProducts);
+    
+    // Add the original product for reference
+    const result = {
+      original_product: originalProduct,
+      similar_by_dispensary: Object.values(groupedByDispensary)
+    };
+    
     ctx.response.status = 200;
-    ctx.response.body = { success: true, data: results };
+    ctx.response.body = { success: true, data: result };
   } catch (error) {
-    console.error(`Error finding similar products for product ${productId}:`, error);
+    console.error(`Error comparing products across dispensaries for product ${productId}:`, error);
     ctx.response.status = 500;
-    ctx.response.body = { success: false, error: "Failed to find similar products" };
+    ctx.response.body = { success: false, error: "Failed to compare products across dispensaries" };
   }
 });
 

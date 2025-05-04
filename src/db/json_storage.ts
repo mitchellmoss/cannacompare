@@ -440,11 +440,16 @@ export async function findSimilarProducts(
 
 /**
  * Find similar products to an existing product
+ * @param productId - ID of the product to find similar items for
+ * @param limit - Maximum number of similar products to return
+ * @param threshold - Similarity threshold (0-1)
+ * @param crossDispensary - Whether to prioritize products from different dispensaries
  */
 export async function findSimilarProductsById(
   productId: number,
   limit = 5,
-  threshold = SIMILARITY_THRESHOLD
+  threshold = SIMILARITY_THRESHOLD,
+  crossDispensary = false
 ): Promise<ProductQueryResult[]> {
   // Get the product's embedding
   const productEmbedding = getProductEmbedding(productId);
@@ -453,24 +458,54 @@ export async function findSimilarProductsById(
     return [];
   }
   
-  return findSimilarProductsByEmbedding(productEmbedding, limit, threshold, productId);
+  // If using cross-dispensary mode, we need to know the product's dispensary ID
+  let excludeDispensaryId: number | undefined;
+  
+  if (crossDispensary) {
+    const products = readJsonFile<Product[]>(PRODUCTS_FILE);
+    const product = products.find(p => p.id === productId);
+    if (product) {
+      excludeDispensaryId = product.dispensary_id;
+    }
+  }
+  
+  return findSimilarProductsByEmbedding(
+    productEmbedding, 
+    limit, 
+    threshold, 
+    productId, 
+    crossDispensary, 
+    excludeDispensaryId
+  );
 }
 
 /**
  * Helper function to find similar products using an embedding
+ * @param targetEmbedding - Embedding vector to compare against
+ * @param limit - Maximum number of products to return
+ * @param threshold - Similarity threshold (0-1)
+ * @param excludeProductId - Optional ID to exclude (e.g., the query product)
+ * @param crossDispensary - Whether to prioritize products from different dispensaries
+ * @param excludeDispensaryId - Optional dispensary ID to exclude
  */
 export function findSimilarProductsByEmbedding(
   targetEmbedding: Float32Array,
   limit = 5,
   threshold = SIMILARITY_THRESHOLD,
-  excludeProductId?: number
-): (ProductQueryResult & { id: number })[] {
+  excludeProductId?: number,
+  crossDispensary = false,
+  excludeDispensaryId?: number
+): (ProductQueryResult & { id: number; dispensary_id: number })[] {
   const products = readJsonFile<Product[]>(PRODUCTS_FILE);
   const dispensaries = readJsonFile<Dispensary[]>(DISPENSARIES_FILE);
   const embeddings = readJsonFile<ProductEmbedding[]>(EMBEDDINGS_FILE);
   
   // Calculate similarity scores
-  type ProductWithScore = ProductQueryResult & { id: number; score: number };
+  type ProductWithScore = ProductQueryResult & { 
+    id: number; 
+    dispensary_id: number;
+    score: number;
+  };
   const productsWithScores: ProductWithScore[] = [];
   
   for (const embedding of embeddings) {
@@ -482,6 +517,11 @@ export function findSimilarProductsByEmbedding(
     const product = products.find(p => p.id === embedding.product_id);
     if (!product) continue;
     
+    // Skip products from the excluded dispensary if specified
+    if (excludeDispensaryId && product.dispensary_id === excludeDispensaryId) {
+      continue;
+    }
+    
     const dispensary = dispensaries.find(d => d.id === product.dispensary_id);
     if (!dispensary) continue;
     
@@ -491,6 +531,7 @@ export function findSimilarProductsByEmbedding(
     if (score >= threshold) {
       productsWithScores.push({
         id: product.id,
+        dispensary_id: product.dispensary_id,
         product_name: product.product_name,
         price: product.price,
         weight_or_size: product.weight_or_size,
@@ -501,11 +542,49 @@ export function findSimilarProductsByEmbedding(
     }
   }
   
-  // Sort by similarity score (highest first) and take the top results
-  productsWithScores.sort((a, b) => b.score - a.score);
-  
-  // Take top results but keep the id property
-  return productsWithScores.slice(0, limit).map(({ score, ...product }) => product);
+  // In cross-dispensary mode, we want to prioritize returning products from 
+  // different dispensaries, while still respecting similarity scores
+  if (crossDispensary) {
+    // Group products by dispensary
+    const byDispensary = new Map<number, ProductWithScore[]>();
+    for (const product of productsWithScores) {
+      if (!byDispensary.has(product.dispensary_id)) {
+        byDispensary.set(product.dispensary_id, []);
+      }
+      byDispensary.get(product.dispensary_id)!.push(product);
+    }
+    
+    // Sort products within each dispensary by score (highest first)
+    for (const dispensaryProducts of byDispensary.values()) {
+      dispensaryProducts.sort((a, b) => b.score - a.score);
+    }
+    
+    // Interleave top products from each dispensary until we hit the limit
+    // This ensures we have representation from multiple dispensaries
+    const interleaved: ProductWithScore[] = [];
+    let dispensariesExhausted = false;
+    let index = 0;
+    
+    while (interleaved.length < limit && !dispensariesExhausted) {
+      dispensariesExhausted = true;
+      for (const dispensaryProducts of byDispensary.values()) {
+        if (index < dispensaryProducts.length) {
+          interleaved.push(dispensaryProducts[index]);
+          dispensariesExhausted = false;
+          if (interleaved.length >= limit) break;
+        }
+      }
+      index++;
+    }
+    
+    // Return results without score, but sorted by score
+    interleaved.sort((a, b) => b.score - a.score);
+    return interleaved.map(({ score, ...product }) => product);
+  } else {
+    // Standard behavior: sort by score and take top results
+    productsWithScores.sort((a, b) => b.score - a.score);
+    return productsWithScores.slice(0, limit).map(({ score, ...product }) => product);
+  }
 }
 
 // Search/Query Operations
@@ -534,7 +613,7 @@ export function searchProductsByName(searchTerm: string): (ProductQueryResult & 
 /**
  * Get product by ID with full details
  */
-export function getProductById(productId: number): (ProductQueryResult & { id: number }) | null {
+export function getProductById(productId: number): (ProductQueryResult & { id: number; dispensary_id: number }) | null {
   const products = readJsonFile<Product[]>(PRODUCTS_FILE);
   const dispensaries = readJsonFile<Dispensary[]>(DISPENSARIES_FILE);
   
@@ -546,6 +625,7 @@ export function getProductById(productId: number): (ProductQueryResult & { id: n
   
   return {
     id: product.id,
+    dispensary_id: product.dispensary_id,
     product_name: product.product_name,
     price: product.price,
     weight_or_size: product.weight_or_size,
@@ -609,4 +689,67 @@ export function getRecentErrors(limit = 100) {
         dispensary_name: dispensary?.name
       };
     });
+}
+
+/**
+ * Group products by their dispensary for easy comparison
+ * @param products - Array of products to group
+ * @param includeEmpty - Whether to include dispensaries with no products
+ * @returns Object with dispensary IDs as keys and arrays of products as values
+ */
+export function groupProductsByDispensary(
+  products: (ProductQueryResult & { id: number; dispensary_id?: number })[],
+  includeEmpty = false
+): Record<number, { dispensary_id: number; dispensary_name: string; products: ProductQueryResult[] }> {
+  const dispensaries = readJsonFile<Dispensary[]>(DISPENSARIES_FILE);
+  const result: Record<number, { dispensary_id: number; dispensary_name: string; products: ProductQueryResult[] }> = {};
+  
+  // Initialize with all dispensaries if includeEmpty is true
+  if (includeEmpty) {
+    dispensaries.forEach(dispensary => {
+      result[dispensary.id] = {
+        dispensary_id: dispensary.id,
+        dispensary_name: dispensary.name,
+        products: []
+      };
+    });
+  }
+  
+  // Group products by dispensary ID
+  products.forEach(product => {
+    // If the product has a dispensary_id property, use it directly
+    if (product.dispensary_id !== undefined) {
+      if (!result[product.dispensary_id]) {
+        const dispensary = dispensaries.find(d => d.id === product.dispensary_id);
+        if (dispensary) {
+          result[product.dispensary_id] = {
+            dispensary_id: product.dispensary_id,
+            dispensary_name: dispensary.name,
+            products: []
+          };
+        } else {
+          // Skip if we can't find the dispensary
+          return;
+        }
+      }
+      // Add the product to its dispensary group
+      result[product.dispensary_id].products.push(product);
+    } else {
+      // If no dispensary_id, try to find the dispensary by name
+      const dispensary = dispensaries.find(d => d.name === product.dispensary_name);
+      if (dispensary) {
+        if (!result[dispensary.id]) {
+          result[dispensary.id] = {
+            dispensary_id: dispensary.id,
+            dispensary_name: dispensary.name,
+            products: []
+          };
+        }
+        // Add the product to its dispensary group
+        result[dispensary.id].products.push(product);
+      }
+    }
+  });
+  
+  return result;
 }

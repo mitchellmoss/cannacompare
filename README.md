@@ -25,6 +25,8 @@ The code in this repository is provided as a technical demonstration of web scra
 - Local JSON file-based data storage
 - Web interface for searching and comparing product prices
 - Support for multiple dispensaries
+- AI-powered product similarity search using embeddings
+- Cross-dispensary product comparison for price and feature matching
 - Robust error handling and logging
 - Smart fallback mechanisms for different menu structures
 
@@ -32,9 +34,11 @@ The code in this repository is provided as a technical demonstration of web scra
 
 - **Deno**: Modern, secure TypeScript runtime
 - **Firecrawl API**: Web scraping service with HTML or LLM extraction
+- **Google Generative AI**: For generating text embeddings (text-embedding-004 model)
 - **JSON Storage**: Simple file-based data persistence
 - **Oak**: Deno web framework for the HTTP server
 - **Deno DOM**: HTML parsing for product extraction
+- **Vector Embeddings**: For semantic similarity search and product comparison
 
 ## Prerequisites
 
@@ -54,20 +58,25 @@ The code in this repository is provided as a technical demonstration of web scra
 │   │   └── main_scraper.ts       # Main scraping orchestration script
 │   ├── db/
 │   │   ├── json_storage.ts       # JSON file-based storage functions
-│   │   └── database.ts           # Database interface
+│   │   ├── database.ts           # Database interface
+│   │   └── schema.sql            # Database schema definitions
 │   ├── web/
 │   │   ├── server.ts             # Oak web server setup
 │   │   ├── routes.ts             # API endpoint definitions
 │   │   └── public/               # Static frontend files
-│   │       ├── index.html
+│   │       ├── index.html        # Main search interface
+│   │       ├── comparison.html   # Cross-dispensary comparison view
+│   │       ├── embeddings.html   # Embedding management interface
 │   │       ├── styles.css
 │   │       └── script.js
 │   └── shared/
-│       └── types.ts              # Shared TypeScript types
+│       ├── types.ts              # Shared TypeScript types
+│       └── embeddings_service.ts # Google AI embeddings service
 ├── target_dispensaries.json  # List of target dispensary menu URLs
 └── data/                    # Directory for JSON data storage
     ├── dispensaries.json    # Stored dispensary information
     ├── products.json        # Stored product information
+    ├── embeddings.json      # Product embedding vectors 
     └── errors.json          # Error logging
 ```
 
@@ -80,12 +89,15 @@ The code in this repository is provided as a technical demonstration of web scra
    ```
 
 2. **Configure environment variables:**
-   Update the `.env` file with your Firecrawl API key and other settings:
+   Update the `.env` file with your API keys and other settings:
    ```
    FIRECRAWL_API_KEY="fc-YOUR_API_KEY_HERE"
+   GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY_HERE"
    DATABASE_PATH="./dispensary_data.db"
    TARGET_URLS_FILE="./target_dispensaries.json"
    SERVER_PORT=8000
+   EMBEDDING_MODEL="text-embedding-004"
+   SIMILARITY_THRESHOLD=0.7
    ```
 
 3. **Add target dispensaries:**
@@ -144,6 +156,18 @@ The web interface provides a simple way to search and compare product prices:
 1. Enter a product name in the search box (e.g., "Blue Dream", "OG Kush")
 2. Filter results by dispensary using the dropdown
 3. View price comparisons across different dispensaries
+4. Use semantic search to find similar products based on embeddings
+5. Compare products across different dispensaries using the comparison feature
+
+#### Cross-Dispensary Comparison
+
+The cross-dispensary comparison feature allows users to:
+
+1. Find similar products across multiple dispensaries
+2. Compare prices for equivalent products side-by-side
+3. Identify the best price for similar products
+4. View similar products organized by dispensary
+5. Create custom side-by-side comparisons between selected products
 
 ## License
 

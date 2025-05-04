@@ -20,6 +20,7 @@ export interface ProductQueryResult extends ProductSchema {
   dispensary_name: string;
   scraped_at: string;
   id?: number; // Include product ID for hover functionality
+  dispensary_id?: number; // Include dispensary ID for cross-dispensary comparison
 }
 
 // Action types for Firecrawl
