@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "run": "deno run --allow-net --allow-read --allow-write --allow-env --unstable src/web/server.ts",
+    "scrape": "deno run --allow-net --allow-read --allow-write --allow-env src/scraper/main_scraper.ts",
+    "scheduler": "deno run --allow-net --allow-read --allow-write --allow-env --unstable src/scheduler/scheduler.ts",
+    "force-scrape": "deno run --allow-net --allow-read --allow-write --allow-env --unstable src/scheduler/force_scrape.ts"
+  },
+  "importMap": {
+    "imports": {
+      "oak": "https://deno.land/x/oak@v12.6.1/mod.ts",
+      "std/": "https://deno.land/std@0.218.2/"
+    }
+  }
+}

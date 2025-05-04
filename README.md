@@ -113,12 +113,12 @@ The code in this repository is provided as a technical demonstration of web scra
 
 4. **Initialize the database:**
    ```bash
-   deno run --allow-read --allow-write --allow-env src/scraper/main_scraper.ts
+   deno task scrape
    ```
 
-5. **Run the web server:**
+5. **Run the web server (with automatic daily scraping):**
    ```bash
-   deno run --allow-net --allow-read --allow-write --allow-env src/web/server.ts
+   deno task run
    ```
 
 6. **Access the web interface:**
@@ -131,7 +131,7 @@ The code in this repository is provided as a technical demonstration of web scra
 To scrape product data from all configured dispensaries:
 
 ```bash
-deno run --allow-net --allow-read --allow-write --allow-env src/scraper/main_scraper.ts
+deno task scrape
 ```
 
 This command:
@@ -140,13 +140,25 @@ This command:
 3. Parses the HTML content to extract product information
 4. Stores the product data in JSON files in the data directory
 
-### Setting Up Recurring Scraping
+### Automatic Daily Scraping
 
-For automatic updates, set up a cron job (Linux/macOS) or scheduled task (Windows).
+The application includes a built-in scheduler that automatically runs the scraper once every 24 hours:
 
-Example cron entry (runs daily at 2 AM):
+1. When you run `deno task run`, the web server starts with the scheduler service
+2. The scheduler checks if 24 hours have passed since the last scraper run
+3. If 24 hours have passed (or if it's the first run), the scraper runs automatically
+4. The timestamp is stored in Deno KV storage for persistence across server restarts
+
+You can also manually trigger the scheduler check:
+
+```bash
+deno task scheduler
 ```
-0 2 * * * /path/to/deno run --allow-net --allow-read --allow-write --allow-env /path/to/dutchiescraper/src/scraper/main_scraper.ts >> /path/to/dutchiescraper/scrape_cron.log 2>&1
+
+To force a scraping run regardless of the time since last run:
+
+```bash
+deno task force-scrape
 ```
 
 ### Web Interface

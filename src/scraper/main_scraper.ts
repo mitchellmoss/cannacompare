@@ -80,6 +80,9 @@ export async function setupDbOnly() {
   console.log("Database setup complete.");
 }
 
+// Export the main function for use in scheduler
+export { main };
+
 // Run the main function if this module is executed directly
 if (import.meta.main) {
   main();

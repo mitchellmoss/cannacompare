@@ -2,6 +2,7 @@ import { Application } from "https://deno.land/x/oak@v12.6.1/mod.ts";
 import { load } from "https://deno.land/std@0.218.2/dotenv/mod.ts";
 import { setupDatabase, closeDb } from "../db/json_storage.ts"; // Changed to use JSON storage
 import apiRouter from "./routes.ts";
+import { startSchedulerService } from "../scheduler/startup.ts";
 
 // Load environment variables
 const env = await load();
@@ -73,13 +74,16 @@ app.use((ctx) => {
 setupDatabase();
 
 // Add event listener for server startup
-app.addEventListener("listen", ({ hostname, port, secure }) => {
+app.addEventListener("listen", async ({ hostname, port, secure }) => {
   console.log(
     `Web server listening on: ${secure ? "https://" : "http://"}${hostname ?? "localhost"}:${port}`
   );
   console.log(`- API available at: http://localhost:${port}/api/`);
   console.log(`- Frontend available at: http://localhost:${port}/`);
   console.log(`- Embeddings Management: http://localhost:${port}/embeddings.html`);
+  
+  // Start the scheduler service after the server is up
+  await startSchedulerService();
 });
 
 // Graceful shutdown
