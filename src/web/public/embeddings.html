@@ -134,7 +134,7 @@
     <div class="card">
       <h2>Generate Embeddings</h2>
       <p>
-        This tool uses Google's Gemini AI to create vector embeddings for all products in the database.
+        This tool uses Google's text-embedding-004 model to create vector embeddings for all products in the database.
         These embeddings enable semantic similarity search, helping users find related products.
       </p>
       
@@ -142,6 +142,10 @@
         <button id="generateBtn" class="action-btn">
           <span id="spinner" class="spinner"></span>
           Generate All Missing Embeddings
+        </button>
+        <button id="regenerateAllBtn" class="action-btn" style="background-color: #A95C68;">
+          <span id="regenerateSpinner" class="spinner"></span>
+          Regenerate ALL Embeddings
         </button>
         <button id="refreshStatsBtn" class="action-btn secondary">
           Refresh Stats
@@ -173,8 +177,8 @@
       </p>
       <ol>
         <li>Finds all products without embeddings</li>
-        <li>Processes them in batches of 50 products</li>
-        <li>Sends each product's description to Google's Gemini API</li>
+        <li>Processes them in batches of 1000 products</li>
+        <li>Sends each product's description to Google's text-embedding-004 API</li>
         <li>Stores the resulting embeddings in the database</li>
         <li>Shows you a summary of the processed products</li>
       </ol>
@@ -191,9 +195,11 @@
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const generateBtn = document.getElementById('generateBtn');
+      const regenerateAllBtn = document.getElementById('regenerateAllBtn');
       const refreshStatsBtn = document.getElementById('refreshStatsBtn');
       const statusDiv = document.getElementById('status');
       const spinner = document.getElementById('spinner');
+      const regenerateSpinner = document.getElementById('regenerateSpinner');
       
       // Stats elements
       const totalProductsEl = document.getElementById('totalProducts');
@@ -205,11 +211,13 @@
       
       // Set up event listeners
       generateBtn.addEventListener('click', generateEmbeddings);
+      regenerateAllBtn.addEventListener('click', regenerateAllEmbeddings);
       refreshStatsBtn.addEventListener('click', fetchStats);
       
       async function generateEmbeddings() {
         // Show loading state
         generateBtn.disabled = true;
+        regenerateAllBtn.disabled = true;
         spinner.style.display = 'inline-block';
         statusDiv.className = '';
         statusDiv.textContent = 'Processing, please wait...';
@@ -221,7 +229,9 @@
             headers: {
               'Content-Type': 'application/json'
             },
-            body: JSON.stringify({})
+            body: JSON.stringify({
+              processAll: true // Process all products in batches
+            })
           });
           
           if (!response.ok) {
@@ -246,7 +256,60 @@
         } finally {
           // Reset UI
           generateBtn.disabled = false;
+          regenerateAllBtn.disabled = false;
           spinner.style.display = 'none';
+        }
+      }
+      
+      async function regenerateAllEmbeddings() {
+        if (!confirm("This will regenerate embeddings for ALL products using the new 'text-embedding-004' model. This may take some time and will overwrite any existing embeddings. Continue?")) {
+          return;
+        }
+        
+        // Show loading state
+        generateBtn.disabled = true;
+        regenerateAllBtn.disabled = true;
+        regenerateSpinner.style.display = 'inline-block';
+        statusDiv.className = '';
+        statusDiv.textContent = 'Regenerating all embeddings with the new model, please wait...';
+        statusDiv.style.display = 'block';
+        
+        try {
+          const response = await fetch('/api/embeddings/generate', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              regenerateAll: true, // Regenerate ALL embeddings
+              processAll: true     // Process all products in batches
+            })
+          });
+          
+          if (!response.ok) {
+            throw new Error(`Server returned ${response.status}: ${response.statusText}`);
+          }
+          
+          const result = await response.json();
+          
+          if (result.success) {
+            statusDiv.className = 'success';
+            statusDiv.textContent = result.message || 'All embeddings regenerated successfully with the new model';
+          } else {
+            statusDiv.className = 'error';
+            statusDiv.textContent = result.error || 'Failed to regenerate embeddings';
+          }
+          
+          // Refresh stats after regenerating embeddings
+          fetchStats();
+        } catch (error) {
+          statusDiv.className = 'error';
+          statusDiv.textContent = `Error: ${error.message}`;
+        } finally {
+          // Reset UI
+          generateBtn.disabled = false;
+          regenerateAllBtn.disabled = false;
+          regenerateSpinner.style.display = 'none';
         }
       }
       

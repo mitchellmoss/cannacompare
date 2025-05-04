@@ -20,7 +20,7 @@ const DISPENSARIES_FILE = join(DATA_DIR, "dispensaries.json");
 const PRODUCTS_FILE = join(DATA_DIR, "products.json");
 const ERRORS_FILE = join(DATA_DIR, "errors.json");
 const EMBEDDINGS_FILE = join(DATA_DIR, "embeddings.json");
-const EMBEDDING_MODEL = env.EMBEDDING_MODEL || "gemini-embedding-exp-03-07";
+const EMBEDDING_MODEL = env.EMBEDDING_MODEL || "text-embedding-004";
 const SIMILARITY_THRESHOLD = Number(env.SIMILARITY_THRESHOLD) || 0.7;
 
 // Data structure
@@ -268,30 +268,137 @@ export async function generateAndStoreEmbedding(productId: number): Promise<bool
 }
 
 /**
+ * Helper function to implement rate limiting for API calls
+ * Tracks API calls and ensures we don't exceed the rate limit
+ */
+const rateLimiter = {
+  // Timestamps of recent API calls (rolling window)
+  recentCalls: [] as number[],
+  // Maximum calls allowed per minute (Google's limit is 1,500)
+  maxCallsPerMinute: 1200, // Set slightly lower for safety
+  // Batch size (process this many items at once)
+  batchSize: 40,
+  // Time between batches in ms
+  batchDelayMs: 3000,
+
+  // Check if we can make a new API call or need to wait
+  async waitIfNeeded(): Promise<void> {
+    const now = Date.now();
+    // Remove timestamps older than 1 minute
+    this.recentCalls = this.recentCalls.filter(timestamp => now - timestamp < 60000);
+    
+    // If we're approaching the limit, wait until we have capacity
+    if (this.recentCalls.length >= this.maxCallsPerMinute) {
+      const oldestCall = this.recentCalls[0];
+      const waitTime = 60000 - (now - oldestCall) + 1000; // Add 1 second buffer
+      console.log(`Rate limit approaching, waiting ${waitTime}ms before next call`);
+      await new Promise(resolve => setTimeout(resolve, waitTime));
+      // Recursive call to check again after waiting
+      return this.waitIfNeeded();
+    }
+    
+    // Track this call
+    this.recentCalls.push(now);
+    return Promise.resolve();
+  },
+  
+  // Process a batch of items with rate limiting
+  async processBatch<T>(
+    items: T[], 
+    processor: (item: T) => Promise<boolean>,
+    onProgress?: (processed: number, total: number) => void
+  ): Promise<number> {
+    let successCount = 0;
+    
+    // Process in smaller batches to avoid hitting rate limits
+    for (let i = 0; i < items.length; i += this.batchSize) {
+      const batch = items.slice(i, i + this.batchSize);
+      
+      // Process each item in the current batch
+      for (let j = 0; j < batch.length; j++) {
+        // Wait if needed to avoid hitting rate limits
+        await this.waitIfNeeded();
+        
+        // Process the item
+        const success = await processor(batch[j]);
+        if (success) successCount++;
+        
+        // Report progress if callback provided
+        if (onProgress) {
+          onProgress(i + j + 1, items.length);
+        }
+      }
+      
+      // If this isn't the last batch, wait before starting the next batch
+      if (i + this.batchSize < items.length) {
+        console.log(`Processed ${i + batch.length} of ${items.length} items. Waiting ${this.batchDelayMs}ms before next batch...`);
+        await new Promise(resolve => setTimeout(resolve, this.batchDelayMs));
+      }
+    }
+    
+    return successCount;
+  }
+};
+
+/**
  * Generate embeddings for products without them
  * @param limit - Maximum number of products to process in one batch
+ * @param processAll - If true, will process all products without embeddings in batches
  */
-export async function generateMissingEmbeddings(limit = 50): Promise<number> {
+export async function generateMissingEmbeddings(limit = 1000, processAll = false): Promise<number> {
   const products = readJsonFile<Product[]>(PRODUCTS_FILE);
   const embeddings = readJsonFile<ProductEmbedding[]>(EMBEDDINGS_FILE);
   
   // Find products without embeddings
   const productsWithEmbeddings = new Set(embeddings.map(e => e.product_id));
-  const productsToProcess = products
-    .filter(p => !productsWithEmbeddings.has(p.id))
-    .slice(0, limit);
+  const allProductsWithoutEmbeddings = products.filter(p => !productsWithEmbeddings.has(p.id));
   
-  let successCount = 0;
+  // Determine which products to process
+  const productsToProcess = processAll 
+    ? allProductsWithoutEmbeddings 
+    : allProductsWithoutEmbeddings.slice(0, limit);
   
-  for (const product of productsToProcess) {
-    const success = await generateAndStoreEmbedding(product.id);
-    if (success) successCount++;
-    
-    // Small delay to avoid rate limiting
-    if (productsToProcess.length > 10) {
-      await new Promise(resolve => setTimeout(resolve, 100));
+  console.log(`Found ${allProductsWithoutEmbeddings.length} products without embeddings, processing ${productsToProcess.length}`);
+  
+  // Process products with rate limiting
+  const successCount = await rateLimiter.processBatch(
+    productsToProcess,
+    (product) => generateAndStoreEmbedding(product.id),
+    (processed, total) => {
+      if (processed % 20 === 0 || processed === total) {
+        console.log(`Processed ${processed} of ${total} products (${Math.round(processed/total*100)}%)`);
+      }
     }
-  }
+  );
+  
+  return successCount;
+}
+
+/**
+ * Regenerate embeddings for all products with the new model
+ * @param limit - Maximum number of products to process in one batch
+ * @param processAll - If true, will process all products in batches
+ */
+export async function regenerateAllEmbeddings(limit = 1000, processAll = false): Promise<number> {
+  const products = readJsonFile<Product[]>(PRODUCTS_FILE);
+  
+  // Determine which products to process
+  const productsToProcess = processAll 
+    ? products 
+    : products.slice(0, limit);
+  
+  console.log(`Regenerating embeddings for ${productsToProcess.length} products with the new model`);
+  
+  // Process products with rate limiting
+  const successCount = await rateLimiter.processBatch(
+    productsToProcess,
+    (product) => generateAndStoreEmbedding(product.id),
+    (processed, total) => {
+      if (processed % 20 === 0 || processed === total) {
+        console.log(`Processed ${processed} of ${total} products (${Math.round(processed/total*100)}%)`);
+      }
+    }
+  );
   
   return successCount;
 }

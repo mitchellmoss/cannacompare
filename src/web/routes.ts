@@ -9,6 +9,7 @@ import {
   getProductById,
   generateMissingEmbeddings,
   generateAndStoreEmbedding,
+  regenerateAllEmbeddings,
   readJsonFile
 } from "../db/json_storage.ts"; // Changed to use JSON storage
 import { join } from "https://deno.land/std@0.218.2/path/mod.ts";
@@ -199,12 +200,16 @@ router.post("/api/embeddings/generate", async (ctx) => {
   const body = ctx.request.body();
   let productId: number | undefined;
   let limit: number | undefined;
+  let processAll = false;
+  let regenerateAll = false;
   
   if (body.type === "json") {
     try {
       const value = await body.value;
       productId = value.productId;
       limit = value.limit;
+      processAll = value.processAll === true;
+      regenerateAll = value.regenerateAll === true;
     } catch (e) {
       console.log("Error parsing body:", e);
       // Continue with default values if body parsing fails
@@ -229,14 +234,27 @@ router.post("/api/embeddings/generate", async (ctx) => {
           message: `Failed to generate embedding for product ID ${productId}` 
         };
       }
-    } else {
-      // Generate embeddings for products without them
-      const count = await generateMissingEmbeddings(limit || 50);
+    } else if (regenerateAll) {
+      // Regenerate embeddings for ALL products (even those with existing embeddings)
+      const count = await regenerateAllEmbeddings(limit || 1000, processAll);
       
       result = { 
         success: true, 
         count, 
-        message: `Generated embeddings for ${count} products` 
+        message: processAll 
+          ? `Regenerated embeddings for all ${count} products with the new model`
+          : `Regenerated embeddings for ${count} products with the new model` 
+      };
+    } else {
+      // Generate embeddings for products without them
+      const count = await generateMissingEmbeddings(limit || 1000, processAll);
+      
+      result = { 
+        success: true, 
+        count, 
+        message: processAll 
+          ? `Generated embeddings for all ${count} products without embeddings`
+          : `Generated embeddings for ${count} products` 
       };
     }
     

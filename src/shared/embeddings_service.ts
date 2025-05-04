@@ -7,7 +7,7 @@ import { load } from "https://deno.land/std@0.218.2/dotenv/mod.ts";
 // Load environment variables
 const env = await load();
 const GOOGLE_API_KEY = env.GOOGLE_API_KEY;
-const EMBEDDING_MODEL = env.EMBEDDING_MODEL || "gemini-embedding-exp-03-07";
+const EMBEDDING_MODEL = env.EMBEDDING_MODEL || "text-embedding-004";
 
 // Embedding API endpoint
 const EMBEDDING_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${EMBEDDING_MODEL}:embedContent?key=${GOOGLE_API_KEY}`;
@@ -44,11 +44,13 @@ interface EmbeddingResponse {
  * Generate embeddings for a given text string using Google's Gemini API
  * @param text - Text to generate embeddings for
  * @param isQuery - Whether this is a query (true) or document (false)
+ * @param retryCount - Number of times to retry if the request fails
  * @returns - Embedding vector as Float32Array or null if error
  */
 export async function getEmbedding(
   text: string,
-  isQuery = false
+  isQuery = false,
+  retryCount = 3
 ): Promise<Float32Array | null> {
   if (!GOOGLE_API_KEY) {
     console.error("Missing GOOGLE_API_KEY in environment variables");
@@ -64,30 +66,68 @@ export async function getEmbedding(
     taskType: isQuery ? "RETRIEVAL_QUERY" : "RETRIEVAL_DOCUMENT",
   };
 
-  try {
-    // Send request to Gemini API
-    const response = await fetch(EMBEDDING_API_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(request),
-    });
+  // Retry logic with exponential backoff
+  for (let attempt = 0; attempt <= retryCount; attempt++) {
+    try {
+      // Send request to Gemini API
+      const response = await fetch(EMBEDDING_API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(request),
+      });
 
-    if (!response.ok) {
-      const errorData = await response.text();
-      console.error("Gemini API error:", errorData);
+      // If rate limited (429), wait and retry
+      if (response.status === 429) {
+        if (attempt < retryCount) {
+          const waitTime = Math.pow(2, attempt) * 1000 + Math.random() * 1000;
+          console.warn(`Rate limited (429). Retrying in ${Math.round(waitTime/1000)} seconds... (Attempt ${attempt + 1}/${retryCount})`);
+          await new Promise(resolve => setTimeout(resolve, waitTime));
+          continue; // Retry
+        } else {
+          const errorData = await response.text();
+          console.error("Rate limit reached and max retries exceeded:", errorData);
+          return null;
+        }
+      }
+
+      if (!response.ok) {
+        const errorData = await response.text();
+        console.error(`Gemini API error (${response.status}):`, errorData);
+        
+        // For other errors, retry only if we have attempts remaining
+        if (attempt < retryCount) {
+          const waitTime = Math.pow(2, attempt) * 1000;
+          console.warn(`API error. Retrying in ${Math.round(waitTime/1000)} seconds... (Attempt ${attempt + 1}/${retryCount})`);
+          await new Promise(resolve => setTimeout(resolve, waitTime));
+          continue; // Retry
+        }
+        
+        return null;
+      }
+
+      const data = await response.json() as EmbeddingResponse;
+      
+      // Convert to Float32Array for efficiency
+      return new Float32Array(data.embedding.values);
+    } catch (error) {
+      console.error(`Error generating embedding (Attempt ${attempt + 1}/${retryCount + 1}):`, error);
+      
+      // For unexpected errors, retry only if we have attempts remaining
+      if (attempt < retryCount) {
+        const waitTime = Math.pow(2, attempt) * 1000;
+        console.warn(`Unexpected error. Retrying in ${Math.round(waitTime/1000)} seconds...`);
+        await new Promise(resolve => setTimeout(resolve, waitTime));
+        continue; // Retry
+      }
+      
       return null;
     }
-
-    const data = await response.json() as EmbeddingResponse;
-    
-    // Convert to Float32Array for efficiency
-    return new Float32Array(data.embedding.values);
-  } catch (error) {
-    console.error("Error generating embedding:", error);
-    return null;
   }
+  
+  // If we get here, all retries failed
+  return null;
 }
 
 /**

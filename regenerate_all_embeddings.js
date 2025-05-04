@@ -1,12 +1,12 @@
-// Script to generate embeddings for products
-// Run with: deno run --allow-net generate_embeddings.js
+// Script to regenerate ALL embeddings for products with the new model
+// Run with: deno run --allow-net regenerate_all_embeddings.js
 
 // Server URL
 const serverUrl = "http://localhost:8000";
 
-// Function to generate embeddings (for all products)
-async function generateEmbeddings() {
-  console.log("Generating embeddings for all products without embeddings...");
+// Function to regenerate all embeddings with the new model
+async function regenerateAllEmbeddings() {
+  console.log("Regenerating embeddings for ALL products with the new model...");
   
   try {
     const response = await fetch(`${serverUrl}/api/embeddings/generate`, {
@@ -15,7 +15,8 @@ async function generateEmbeddings() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        processAll: true  // Process all products in batches
+        regenerateAll: true,  // Regenerate ALL embeddings
+        processAll: true     // Process all products in batches
       })
     });
     
@@ -27,9 +28,9 @@ async function generateEmbeddings() {
     console.log("Success!");
     console.log(result);
   } catch (error) {
-    console.error("Error generating embeddings:", error.message);
+    console.error("Error regenerating embeddings:", error.message);
   }
 }
 
 // Execute immediately
-generateEmbeddings();
+regenerateAllEmbeddings();
