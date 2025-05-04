@@ -107,12 +107,14 @@ section {
 /* Results section */
 .results-container {
   overflow-x: auto;
+  position: relative;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
+  position: relative;
 }
 
 th, td {
@@ -128,11 +130,14 @@ th {
 
 tr:hover {
   background-color: #f5f5f5;
+  z-index: 10;
+  position: relative;
 }
 
 .actions-cell {
   white-space: nowrap;
   text-align: center;
+  position: relative;
 }
 
 .similar-button {
@@ -147,6 +152,87 @@ tr:hover {
 
 .similar-button:hover {
   background-color: #395682;
+}
+
+/* Similar Products Tooltip */
+.product-row {
+  position: relative;
+}
+
+.similar-tooltip {
+  visibility: hidden;
+  position: absolute;
+  right: -320px;
+  top: 0;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 0.75rem;
+  z-index: 100;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.similar-tooltip-header {
+  font-weight: bold;
+  color: #2c5e3f;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.similar-product-item {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.similar-product-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.similar-product-name {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.similar-product-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.similar-product-dispensary {
+  font-size: 0.85rem;
+  color: #4a6fa5;
+  margin-top: 0.25rem;
+}
+
+.product-row:hover .similar-tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+  pointer-events: auto;
+}
+
+.similar-loading {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+}
+
+@media (max-width: 1200px) {
+  .similar-tooltip {
+    right: 0;
+    top: 100%;
+    width: 250px;
+  }
 }
 
 /* Similar products styling */

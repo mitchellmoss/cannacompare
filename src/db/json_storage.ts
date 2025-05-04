@@ -107,7 +107,7 @@ export function closeDb(): void {
 }
 
 // Helper functions
-function readJsonFile<T>(filePath: string): T {
+export function readJsonFile<T>(filePath: string): T {
   const content = Deno.readTextFileSync(filePath);
   return JSON.parse(content) as T;
 }
@@ -357,13 +357,13 @@ export function findSimilarProductsByEmbedding(
   limit = 5,
   threshold = SIMILARITY_THRESHOLD,
   excludeProductId?: number
-): ProductQueryResult[] {
+): (ProductQueryResult & { id: number })[] {
   const products = readJsonFile<Product[]>(PRODUCTS_FILE);
   const dispensaries = readJsonFile<Dispensary[]>(DISPENSARIES_FILE);
   const embeddings = readJsonFile<ProductEmbedding[]>(EMBEDDINGS_FILE);
   
   // Calculate similarity scores
-  type ProductWithScore = ProductQueryResult & { score: number };
+  type ProductWithScore = ProductQueryResult & { id: number; score: number };
   const productsWithScores: ProductWithScore[] = [];
   
   for (const embedding of embeddings) {
@@ -383,6 +383,7 @@ export function findSimilarProductsByEmbedding(
     
     if (score >= threshold) {
       productsWithScores.push({
+        id: product.id,
         product_name: product.product_name,
         price: product.price,
         weight_or_size: product.weight_or_size,
@@ -396,12 +397,12 @@ export function findSimilarProductsByEmbedding(
   // Sort by similarity score (highest first) and take the top results
   productsWithScores.sort((a, b) => b.score - a.score);
   
-  // Remove the score property from the results
+  // Take top results but keep the id property
   return productsWithScores.slice(0, limit).map(({ score, ...product }) => product);
 }
 
 // Search/Query Operations
-export function searchProductsByName(searchTerm: string): ProductQueryResult[] {
+export function searchProductsByName(searchTerm: string): (ProductQueryResult & { id: number })[] {
   const products = readJsonFile<Product[]>(PRODUCTS_FILE);
   const dispensaries = readJsonFile<Dispensary[]>(DISPENSARIES_FILE);
   
@@ -411,6 +412,7 @@ export function searchProductsByName(searchTerm: string): ProductQueryResult[] {
     .map(p => {
       const dispensary = dispensaries.find(d => d.id === p.dispensary_id);
       return {
+        id: p.id,
         product_name: p.product_name,
         price: p.price,
         weight_or_size: p.weight_or_size,

@@ -19,6 +19,7 @@ let allProducts = [];
 let dispensaries = [];
 let currentViewMode = 'table'; // 'table' or 'similar'
 let currentProductId = null;
+let hoverTooltips = new Map(); // Cache for tooltips to avoid repeated API calls
 
 // Initialize the app
 document.addEventListener('DOMContentLoaded', init);
@@ -169,6 +170,15 @@ function displayResults(products) {
   
   products.forEach(product => {
     const row = resultsBody.insertRow();
+    row.className = 'product-row';
+    
+    // Ensure product has an ID property - if not present, the UI won't show hover tooltip
+    const productId = product.id || null;
+    
+    // Set the data-product-id attribute for hover functionality
+    if (productId) {
+      row.setAttribute('data-product-id', productId);
+    }
     
     // Product name
     const nameCell = row.insertCell();
@@ -200,11 +210,36 @@ function displayResults(products) {
     actionsCell.className = 'actions-cell';
     
     // Only show similar button if the product has an ID
-    if (product.id) {
+    if (productId) {
+      // Create tooltip container for this product
+      const tooltip = document.createElement('div');
+      tooltip.className = 'similar-tooltip';
+      tooltip.innerHTML = '<div class="similar-loading">Loading similar products...</div>';
+      row.appendChild(tooltip);
+      
+      // Add mouseover event listener to fetch similar products
+      row.addEventListener('mouseenter', () => {
+        console.log(`Mouse entered row for product ${productId}`);
+        // Only load if we haven't already cached this tooltip
+        if (!hoverTooltips.has(productId)) {
+          console.log(`Loading similar products for ${productId}`);
+          loadSimilarProductsTooltip(productId, tooltip);
+        } else {
+          console.log(`Using cached data for ${productId}`);
+          // Use cached data if available
+          renderSimilarProductsTooltip(tooltip, hoverTooltips.get(productId));
+        }
+      });
+      
+      // Add mouseleave listener to ensure proper tooltip behavior
+      row.addEventListener('mouseleave', () => {
+        console.log(`Mouse left row for product ${productId}`);
+      });
+      
       const similarButton = document.createElement('button');
       similarButton.className = 'similar-button';
       similarButton.textContent = 'Find Similar';
-      similarButton.addEventListener('click', () => findSimilarProducts(product.id));
+      similarButton.addEventListener('click', () => findSimilarProducts(productId));
       actionsCell.appendChild(similarButton);
     }
   });
@@ -333,6 +368,80 @@ function setViewMode(mode, originalProduct = null, similarProducts = null) {
       resultsBody.innerHTML = '<tr><td colspan="6">No similar products found.</td></tr>';
     }
   }
+}
+
+/**
+ * Load similar products for tooltip hover display
+ */
+async function loadSimilarProductsTooltip(productId, tooltipElement) {
+  if (!productId) {
+    console.error('Product ID is missing or undefined');
+    return;
+  }
+  
+  try {
+    console.log(`Fetching similar products for tooltip: ${PRODUCTS_ENDPOINT}/${productId}/similar?limit=3`);
+    
+    // Get similar products with a smaller limit (3 for hover)
+    const response = await fetch(`${PRODUCTS_ENDPOINT}/${productId}/similar?limit=3`);
+    
+    if (!response.ok) {
+      console.error(`HTTP error! status: ${response.status}`);
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    const result = await response.json();
+    console.log('API Response:', result);
+    
+    if (!result.success) {
+      console.error('API reported failure:', result.error);
+      throw new Error(result.error || 'Failed to fetch similar products');
+    }
+    
+    const similarProducts = result.data;
+    if (!similarProducts || !Array.isArray(similarProducts)) {
+      console.error('Unexpected API response format:', similarProducts);
+      throw new Error('Unexpected API response format');
+    }
+    
+    console.log(`Found ${similarProducts.length} similar products for ${productId}`);
+    
+    // Cache the results
+    hoverTooltips.set(productId, similarProducts);
+    
+    // Render the tooltip content
+    renderSimilarProductsTooltip(tooltipElement, similarProducts);
+  } catch (error) {
+    console.error('Failed to fetch similar products for tooltip:', error);
+    tooltipElement.innerHTML = '<div class="similar-tooltip-header">Unable to load similar products</div>';
+  }
+}
+
+/**
+ * Render the similar products tooltip content
+ */
+function renderSimilarProductsTooltip(tooltipElement, similarProducts) {
+  if (!similarProducts || similarProducts.length === 0) {
+    tooltipElement.innerHTML = '<div class="similar-tooltip-header">No similar products found</div>';
+    return;
+  }
+  
+  let html = `<div class="similar-tooltip-header">Similar Products</div>`;
+  
+  similarProducts.forEach(product => {
+    html += `
+      <div class="similar-product-item">
+        <div class="similar-product-name">${product.product_name}</div>
+        <div class="similar-product-info">
+          <span>${product.weight_or_size || 'N/A'}</span>
+          <span>${product.price}</span>
+        </div>
+        <div class="similar-product-dispensary">${product.dispensary_name}</div>
+      </div>
+    `;
+  });
+  
+  tooltipElement.innerHTML = html;
 }
 
 /**
