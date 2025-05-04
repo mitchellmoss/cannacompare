@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embeddings Management - Cannabis Product Price Comparator</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .embed-section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    .action-btn {
+      background-color: #2c5e3f;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-right: 10px;
+    }
+
+    .action-btn:hover {
+      background-color: #1e472e;
+    }
+
+    .action-btn.secondary {
+      background-color: #555;
+    }
+
+    .action-btn.secondary:hover {
+      background-color: #444;
+    }
+
+    #status {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-radius: 4px;
+      background-color: #f5f5f5;
+      display: none;
+    }
+
+    #status.success {
+      background-color: #e3f2e6;
+      color: #2c5e3f;
+      display: block;
+    }
+
+    #status.error {
+      background-color: #ffeeee;
+      color: #cc0000;
+      display: block;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+      margin-right: 10px;
+      vertical-align: middle;
+      display: none;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .stats-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .stat-card {
+      background-color: #f9f9f9;
+      border-radius: 6px;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #2c5e3f;
+    }
+
+    .stat-card p {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .nav-links {
+      margin-bottom: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #2c5e3f;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cannabis Product Price Comparator</h1>
+    <p>Embeddings Management</p>
+  </header>
+
+  <main class="embed-section">
+    <div class="nav-links">
+      <a href="/">← Back to Search</a>
+    </div>
+
+    <div class="card">
+      <h2>Generate Embeddings</h2>
+      <p>
+        This tool uses Google's Gemini AI to create vector embeddings for all products in the database.
+        These embeddings enable semantic similarity search, helping users find related products.
+      </p>
+      
+      <div class="actions" style="margin-top: 1.5rem;">
+        <button id="generateBtn" class="action-btn">
+          <span id="spinner" class="spinner"></span>
+          Generate All Missing Embeddings
+        </button>
+        <button id="refreshStatsBtn" class="action-btn secondary">
+          Refresh Stats
+        </button>
+      </div>
+
+      <div id="status"></div>
+
+      <div class="stats-container">
+        <div class="stat-card">
+          <h3 id="totalProducts">-</h3>
+          <p>Total Products</p>
+        </div>
+        <div class="stat-card">
+          <h3 id="withEmbeddings">-</h3>
+          <p>With Embeddings</p>
+        </div>
+        <div class="stat-card">
+          <h3 id="percentComplete">-</h3>
+          <p>Percent Complete</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>How It Works</h2>
+      <p>
+        When you click "Generate All Missing Embeddings", the system:
+      </p>
+      <ol>
+        <li>Finds all products without embeddings</li>
+        <li>Processes them in batches of 50 products</li>
+        <li>Sends each product's description to Google's Gemini API</li>
+        <li>Stores the resulting embeddings in the database</li>
+        <li>Shows you a summary of the processed products</li>
+      </ol>
+      <p>
+        For this to work, make sure you've set a valid Google API key in your <code>.env</code> file.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cannabis Price Comparator. For educational purposes only.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const generateBtn = document.getElementById('generateBtn');
+      const refreshStatsBtn = document.getElementById('refreshStatsBtn');
+      const statusDiv = document.getElementById('status');
+      const spinner = document.getElementById('spinner');
+      
+      // Stats elements
+      const totalProductsEl = document.getElementById('totalProducts');
+      const withEmbeddingsEl = document.getElementById('withEmbeddings');
+      const percentCompleteEl = document.getElementById('percentComplete');
+      
+      // Load initial stats
+      fetchStats();
+      
+      // Set up event listeners
+      generateBtn.addEventListener('click', generateEmbeddings);
+      refreshStatsBtn.addEventListener('click', fetchStats);
+      
+      async function generateEmbeddings() {
+        // Show loading state
+        generateBtn.disabled = true;
+        spinner.style.display = 'inline-block';
+        statusDiv.className = '';
+        statusDiv.textContent = 'Processing, please wait...';
+        statusDiv.style.display = 'block';
+        
+        try {
+          const response = await fetch('/api/embeddings/generate', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({})
+          });
+          
+          if (!response.ok) {
+            throw new Error(`Server returned ${response.status}: ${response.statusText}`);
+          }
+          
+          const result = await response.json();
+          
+          if (result.success) {
+            statusDiv.className = 'success';
+            statusDiv.textContent = result.message || 'Embeddings generated successfully';
+          } else {
+            statusDiv.className = 'error';
+            statusDiv.textContent = result.error || 'Failed to generate embeddings';
+          }
+          
+          // Refresh stats after generating embeddings
+          fetchStats();
+        } catch (error) {
+          statusDiv.className = 'error';
+          statusDiv.textContent = `Error: ${error.message}`;
+        } finally {
+          // Reset UI
+          generateBtn.disabled = false;
+          spinner.style.display = 'none';
+        }
+      }
+      
+      async function fetchStats() {
+        try {
+          // Get the total number of products
+          const productsResponse = await fetch('/api/products/stats');
+          
+          if (productsResponse.ok) {
+            const stats = await productsResponse.json();
+            
+            if (stats.success) {
+              totalProductsEl.textContent = stats.data.totalProducts || '0';
+              withEmbeddingsEl.textContent = stats.data.withEmbeddings || '0';
+              
+              const total = parseInt(stats.data.totalProducts) || 0;
+              const withEmbed = parseInt(stats.data.withEmbeddings) || 0;
+              
+              const percent = total > 0 ? Math.round((withEmbed / total) * 100) : 0;
+              percentCompleteEl.textContent = `${percent}%`;
+            }
+          } else {
+            // If we can't get the stats, just show N/A
+            totalProductsEl.textContent = 'N/A';
+            withEmbeddingsEl.textContent = 'N/A';
+            percentCompleteEl.textContent = 'N/A';
+          }
+        } catch (error) {
+          console.error('Error fetching stats:', error);
+        }
+      }
+    });
+  </script>
+</body>
+</html>

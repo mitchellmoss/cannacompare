@@ -23,6 +23,19 @@ CREATE TABLE IF NOT EXISTS products (
 CREATE INDEX IF NOT EXISTS idx_product_name ON products (product_name);
 CREATE INDEX IF NOT EXISTS idx_dispensary_id ON products (dispensary_id);
 
+-- Product embeddings table - stores vector embeddings for similarity search
+CREATE TABLE IF NOT EXISTS product_embeddings (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    product_id INTEGER NOT NULL UNIQUE,
+    embedding BLOB NOT NULL, -- Store embedding vector as a binary blob
+    embedding_model TEXT NOT NULL, -- Model version used for the embedding
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE
+);
+
+-- Create an index on product_id for faster lookups
+CREATE INDEX IF NOT EXISTS idx_embedding_product_id ON product_embeddings (product_id);
+
 -- Log table for scraping errors
 CREATE TABLE IF NOT EXISTS scrape_log (
     id INTEGER PRIMARY KEY AUTOINCREMENT,

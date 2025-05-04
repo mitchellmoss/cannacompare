@@ -24,6 +24,15 @@ app.use(async (ctx, next) => {
   ctx.response.headers.set("X-Response-Time", `${ms}ms`);
 });
 
+// Fix for Content-Type missing error - add a content type if missing for POST requests
+app.use(async (ctx, next) => {
+  if (ctx.request.method === "POST" && !ctx.request.headers.get("content-type")) {
+    ctx.request.headers.set("content-type", "application/json");
+    console.log("Added missing Content-Type header to POST request");
+  }
+  await next();
+});
+
 // CORS middleware for development
 app.use(async (ctx, next) => {
   ctx.response.headers.set("Access-Control-Allow-Origin", "*");
@@ -70,6 +79,7 @@ app.addEventListener("listen", ({ hostname, port, secure }) => {
   );
   console.log(`- API available at: http://localhost:${port}/api/`);
   console.log(`- Frontend available at: http://localhost:${port}/`);
+  console.log(`- Embeddings Management: http://localhost:${port}/embeddings.html`);
 });
 
 // Graceful shutdown
