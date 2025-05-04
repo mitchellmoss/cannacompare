@@ -134,8 +134,8 @@
     <div class="card">
       <h2>Generate Embeddings</h2>
       <p>
-        This tool uses Google's text-embedding-004 model to create vector embeddings for all products in the database.
-        These embeddings enable semantic similarity search, helping users find related products.
+        This tool uses Google's gemini-embedding-exp-03-07 model (with 3072 dimensions) to create vector embeddings for all products in the database.
+        These embeddings enable semantic similarity search, helping users find related products across different dispensaries.
       </p>
       
       <div class="actions" style="margin-top: 1.5rem;">
@@ -177,8 +177,8 @@
       </p>
       <ol>
         <li>Finds all products without embeddings</li>
-        <li>Processes them in batches of 1000 products</li>
-        <li>Sends each product's description to Google's text-embedding-004 API</li>
+        <li>Processes them in very small batches (3 products at a time) due to API rate limits</li>
+        <li>Sends each product's description to Google's gemini-embedding-exp-03-07 API (3072 dimensions)</li>
         <li>Stores the resulting embeddings in the database</li>
         <li>Shows you a summary of the processed products</li>
       </ol>
@@ -262,7 +262,7 @@
       }
       
       async function regenerateAllEmbeddings() {
-        if (!confirm("This will regenerate embeddings for ALL products using the new 'text-embedding-004' model. This may take some time and will overwrite any existing embeddings. Continue?")) {
+        if (!confirm("This will regenerate embeddings for ALL products using the 'gemini-embedding-exp-03-07' model with 3072 dimensions. Due to stricter API rate limits (5 requests per minute), this process will take a long time and will overwrite any existing embeddings. Continue?")) {
           return;
         }
         

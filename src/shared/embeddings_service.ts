@@ -7,13 +7,14 @@ import { load } from "https://deno.land/std@0.218.2/dotenv/mod.ts";
 // Load environment variables
 const env = await load();
 const GOOGLE_API_KEY = env.GOOGLE_API_KEY;
-const EMBEDDING_MODEL = env.EMBEDDING_MODEL || "text-embedding-004";
+const EMBEDDING_MODEL = env.EMBEDDING_MODEL || "gemini-embedding-exp-03-07";
+const DIMENSIONS = env.EMBEDDING_DIMENSIONS ? parseInt(env.EMBEDDING_DIMENSIONS) : 3072;
 
-// Embedding API endpoint
+// Embedding API endpoint with dimensions specification for the experimental model
 const EMBEDDING_API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${EMBEDDING_MODEL}:embedContent?key=${GOOGLE_API_KEY}`;
 
 // Log configuration status
-console.log(`Embedding service configured with model: ${EMBEDDING_MODEL}`);
+console.log(`Embedding service configured with model: ${EMBEDDING_MODEL} (${DIMENSIONS} dimensions)`);
 if (!GOOGLE_API_KEY) {
   console.warn("Warning: GOOGLE_API_KEY is not set in the environment. Embedding functionality will not work.");
 }
@@ -29,6 +30,7 @@ interface EmbeddingRequest {
     }[];
   };
   taskType: "RETRIEVAL_DOCUMENT" | "RETRIEVAL_QUERY";
+  dimensions?: number; // Optional dimensions parameter for experimental model
 }
 
 /**
@@ -64,6 +66,7 @@ export async function getEmbedding(
       parts: [{ text }],
     },
     taskType: isQuery ? "RETRIEVAL_QUERY" : "RETRIEVAL_DOCUMENT",
+    dimensions: DIMENSIONS, // Request specific dimensions for the experimental model
   };
 
   // Retry logic with exponential backoff

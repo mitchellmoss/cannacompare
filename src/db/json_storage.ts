@@ -20,7 +20,8 @@ const DISPENSARIES_FILE = join(DATA_DIR, "dispensaries.json");
 const PRODUCTS_FILE = join(DATA_DIR, "products.json");
 const ERRORS_FILE = join(DATA_DIR, "errors.json");
 const EMBEDDINGS_FILE = join(DATA_DIR, "embeddings.json");
-const EMBEDDING_MODEL = env.EMBEDDING_MODEL || "text-embedding-004";
+const EMBEDDING_MODEL = env.EMBEDDING_MODEL || "gemini-embedding-exp-03-07";
+const EMBEDDING_DIMENSIONS = env.EMBEDDING_DIMENSIONS ? parseInt(env.EMBEDDING_DIMENSIONS) : 3072;
 const SIMILARITY_THRESHOLD = Number(env.SIMILARITY_THRESHOLD) || 0.7;
 
 // Data structure
@@ -274,12 +275,13 @@ export async function generateAndStoreEmbedding(productId: number): Promise<bool
 const rateLimiter = {
   // Timestamps of recent API calls (rolling window)
   recentCalls: [] as number[],
-  // Maximum calls allowed per minute (Google's limit is 1,500)
-  maxCallsPerMinute: 1200, // Set slightly lower for safety
-  // Batch size (process this many items at once)
-  batchSize: 40,
-  // Time between batches in ms
-  batchDelayMs: 3000,
+  // Maximum calls allowed per minute (gemini-embedding-exp-03-07 has much lower limits)
+  // Free tier: 5 RPM, Tier 1: 10 RPM
+  maxCallsPerMinute: 5, // Using free tier limit for safety
+  // Batch size (process only a few items at once to respect the strict rate limit)
+  batchSize: 3,
+  // Time between batches in ms (longer delay to respect the lower rate limit)
+  batchDelayMs: 13000, // ~13 seconds delay ensures we stay within the 5 RPM limit
 
   // Check if we can make a new API call or need to wait
   async waitIfNeeded(): Promise<void> {
